@@ -1,0 +1,7 @@
+a {
+    color: #0097AC;
+}
+
+.swiper-slide {
+    filter: brightness(50%);
+}
