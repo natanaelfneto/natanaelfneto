@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ['*']
 
 LOCAL_APPS = [
     # 'base',
-    # 'comum',
+    'common'
     # 'contas',
     # 'main',
     # 'ordens_servicos',
@@ -32,7 +32,7 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
+    # 'crispy_forms',
 
 ]
 INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
@@ -127,7 +127,7 @@ DATE_INPUT_FORMATS = [
     '%m/%d/%Y', '%m/%d/%y'
 ]
 
-AUTH_USER_MODEL = 'contas.Usuario'
+# AUTH_USER_MODEL = 'contas.Usuario'
 
 try:
     from local_settings import *

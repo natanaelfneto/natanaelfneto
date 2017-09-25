@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -9,21 +10,21 @@
     ============================================= -->
     <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400italic,500,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="css/dark.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="css/swiper.css" type="text/css" /> -->
+    <link rel="stylesheet" href="{% static 'plugins/canvas/css/style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/canvas/css/dark.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/swiper/css/swiper.css' %}" type="text/css" />
 
     <!-- Photography Specific Stylesheet -->
-    <link rel="stylesheet" href="demos/photography/photography.css" type="text/css" />
-    <link rel="stylesheet" href="demos/photography/css/photography-addons.css" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/photography.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/photography-addons.css' %}" type="text/css" />
     <!-- / -->
 
-    <!-- <link rel="stylesheet" href="css/font-icons.css" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="css/animate.css" type="text/css" /> -->
+    <link rel="stylesheet" href="[% static 'plugins/font-icons/css/font-icons.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/one-page/css/et-line.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'plugins/animate/css/animate.css' %}" type="text/css" />
     <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" /> -->
 
-    <!-- <link rel="stylesheet" href="demos/photography/css/fonts.css" type="text/css" /> -->
+    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/fonts.css' %}" type="text/css" />
 
     <!-- <link rel="stylesheet" href="css/responsive.css" type="text/css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -665,13 +666,13 @@
 
     <!-- External JavaScripts
     ============================================= -->
-    <script type="text/javascript" src="{% static '/plugins/jquery/js/jquery.js' %}"></script>
-    <!-- <script type="text/javascript" src="js/plugins.js"></script> -->
-    <!-- <script src="demos/photography/js/photography-addons.js"></script> -->
+    <script type="text/javascript" src="{% static 'plugins/jquery/js/jquery-2.2.4.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/canvas/js/plugins-pkg.js' %}"></script>
+    <script src="{% static 'plugins/canvas/photography/js/photography-addons.js' %}"></script>
 
     <!-- Footer Scripts
     ============================================= -->
-    <!-- <script type="text/javascript" src="js/functions.js"></script> -->
+    <script type="text/javascript" src="{% static 'plugins/canvas/js/functions.js' %}"></script>
 
     <script>
         (function() {
@@ -736,7 +737,7 @@
             swiperSlider.enableKeyboardControl();
         });
 
-    </script>
+    // </script>
 
 </body>
 </html>
