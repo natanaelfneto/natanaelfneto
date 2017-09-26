@@ -1,48 +1,6 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-<head>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
-
-    <!-- Stylesheets
-    ============================================= -->
-    <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400italic,500,600,700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/canvas/css/style.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/canvas/css/dark.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/swiper/css/swiper.css' %}" type="text/css" />
-
-    <!-- Photography Specific Stylesheet -->
-    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/photography.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/photography-addons.css' %}" type="text/css" />
-    <!-- / -->
-
-    <link rel="stylesheet" href="{% static 'plugins/font-icons/font-icons.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/one-page/css/et-line.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/animate/css/animate.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'plugins/magnific-popup/css/magnific-popup.css' %}" type="text/css" />
-
-    <link rel="stylesheet" href="{% static 'plugins/canvas/photography/css/fonts.css' %}" type="text/css" />
-
-    <link rel="stylesheet" href="{% static 'plugins/responsive/css/responsive.css' %}" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
-
-
-    <!-- Document Title
-    ============================================= -->
-    <title>@natanaelfneto</title>
-</head>
-<body class="stretched side-header side-header-right open-header">
-    <!-- Document Wrapper
-    ============================================= -->
-    <div id="wrapper" class="clearfix">
-        <div class="co-name hidden-sm hidden-xs center">
-            <img src="demos/photography/images/logo-dark@2x.png" alt="Canvas Logo">
-        </div>
+{% block content-sections %}
         <!-- Header
         ============================================= -->
         <header id="header" class="no-sticky dark">
@@ -162,41 +120,41 @@
                         <img alt="img-author" style="border: 8px solid #333;"
                             src="{% static 'img/profile-picture-2017.png' %}" />
                         <div id="copyrights" class="nobg">
-                                <div class="container clearfix">
-                                    <div class="col_full center nobottommargin notopmargin">
-                                        <a href="http://github.com/natanaelfneto" target="_blank"
-                                            class="social-icon inline-block si-borderless si-github">
-                                            <i class="icon-github-circled"></i>
-                                            <i class="icon-github-circled"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/natanael-f-neto-a0077b23/" target="_blank"
-                                            class="social-icon inline-block si-borderless si-linkedin">
-                                            <i class="icon-linkedin"></i>
-                                            <i class="icon-linkedin"></i>
-                                        </a>
-                                        <a href="http://facebook.com/natanaelfneto" target="_blank"
-                                            class="social-icon inline-block si-borderless si-facebook">
-                                            <i class="icon-facebook"></i>
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="http://twitter.com/natanaelfneto" target="_blank"
-                                            class="social-icon inline-block si-borderless si-twitter">
-                                            <i class="icon-twitter"></i>
-                                            <i class="icon-twitter"></i>
-                                        </a>
-                                        <!-- <a href="http://instagram.com/natanaelfneto" target="_blank"
-                                            class="social-icon inline-block si-borderless si-instagram">
-                                            <i class="icon-instagram"></i>
-                                            <i class="icon-instagram"></i>
-                                        </a> -->
-                                        <a href="mailto:natanaelfneto@outlook.com"
-                                            class="social-icon inline-block si-borderless si-gplus">
-                                            <i class="icon-envelope2"></i>
-                                            <i class="icon-envelope2"></i>
-                                        </a>
-                                    </div>
+                            <div class="container clearfix">
+                                <div class="col_full center nobottommargin notopmargin">
+                                    <a href="http://github.com/natanaelfneto" target="_blank"
+                                        class="social-icon inline-block si-borderless si-github">
+                                        <i class="icon-github-circled"></i>
+                                        <i class="icon-github-circled"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/natanael-f-neto-a0077b23/" target="_blank"
+                                        class="social-icon inline-block si-borderless si-linkedin">
+                                        <i class="icon-linkedin"></i>
+                                        <i class="icon-linkedin"></i>
+                                    </a>
+                                    <a href="http://facebook.com/natanaelfneto" target="_blank"
+                                        class="social-icon inline-block si-borderless si-facebook">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a href="http://twitter.com/natanaelfneto" target="_blank"
+                                        class="social-icon inline-block si-borderless si-twitter">
+                                        <i class="icon-twitter"></i>
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                    <!-- <a href="http://instagram.com/natanaelfneto" target="_blank"
+                                        class="social-icon inline-block si-borderless si-instagram">
+                                        <i class="icon-instagram"></i>
+                                        <i class="icon-instagram"></i>
+                                    </a> -->
+                                    <a href="mailto:natanaelfneto@outlook.com"
+                                        class="social-icon inline-block si-borderless si-gplus">
+                                        <i class="icon-envelope2"></i>
+                                        <i class="icon-envelope2"></i>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-5 col-sm-7 col-md-offset-1">
@@ -211,15 +169,15 @@
                             I'm an Electrical, Electronic, and Software Engineer.
                             Also, I'm CCO and Co-Founder at
                             <a href="http://need.eng.br">NEED.eng.br</a>.
-                            Since 2016, my main occupation is as a Research
-                            Engineer at the <a href="http://lais.huol.ufrn.br/">
-                            Laboratory of Technological Innovation in Health - LAIS</a>.
-                            I'm a current studant for the Master's Degree in
-                            Science, Technology and Innovation at the
+                            Since 2016, my main occupation is at the
                             <a href="http://lais.huol.ufrn.br/">
-                            Science, Techninology and Innovation Post-Grad Program</a>
-                            - UFRN. In 2017 I finished a Specialization in
-                            Health Informatics at <a href="http://eb.ct.ufrn.br/">
+                            Laboratory of Technological Innovation in Health - LAIS</a>
+                            as a Research Engineer. I'm a current student for the
+                            Master's Degree in Science, Technology and Innovation at the
+                            <a href="#">
+                            Science, Technology and Innovation Post-Grad Program</a>
+                            - UFRN. In 2017. I finished a Specialization in
+                            Health Informatics at the <a href="http://eb.ct.ufrn.br/">
                             Department of Biomedical Engineering</a>
                             - DEB/UFRN. My Bachelor's Degree is in Electrical
                             Engineering at the <a href="https://www2.emc.ufg.br/">
@@ -244,9 +202,9 @@
                     ============================================= -->
                     <div class="grid">
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-detalhe-do-cadeados.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-detalhe-do-cadeados.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -284,9 +242,9 @@
                             </a>
                         </div>
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-perfil-usuario.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-perfil-usuario.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -304,9 +262,9 @@
                             </a>
                         </div>
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-historico.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-historico.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -324,9 +282,9 @@
                             </a>
                         </div>
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-servicos.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-servicos.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -344,9 +302,9 @@
                             </a>
                         </div>
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-detalhe-do-cadeado-abertos.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-detalhe-do-cadeado-abertos.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -364,69 +322,9 @@
                             </a>
                         </div>
                         <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                            <a href="{% static 'img/project-pictures/new-cast-tela-inicial-web.png' %}"
                                 class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                    alt="img01" />
-                                <div class="description description-grid">
-                                    <h3>Title</h3>
-                                    <p>Text<span>&mdash; Name</span></p>
-                                    <div class="details">
-                                        <ul>
-                                            <li><i class="icon icon-line-camera"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-eye"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-printer"></i><span>&fnof;detail</span></li>
-                                            <li><i class="icon icon-line-cog"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-sun"></i><span>detail</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                    alt="img01" />
-                                <div class="description description-grid">
-                                    <h3>Title</h3>
-                                    <p>Text<span>&mdash; Name</span></p>
-                                    <div class="details">
-                                        <ul>
-                                            <li><i class="icon icon-line-camera"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-eye"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-printer"></i><span>&fnof;detail</span></li>
-                                            <li><i class="icon icon-line-cog"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-sun"></i><span>detail</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                    alt="img01" />
-                                <div class="description description-grid">
-                                    <h3>Title</h3>
-                                    <p>Text<span>&mdash; Name</span></p>
-                                    <div class="details">
-                                        <ul>
-                                            <li><i class="icon icon-line-camera"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-eye"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-printer"></i><span>&fnof;detail</span></li>
-                                            <li><i class="icon icon-line-cog"></i><span>detail</span></li>
-                                            <li><i class="icon icon-line-sun"></i><span>detail</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item" data-size="1280x853">
-                            <a href="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
-                                class="img-wrap img-grayscale" data-animate="fadeInUp">
-                                <img src="{% static 'img/project-pictures/new-cast-tela-cadeados-do-servico.png' %}"
+                                <img src="{% static 'img/project-pictures/new-cast-tela-inicial-web-mobile.png' %}"
                                     alt="img01" />
                                 <div class="description description-grid">
                                     <h3>Title</h3>
@@ -448,7 +346,7 @@
                     <div class="preview">
                         <button class="action action-close">
                             <i class="icon-line2-close"></i>
-                            <span class="text-hidden">Close</span>
+                            <span class="">Close</span>
                         </button>
                         <div class="description description-preview"></div>
                     </div>
@@ -466,12 +364,17 @@
                 <div class="container clearfix">
                     <div class="col_full center nobottommargin topmargin-sm">
                         &copy; NEED Tecnologia e Serviços LTDA. 2017. All Rights Reserved.</br></br>
+                        <a href="http://need.eng.br" target="_blank"
+                            class="social-icon inline-block si-small si-borderless si-rounded si-pinterest">
+                            <i class="icon-globe"></i>
+                            <i class="icon-globe"></i>
+                        </a>
                         <a href="http://facebook.com/needbrasil" target="_blank"
                             class="social-icon inline-block si-small si-borderless si-rounded si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
-                        <a href="http://instagram.com/sneedbrasil" target="_blank"
+                        <a href="http://instagram.com/needbrasil" target="_blank"
                             class="social-icon inline-block si-small si-borderless si-rounded si-instagram">
                             <i class="icon-instagram"></i>
                             <i class="icon-instagram"></i>
@@ -485,81 +388,4 @@
                 </div>
             </div><!-- #copyrights end -->
         </footer><!-- #footer end -->
-    </div><!-- #wrapper end -->
-    <!-- Go To Top
-    ============================================= -->
-    <div id="gotoTop" class="icon-angle-up"></div>
-    <!-- External JavaScripts
-    ============================================= -->
-    <script type="text/javascript" src="{% static 'plugins/jquery/js/jquery-2.2.4.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/canvas/js/plugins-pkg.js' %}"></script>
-    <script src="{% static 'plugins/canvas/photography/js/photography-addons.js' %}"></script>
-    <!-- Footer Scripts
-    ============================================= -->
-    <script type="text/javascript" src="{% static 'plugins/canvas/js/functions.js' %}"></script>
-    <script>
-        (function() {
-            var support = { transitions: Modernizr.csstransitions },
-                // transition end event name
-                transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-                transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-                onEndTransition = function( el, callback ) {
-                    var onEndCallbackFn = function( ev ) {
-                        if( support.transitions ) {
-                            if( ev.target != this ) return;
-                            this.removeEventListener( transEndEventName, onEndCallbackFn );
-                        }
-                        if( callback && typeof callback === 'function' ) { callback.call(this); }
-                    };
-                    if( support.transitions ) {
-                        el.addEventListener( transEndEventName, onEndCallbackFn );
-                    }
-                    else {
-                        onEndCallbackFn();
-                    }
-                };
-
-            new GridFx(document.querySelector('.grid'), {
-                imgPosition : {
-                    x : -0.5,
-                    y : 1
-                },
-                onOpenItem : function(instance, item) {
-                    instance.items.forEach(function(el) {
-                        if(item != el) {
-                            var delay = Math.floor(Math.random() * 50);
-                            el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                            el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                            el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
-                            el.style.transform = 'scale3d(0.1,0.1,1)';
-                            el.style.opacity = 0;
-                        }
-                    });
-                },
-                onCloseItem : function(instance, item) {
-                    instance.items.forEach(function(el) {
-                        if(item != el) {
-                            el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
-                            el.style.transition = 'opacity .4s, transform .4s';
-                            el.style.WebkitTransform = 'scale3d(1,1,1)';
-                            el.style.transform = 'scale3d(1,1,1)';
-                            el.style.opacity = 1;
-
-                            onEndTransition(el, function() {
-                                el.style.transition = 'none';
-                                el.style.WebkitTransform = 'none';
-                            });
-                        }
-                    });
-                }
-            });
-        })();
-
-        jQuery(document).ready(function($) {
-            var swiperSlider = $('.swiper-parent')[0].swiper;
-            swiperSlider.enableKeyboardControl();
-        });
-
-    // </script>
-</body>
-</html>
+{% endblock %}
