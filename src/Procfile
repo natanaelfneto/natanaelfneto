@@ -1,1 +1,0 @@
-web: gunicorn natanaelfneto.wsgi --log-file -
