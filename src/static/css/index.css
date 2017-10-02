@@ -1,3 +1,15 @@
 a {
     color: #0097AC;
 }
+
+@font-face{
+    font-family: 'candy-inc';
+    src: url('font/candy-inc.woff') format('woff'),
+         url('font/candy-inc.ttf') format('truetype'),
+         url('font/candy-inc.eot');
+};
+
+span.logofont {
+    font-family: 'candy-inc', sans-serif;
+    font-size: 30px;
+}
