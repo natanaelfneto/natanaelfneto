@@ -8,7 +8,6 @@ from django.contrib import admin
 urlpatterns = [
 	#admin
 	url(r'^admin/', admin.site.urls),
-
 	url(r'^', include('common.urls', namespace='common')),
 ]
 
