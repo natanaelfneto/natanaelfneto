@@ -130,7 +130,7 @@ DATE_INPUT_FORMATS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # AUTH_USER_MODEL = 'contas.Usuario'
 
