@@ -1,2 +1,3 @@
+web: python manage.py collectstatic
 web: python manage.py migrate
-web: python manage.py runserver 0.0.0.0:8798
+web: python manage.py runserver 0.0.0.0:8888
