@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Released]
 
+### 1.0.0 - 2017-09-20
+### Changed
+- README.md file updated
+- 
+
 ## [Unreleased]
 ### 0.2.0 - 2017-09-20
 ### Added
@@ -22,7 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
     VisualStudio, VisualStudioCode, webStorm+all, Windows
 
 ### Changed
-- settings.pyy
+- settings.py
 
 ### 0.0.0 - 2017-09-20
 #### Added

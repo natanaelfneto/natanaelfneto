@@ -1,6 +1,6 @@
 # natanaelfneto portfolio
 
-The goal of this repository is to make a portfolio page
+The goal of this repository is to make a portfolio page and leave open to be replicated if anyone want
 
 ## Getting Started
 

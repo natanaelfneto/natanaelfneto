@@ -10,9 +10,16 @@ class IndexView(TemplateView):
     Index view for the portfolio page
     """
     #
-    template_name = "index.html"
+    template_name = "index2.html"
 
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
 
         return context
+
+# Create your views here.
+def Index2View(request):
+    """
+    Index view for the portfolio page
+    """
+    return render(request, 'detail.html')
