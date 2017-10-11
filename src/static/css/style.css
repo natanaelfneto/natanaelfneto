@@ -9,9 +9,10 @@
 /*Import Global Compulsory CSS Files*/
 @import url(app.css);
 @import url(blocks.css);
-
-/*Import CSS Plugins*/
-@import url(plugins/style-switcher.css);
+@import url(default.css);
+@import url(dark.css);
+@import url(header-default.css);
+@import url(footer.css);
 
 * {
 	border-radius: 0;
