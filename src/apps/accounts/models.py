@@ -21,6 +21,7 @@ class SuperUser(BaseUserManager):
 
 
 class BasicUser(AbstractBaseUser, PermissionsMixin):
+    username = models.CharField(max_length=255, null=False, blank=False)
     active = models.BooleanField(default=True)
     admin = models.BooleanField(default=False)
     email = models.EmailField(max_length=255, unique=True)
@@ -55,4 +56,4 @@ class BasicUser(AbstractBaseUser, PermissionsMixin):
 
     @property
     def get_short_name(self):
-        return self.email
+        return self.username
