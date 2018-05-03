@@ -1,52 +1,26 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
 <head>
-    <title>@natanaelfneto</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- Web Fonts -->
-    <link rel='stylesheet' type='text/css'
-        href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin' />
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/social-font-icons.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{% static 'plugins/animate/css/animate.css' %}">
-    <link rel="stylesheet" href="{% static 'plugins/line-icons/line-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css' %}">
-    <link rel="stylesheet" href="{% static 'plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css' %}">
+	<meta charset="utf-8" />
+	<title>
+        [App Name] <!-- should be variable -->
+    </title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+    <meta content="" name="author" />
+    <link type="stylesheet" href="{% static 'css/natanaelfneto.css' %}" />
+    {% block styles %}
+    {% endblock styles %}
 </head>
-{% block content-sections %}{% endblock %}
-<!-- JS Global Compulsory -->
-<script type="text/javascript" src="{% static 'plugins/jquery/js/jquery-2.2.4.js' %}"></script>
-<script type="text/javascript" src="{% static 'plugins/jquery/js/jquery-migrate.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
-<!-- JS Implementing Plugins -->
-<script type="text/javascript" src="{% static 'js/back-to-top.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/smoothScroll.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery-appear.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery-parallax.js' %}"></script>
-<script type="text/javascript" src="{% static 'plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
-<!-- JS Customization -->
-<!-- JS Page Level -->
-<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/progress-bar.js' %}"></script>
-<script type="text/javascript" src="{% static 'plugins/cube-portfolio/cubeportfolio/js/cube-portfolio-lightbox.js' %}"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        App.initParallaxBg();
-        ProgressBar.initProgressBarHorizontal();
-    });
-</script>
-{% block extrajs %}{% endblock extrajs %}
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <script src="{% static 'vue/app.js' %}"></script>
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
 </html>

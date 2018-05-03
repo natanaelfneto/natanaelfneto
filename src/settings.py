@@ -17,12 +17,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 LOCAL_APPS = [
-    # 'base',
-    'common'
-    # 'contas',
-    # 'main',
-    # 'ordens_servicos',
-    # 'relatorios'
+    'accounts'
 ]
 
 DEFAULT_APPS = [
@@ -32,10 +27,21 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'crispy_forms',
+    #aditional apps
+    'rest_framework',
+    'rest_framework.authtoken',
 
 ]
 INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DATE_FORMAT': "%d/%m/%Y",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,7 +83,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'pgadmin',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5433', 
     }
 }
 
@@ -102,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'pt-br'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'America/Fortaleza'
 
@@ -127,12 +133,7 @@ DATE_INPUT_FORMATS = [
     '%m/%d/%Y', '%m/%d/%y'
 ]
 
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-# AUTH_USER_MODEL = 'contas.Usuario'
+AUTH_USER_MODEL = 'accounts.BasicUser'
 
 try:
     from local_settings import *
