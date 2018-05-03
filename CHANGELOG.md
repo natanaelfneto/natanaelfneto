@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.3 - 2018-05-03
+### Added
+- added first vue component: Navbar
+- added pluings: animatecss
+
 ### 0.0.2 - 2018-05-03
 ### Added
 - added vue simple webpack implementation with 'npm run build' script
