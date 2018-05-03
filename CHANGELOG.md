@@ -7,10 +7,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
-### 0.0.0 - 2018-05-03
+### 0.0.2 - 2018-05-03
+### Added
+- added vue simple webpack implementation with 'npm run build' script
+
+### 0.0.1 - 2018-05-03
 ### Added
 - django MVC refactored
-- gitignore.io for the following:
+- gitignore.io for the following: {
+    Windows,
+    Linux, 
+    MacOS, 
+    OSX,
+    Python,
+    Django,
+    Node,
+    NPM and Yarn debug files,
+    /dist folder,
+    VisualStudio and VS Code,
+    SublimeText
+}
+- folder and file structure to work with django
+
 
 ### 0.0.0 - 2018-05-03
 #### Added

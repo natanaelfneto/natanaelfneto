@@ -6,20 +6,24 @@
 	<title>
         [App Name] <!-- should be variable -->
     </title>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-	<meta content="" name="description" />
     <meta content="" name="author" />
-    <link type="stylesheet" href="{% static 'css/natanaelfneto.css' %}" />
+    <meta content="" name="description" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     {% block styles %}
     {% endblock styles %}
 </head>
 <body>
+    <noscript>
+        <strong>
+            We're sorry but natanaelfneto doesn't work properly without JavaScript enabled.
+            Please enable it to continue.
+        </strong>
+    </noscript>
     <div class="container">
         {% block content %}
         {% endblock content %}
     </div>
-    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
-    <script src="{% static 'vue/app.js' %}"></script>
+    <script src="{% static 'dist/build.js' %}"></script>
     {% block scripts %}
     {% endblock scripts %}
 </body>
