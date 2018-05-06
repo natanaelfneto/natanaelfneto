@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-10 m-auto profile">
+    <div class="col-md-10 m-auto profile pb-0">
         <div class="row text-center">
             <div class="col-md-4 mt-auto">
                 <img class="profile-image" src="../assets/image/profile.png" width="80%"/>

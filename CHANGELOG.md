@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
-### 0.0.4 - 2018-05-03
+### 0.0.5 - 2018-05-06
+### Added
+- added a data dictionary variable into components insted of hard coded information
+
+### 0.0.4 - 2018-05-05
 ### Added
 - added font awesome plugin
 - added line icons and line icons pro plugin

@@ -2,20 +2,53 @@
     <div>
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="#">@natanaelfneto</a>
-                <a class="p-2 text-muted" href="#">Resumé</a>
-                <a class="p-2 text-muted" href="#">Github Pages</a>
-                <a class="p-2 text-muted" href="#">LinkedIn Profile</a>
-                <a class="p-2 text-muted" href="#">NEED Technology</a>
+                <a class="p-2 text-muted" href="{{ link.destiny }}" v-for="link in links">{{ link.string }}</a>
             </nav>
         </div>
         <div class="jumbotron p-3 p-md-5 text-white bg-img">
             <div class="col-md-6 m-auto text-center align-middle">
-                <h1 class="display-4 font-italic">Biomedical, Electrical and Software Engineer</h1>
+                <h1 class="display-4 font-italic">{{ profession }}</h1>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        data: function() {
+            return {
+                profession: 'Biomedical, Electrical and Software Engineer',
+                links: [
+                    {
+                        'string':'@natanaelfneto',
+                        'destiny':'https://...',
+                        'icon':''
+                    },
+                    {
+                        'string':'Resumé',
+                        'destiny':'https://...',
+                        'icon':''
+                    },
+                    {
+                        'string':'Github Pages',
+                        'destiny':'https://...',
+                        'icon':''
+                    },
+                    {
+                        'string':'LinkedIn Pages',
+                        'destiny':'https://...',
+                        'icon':''
+                    },
+                    {
+                        'string':'NEED Technology',
+                        'destiny':'https://...',
+                        'icon':''
+                    }
+                ]
+            }
+        }
+    }
+</script>
 
 <style scoped>
     .bg-img {
