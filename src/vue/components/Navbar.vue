@@ -1,67 +1,34 @@
 <template>
-  <header>
-    <div 
-      class="collapse bg-dark" v-bind:class="collapse ? 'show' : ' '">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">Option 1</h4>
-            <p class="text-muted">
-              Bla, bla, bla...
-              </p>
-          </div>
-          <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Option 2</h4>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Link 1</a></li>
-              <li><a href="#" class="text-white">Link 2</a></li>
-              <li><a href="#" class="text-white">Link 3</a></li>
-            </ul>
-          </div>
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="text-muted" href="#">Language (English)</a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="#">Natanael F. Neto</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="text-muted mr-3" href="#">
+                    <span class="item">
+				        <span aria-hidden="true" class="icon-magnifier"></span>
+				    </span>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Login</a>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="20" height="20" viewBox="0 0 24 24" 
-            fill="none" stroke="currentColor" 
-            stroke-width="2" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            class="mr-2">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-            <circle cx="12" cy="13" r="4"></circle>
-          </svg>
-          <strong>[App Name]</strong>
-        </a>
-        <button class="navbar-toggler" type="button" @click="onClick">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+    </header>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      collapse: false,
-    }
-  },
-  methods: {
-    onClick() {
-      this.collapse = !this.collapse;
-    }
-  }
-}
-</script>
-
 <style scoped>
-  .navbar {
-    padding: 1.0rem 5rem;
-  }
+    .blog-header {
+        line-height: 1;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .blog-header-logo {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        font-size: 2.25rem;
+    }
+    .blog-header-logo:hover {
+        text-decoration: none;
+    }
 </style>

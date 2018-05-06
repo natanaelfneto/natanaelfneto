@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.4 - 2018-05-03
+### Added
+- added font awesome plugin
+- added line icons and line icons pro plugin
+- added components: {
+    - Jumbotron,
+    - Academic,
+    - Profile,
+    - Experience
+}
+- added main.css
+- added bootstrap 4 css
+
 ### 0.0.3 - 2018-05-03
 ### Added
 - added first vue component: Navbar
