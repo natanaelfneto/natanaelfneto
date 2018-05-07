@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.6 - 2018-05-07
+### Added
+- added comunication between components: parent <-> children
+- redered data inside components is now independent from the component itself
+
 ### 0.0.5 - 2018-05-06
 ### Added
 - added a data dictionary variable into components insted of hard coded information
