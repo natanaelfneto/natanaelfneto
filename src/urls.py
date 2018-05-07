@@ -12,6 +12,7 @@ urlpatterns = [
     # app home
     # url(r'^$', RedirectView.as_view(url='/admin')),
     url(r'^$', IndexView.as_view(), name='index'),
+
     # admin
     url(r'^admin/', admin.site.urls),
 ]

@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div class="mb-4">
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="{{ link.destiny }}" v-for="link in links">{{ link.string }}</a>
+                <a class="p-2 text-muted" target="_blank" :href="link.destiny" v-for="link in navlinks">{{ link.string }}</a>
             </nav>
         </div>
         <div class="jumbotron p-3 p-md-5 text-white bg-img">
             <div class="col-md-6 m-auto text-center align-middle">
-                <h1 class="display-4 font-italic">{{ profession }}</h1>
+                <h1 class="display-4 font-italic">{{ position }}</h1>
             </div>
         </div>
     </div>
@@ -15,36 +15,14 @@
 
 <script>
     export default {
-        data: function() {
-            return {
-                profession: 'Biomedical, Electrical and Software Engineer',
-                links: [
-                    {
-                        'string':'@natanaelfneto',
-                        'destiny':'https://...',
-                        'icon':''
-                    },
-                    {
-                        'string':'Resumé',
-                        'destiny':'https://...',
-                        'icon':''
-                    },
-                    {
-                        'string':'Github Pages',
-                        'destiny':'https://...',
-                        'icon':''
-                    },
-                    {
-                        'string':'LinkedIn Pages',
-                        'destiny':'https://...',
-                        'icon':''
-                    },
-                    {
-                        'string':'NEED Technology',
-                        'destiny':'https://...',
-                        'icon':''
-                    }
-                ]
+        props: {
+            position: {
+                type: String,
+                required: true
+            },
+            navlinks: {
+                type: Array,
+                required: true,
             }
         }
     }

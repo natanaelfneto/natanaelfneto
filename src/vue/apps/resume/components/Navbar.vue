@@ -2,7 +2,7 @@
     <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-4 pt-1">
-                <a class="text-muted" href="#">Language (English)</a>
+                <a class="text-muted" href="#" @click="changeContentOutside">Language (English)</a>
             </div>
             <div class="col-4 text-center">
                 <a class="blog-header-logo text-dark" href="#">Natanael F. Neto</a>
@@ -18,6 +18,17 @@
         </div>
     </header>
 </template>
+
+<script>
+    export default {
+        methods: {
+            changeContentOutside() {
+                console.log('called')
+                this.$emit('change')
+            }
+        }
+    }
+</script>
 
 <style scoped>
     .blog-header {
