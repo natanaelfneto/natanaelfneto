@@ -1,8 +1,9 @@
 <template>
-    <div class="container">
-        <Navbar></Navbar>
+    <div class="container" @click="updateFloatMenuPosition($event)">
+        <Navbar :lang="lang" @updateFloatMenuPosition="updateFloatMenuPosition($event)"></Navbar>
         <Jumbotron :navlinks="navlinks" :position="resume.profile.position"></Jumbotron>
         <Content :resume="resume"></Content>
+        <FloatMenu :floatMenu="floatMenu" v-if="floatMenu.visible"></FloatMenu>
     </div>
 </template>
 
@@ -10,15 +11,56 @@
     import Navbar from './components/Navbar.vue'
     import Jumbotron from './components/Jumbotron.vue'
     import Content from './components/Content.vue'
+    import FloatMenu from './components/sub-components/FloatMenu.vue'
 
     export default {
         components: {
             Navbar,
             Jumbotron,
-            Content
+            Content,
+            FloatMenu
         },
         data: function() {
             return {
+                floatMenu: {
+                    isFloatMenu: true,
+                    visible: false,
+                    fixed: false, 
+                    xyPosition: {
+                        x:0,
+                        y:0
+                    },
+                    xySize: {
+                        width:0,
+                        height:0
+                    }
+                },
+                lang: {
+                    available: [
+                        {
+                            tag:'en-US',
+                            en_description:'English',
+                            own_escription:'English',
+                            en_country:'United States',
+                            own_country:'United States',
+                        },
+                        {
+                            tag:'pt-BR',
+                            en_description:'Portuguese',
+                            own_description:'Português',
+                            en_country:'Brazil',
+                            own_country:'Brasil',
+                        },
+                        {
+                            tag:'fr-FR',
+                            en_description:'French',
+                            own_description:'Français',
+                            en_country:'France',
+                            own_country:'France',
+                        }
+                    ],
+                    setted: 'en-US',
+                },
                 navlinks: [
                     {
                         'string':'@natanaelfneto',
@@ -182,6 +224,24 @@
                     }
                 }
             }
+        },
+        methods: {
+            updateFloatMenuPosition(e) {
+                // check if click is outside menu
+                if(!e.isFloatMenu){
+                    if(e.x < this.floatMenu.xyPosition.x) {
+                        this.floatMenu.visible = false;
+                    } else if(e.x > this.floatMenu.xyPosition.x + this.floatMenu.xySize.width) {
+                        this.floatMenu.visible = false;
+                    } else if(e.y < this.floatMenu.xyPosition.y) {
+                        this.floatMenu.visible = false;
+                    } else if(e.y > this.floatMenu.xyPosition.y + this.floatMenu.xySize.height) {
+                        this.floatMenu.visible = false;
+                    }
+                } else {
+                    this.floatMenu = e;
+                }
+            },
         }
     }
 </script>
