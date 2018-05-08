@@ -1,6 +1,8 @@
 <template>
     <div class="menu" :style="setPosition(floatMenu)">
-        <div v-for="option in floatMenu.options">{{ option }}</div>
+        <div v-for="option in floatMenu.options">
+            <span>{{ option }}</span>
+        </div>
     </div>
 </template>
 
@@ -41,7 +43,20 @@
     .menu {
         position: fixed;
         z-index: 100;
-        background-color: black;
-        color: white;
+        background-color: #fafafa;
+        color: #4f6984;
+        box-shadow: 3px 3px #536472;
+        border: 1px solid #4f6994;
+    }
+    .menu div {
+        min-height: 2rem;
+    }
+    .menu div:hover {
+        background-color: #b2c5d8;
+        cursor: pointer;
+    }
+    .menu span {
+        margin: 1rem;
+        vertical-align: middle;
     }
 </style>

@@ -2,7 +2,7 @@
     <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-4 pt-1">
-                <a class="text-muted" href="#" @click="callFloatMenu($event)">
+                <a class="text-muted" href="#" @click="callFloatMenu($event, lang.available)">
                     <span>Language {{ getSettedLanguage() }}</span>
                 </a>
             </div>
@@ -36,8 +36,11 @@
                 var index = available.map(function(e) { return e.tag; }).indexOf(setted);
                 return available[index].own_escription;
             },
-            callFloatMenu(e) {
+            callFloatMenu(e, options) {
                 e.stopPropagation()
+                var longest = options.reduce(
+                    (a, b) => { return a.en_description.length > b.en_description.length ? a : b }
+                ).en_description.length
                 var floatMenu = {
                     isFloatMenu: true,
                     visible: true,
@@ -51,10 +54,10 @@
                     floatParams: {
                         x:e.clientX,
                         y:e.clientY,
-                        width:200,
-                        height:200
+                        width: e.target.getBoundingClientRect().width + longest,
+                        height:''
                     },
-                    options: ['teste','teste2']
+                    options: options.map(function(e) { return e.en_description; })
                 }
                 this.$emit('updateFloatMenuPosition',floatMenu)
             }
