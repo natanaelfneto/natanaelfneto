@@ -1,9 +1,6 @@
 <template>
-    <div class="menu" :style="setPosition()">
-        <div>FLOAT MENU Opt1</div>
-        <div>FLOAT MENU Opt2</div>
-        <div>FLOAT MENU Opt3</div>
-        <div>FLOAT MENU Opt4</div>
+    <div class="menu" :style="setPosition(floatMenu)">
+        <div v-for="option in floatMenu.options">{{ option }}</div>
     </div>
 </template>
 
@@ -16,13 +13,25 @@
             }
         },
         methods: {
-            setPosition() {
-                return { 
-                    left: this.floatMenu.xyPosition.x + 'px',
-                    top: this.floatMenu.xyPosition.y + 'px',
-                    width: this.floatMenu.xySize.width + 'px',
-                    height: this.floatMenu.xySize.height + 'px'
+            setPosition(floatMenu) {
+                var floatParams = this.floatMenu.floatParams
+                var sourceParams = this.floatMenu.sourceParams
+                if(floatMenu.fixed){
+                    var position = { 
+                        left: sourceParams.x + 'px',
+                        top: 30 + sourceParams.y + 'px',
+                        width: floatParams.width + 'px',
+                        height: floatParams.height + 'px'
+                    }
+                } else {
+                    var position = { 
+                        left: floatParams.x + 'px',
+                        top: floatParams.y + 'px',
+                        width: floatParams.width + 'px',
+                        height: floatParams.height + 'px'
+                    }
                 }
+                return position;
             }
         }
     }

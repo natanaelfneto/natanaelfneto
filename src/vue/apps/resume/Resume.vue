@@ -25,15 +25,20 @@
                 floatMenu: {
                     isFloatMenu: true,
                     visible: false,
-                    fixed: false, 
-                    xyPosition: {
+                    fixed: false,
+                    sourceParams: {
                         x:0,
-                        y:0
+                        y:0,
+                        width:0,
+                        height:0,
                     },
-                    xySize: {
+                    floatParams: {
+                        x:0,
+                        y:0,
                         width:0,
                         height:0
-                    }
+                    },
+                    options: []
                 },
                 lang: {
                     available: [
@@ -228,19 +233,26 @@
         methods: {
             updateFloatMenuPosition(e) {
                 // check if click is outside menu
-                if(!e.isFloatMenu){
-                    if(e.x < this.floatMenu.xyPosition.x) {
-                        this.floatMenu.visible = false;
-                    } else if(e.x > this.floatMenu.xyPosition.x + this.floatMenu.xySize.width) {
-                        this.floatMenu.visible = false;
-                    } else if(e.y < this.floatMenu.xyPosition.y) {
-                        this.floatMenu.visible = false;
-                    } else if(e.y > this.floatMenu.xyPosition.y + this.floatMenu.xySize.height) {
+                var floatParams = this.floatMenu.floatParams;
+                var sourceParams = this.floatMenu.sourceParams
+                if(!this.floatMenu.fixed
+                && floatParams.x < e.x && e.x < floatParams.x + floatParams.width 
+                && floatParams.y < e.y && e.y < floatParams.y + floatParams.height) {
+                    //inside menu box
+                    console.log('inside box and not fixed')
+                } else if(this.floatMenu.fixed
+                && sourceParams.x < e.x && e.x < sourceParams.x + floatParams.width 
+                && 30 + sourceParams.y < e.y && e.y < 30 + sourceParams.y + floatParams.height) {
+                    //inside menu box
+                    console.log('inside box and yes fixed')
+                } else {
+                    if(e.isFloatMenu) {
+                        this.floatMenu = e;
+                    } else {
                         this.floatMenu.visible = false;
                     }
-                } else {
-                    this.floatMenu = e;
                 }
+                
             },
         }
     }

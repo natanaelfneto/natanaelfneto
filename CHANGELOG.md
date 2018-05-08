@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.7 - 2018-05-08
+### Added
+- added floating menu with two different types: 'fixed position' and 'click position'
+- float menu working inside navbar so far
+- added bootstrap 4 css as local file insted of CDN
+
 ### 0.0.6 - 2018-05-07
 ### Added
 - added comunication between components: parent <-> children
