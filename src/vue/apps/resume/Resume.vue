@@ -8,6 +8,7 @@
 </template>
 
 <script>
+    // <div class="container" @click="updateFloatMenuPosition($event)">
     import Navbar from './components/Navbar.vue'
     import Jumbotron from './components/Jumbotron.vue'
     import Content from './components/Content.vue'
