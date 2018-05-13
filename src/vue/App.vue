@@ -1,5 +1,5 @@
 <template>
-    <Resume></Resume>
+    <component :is="selectedMainApp"></component>
 </template>
 
 <script>
@@ -9,5 +9,10 @@
         components: {
             Resume
         },
+        data: function() {
+            return {
+                selectedMainApp: 'Resume'
+            }
+        }
     }
 </script>

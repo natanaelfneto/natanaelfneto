@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.8 - 2018-05-13
+### Added
+- added bootstrap 4 js as CDN (evaluating the jquery module first)
+
+### Removed
+- removed floating menu with two different types: 'fixed position' and 'click position'
+
 ### 0.0.7 - 2018-05-08
 ### Added
 - added floating menu with two different types: 'fixed position' and 'click position'

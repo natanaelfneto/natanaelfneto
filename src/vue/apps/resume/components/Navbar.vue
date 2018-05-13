@@ -1,80 +1,107 @@
 <template>
-    <header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 pt-1">
-                <a class="text-muted" href="#" @click="callFloatMenu($event, lang.available)">
-                    <span>Language {{ getSettedLanguage() }}</span>
+    <header class="py-3">
+        <!-- start header -->
+        <div class="row align-items-center">
+            <!-- start language -->
+            <div class="col-3 p-2">
+                <button 
+                    type="button" 
+                    class="btn btn-link text-muted" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+                    Language: {{ getSettedLanguage(langs) }}
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item disabled" href="#">
+                        <span>{{ getSettedLanguage(langs) }} (active)</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a
+                        :id="'id_' + lang.tag" 
+                        class="dropdown-item" 
+                        href="#" 
+                        @click="setLanguage($event)" 
+                        v-for="(lang, index) in langs.available">
+                        <span>{{ lang.en_description }}</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end language -->
+            <!-- start full name -->
+            <div class="col-6 p-2 text-center">
+                <a class="text-dark navbar-name" href="#">
+                    <span>{{ profile.name.first }}</span>
+                    <span>{{ profile.name.last }}</span>
                 </a>
             </div>
-            <div class="col-4 text-center">
-                <a class="blog-header-logo text-dark" href="#">Natanael F. Neto</a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="text-muted mr-3" href="#">
-                    <span class="item">
-				        <span aria-hidden="true" class="icon-magnifier"></span>
-				    </span>
+            <!-- end full name -->
+            <!-- start search/login -->
+            <div class="col-3 p-2 text-right">
+                <!-- start search -->
+                <a class="btn text-muted" href="#">
+                    <span class="item"><span class="icon-magnifier"></span></span>
                 </a>
-                <a class="btn btn-sm btn-outline-secondary" href="#">Login</a>
+                <!-- end search -->
+                <!-- start login -->
+                <a class="btn btn-outline-secondary" href="#">Login</a>
+                <!-- end login -->
             </div>
+            <!-- end search/login -->
         </div>
+        <!-- end header -->
+        <!-- start links -->
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" target="_blank" :href="link.destiny" v-for="link in links">
+                <span>{{ link.string }}</span>
+            </a>
+        </nav>
+        <!-- end links -->
     </header>
 </template>
 
 <script>
     export default {
         props: {
-            lang: {
+            profile: {
                 type: Object,
                 required: true
             },
+            langs: {
+                type: Object,
+                required: true
+            },
+            links: {
+                type: Array,
+                required: true,
+            }
         },
         methods: {
-            getSettedLanguage() {
-                var available = this.lang.available;
-                var setted = this.lang.setted;
-                var index = available.map(function(e) { return e.tag; }).indexOf(setted);
-                return available[index].own_escription;
+            getSettedLanguage(langs) {
+                return langs.available[
+                    langs.available.map(function(e) { 
+                        return e.tag;
+                        }).indexOf(langs.setted)
+                ].own_description;
             },
-            callFloatMenu(e, options) {
-                e.stopPropagation()
-                var longest = options.reduce(
-                    (a, b) => { return a.en_description.length > b.en_description.length ? a : b }
-                ).en_description.length
-                var floatMenu = {
-                    isFloatMenu: true,
-                    visible: true,
-                    fixed: true,
-                    sourceParams: {
-                        x: e.target.getBoundingClientRect().x,
-                        y: e.target.getBoundingClientRect().y,
-                        width: e.target.getBoundingClientRect().width,
-                        height: e.target.getBoundingClientRect().height,
-                    },
-                    floatParams: {
-                        x:e.clientX,
-                        y:e.clientY,
-                        width: e.target.getBoundingClientRect().width + longest,
-                        height:''
-                    },
-                    options: options.map(function(e) { return e.en_description; })
+            setLanguage(e) {
+                if(!e.target.id.includes('id_')) {
+                    var selectedLang = e.target.parentElement.id.replace(/id_/g,'');
+                } else {
+                    var selectedLang = e.target.id.replace(/id_/g,'');
                 }
-                this.$emit('updateFloatMenuPosition',floatMenu)
+                this.langs.setted = selectedLang;
             }
         }
     }
 </script>
 
 <style scoped>
-    .blog-header {
-        line-height: 1;
-        border-bottom: 1px solid #e5e5e5;
-    }
-    .blog-header-logo {
+    .navbar-name {
         font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         font-size: 2.25rem;
     }
-    .blog-header-logo:hover {
-        text-decoration: none;
+    .dropdown-menu {
+        left: 10px;
     }
-</style>
+</style>;

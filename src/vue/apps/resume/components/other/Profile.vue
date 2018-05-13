@@ -29,8 +29,5 @@
 </script>
 
 <style scoped>
-    .resume-image {
-        border: 0.2rem solid var(--primary-color);
-        border-radius: 10rem;
-    }
+    
 </style>
