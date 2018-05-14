@@ -38,13 +38,44 @@
             <!-- end full name -->
             <!-- start search/login -->
             <div class="col-3 p-2 text-right">
-                <!-- start search -->
-                <a class="btn text-muted" href="#">
-                    <span class="item"><span class="icon-magnifier"></span></span>
-                </a>
-                <!-- end search -->
-                <!-- start login -->
-                <a class="btn btn-outline-secondary" href="#">Login</a>
+                <div class="btn-group">
+                    <!-- start search -->
+                    <a class="btn text-muted" href="#">
+                        <span class="item"><span class="icon-magnifier"></span></span>
+                    </a>
+                    <!-- end search -->
+                    <!-- start login -->
+                    <div class="dropdown">
+                        <button 
+                            class="btn btn-outline-secondary" 
+                            type="button" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false">
+                            Login
+                        </button>
+                        <form class="dropdown-menu dropdown-menu-right p-4 mt-2 login-form">
+                            <div class="login-image text-center mb-2">
+                                <img src="../assets/image/profile.png" />
+                            </div>
+                            <div class="form-group">
+                                <label for="dropdownFormEmail">E-mail</label>
+                                <input type="email" class="form-control" id="dropdownFormEmail" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="dropdownFormPassword">Password</label>
+                                <input type="password" class="form-control" id="dropdownFormPassword" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                Remember me
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-block btn-outline-secondary mt-2">Sign in</button>
+                        </form>
+                    </div>
+                </div>
                 <!-- end login -->
             </div>
             <!-- end search/login -->
@@ -101,7 +132,18 @@
         font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         font-size: 2.25rem;
     }
-    .dropdown-menu {
-        left: 10px;
+    .login-form {
+        min-width: 20rem;
+        box-shadow: 1px 2px 1px darkgrey;
+    }
+    .login-image {
+        min-width: 100%;
+        min-height: 100%;
+        background-color: white;
+    }
+    .login-image img {
+        max-width: 60%;
+        border: 1px solid gray;
+        border-radius: 10rem;
     }
 </style>;
