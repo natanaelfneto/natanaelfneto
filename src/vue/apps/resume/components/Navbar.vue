@@ -38,14 +38,19 @@
             <!-- end full name -->
             <!-- start search/login -->
             <div class="col-3 p-2 text-right">
-                <div class="btn-group">
-                    <!-- start search -->
-                    <a class="btn text-muted" href="#">
-                        <span class="item"><span class="icon-magnifier"></span></span>
-                    </a>
-                    <!-- end search -->
-                    <!-- start login -->
-                    <div class="dropdown">
+                <!-- start search -->
+                <div class="row">
+                    <div class="col-9 px-0 search-el">
+                        <form class="form-inline my-2 my-lg-0">
+                            <label class="item">
+                                <input type="text" placeholder="Search..." class="form-control">
+                                <span class="icon-magnifier"></span>
+                            </label>
+                        </form>
+                        <!-- end search -->
+                        <!-- start login -->
+                    </div>
+                    <div class="col-3 dropdown">
                         <button 
                             class="btn btn-outline-secondary" 
                             type="button" 
@@ -128,10 +133,12 @@
 </script>
 
 <style scoped>
+    /* navbar component */
     .navbar-name {
         font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         font-size: 2.25rem;
     }
+    /* login form sub component */
     .login-form {
         min-width: 20rem;
         box-shadow: 1px 2px 1px darkgrey;
@@ -146,4 +153,41 @@
         border: 1px solid gray;
         border-radius: 10rem;
     }
-</style>;
+    /* search sub component */
+    .search-el {
+        position: relative;
+        left: 15px;
+    }
+    .search-el label {
+        text-align: right;
+        margin-left: auto;
+    }
+    .search-el input {
+        width: 40px;
+        color: transparent;
+        background-color: transparent;
+        border-color: #6c757d;
+        -webkit-transition: all 0.5s ease 0s;
+        -moz-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    .search-el input::-webkit-input-placeholder {
+        color: transparent;
+    }
+    .search-el input:focus {
+        width: 150px;
+        color: #6c757d;
+    }
+    .search-el input:focus::-webkit-input-placeholder {
+        color: #6c757d;
+    }
+    .search-el input:focus ~ span {
+        color: transparent !important;
+    }
+    .search-el span {
+        color: #6c757d;
+        position: relative;
+        left: -27px;
+    }
+</style>
