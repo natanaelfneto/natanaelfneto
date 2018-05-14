@@ -39,20 +39,6 @@
                             own_description:'English',
                             en_country:'United States',
                             own_country:'United States',
-                        },
-                        {
-                            tag:'pt-BR',
-                            en_description:'Portuguese',
-                            own_description:'Português',
-                            en_country:'Brazil',
-                            own_country:'Brasil',
-                        },
-                        {
-                            tag:'fr-FR',
-                            en_description:'French',
-                            own_description:'Français',
-                            en_country:'France',
-                            own_country:'France',
                         }
                     ],
                     setted: 'en-US',

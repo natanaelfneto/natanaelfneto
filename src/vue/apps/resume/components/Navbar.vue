@@ -3,7 +3,7 @@
         <!-- start header -->
         <div class="row align-items-center">
             <!-- start language -->
-            <div class="col-3 p-2">
+            <div class="col-lg-3 col-md-4 p-2">
                 <button 
                     type="button" 
                     class="btn btn-link text-muted" 
@@ -29,7 +29,7 @@
             </div>
             <!-- end language -->
             <!-- start full name -->
-            <div class="col-6 p-2 text-center">
+            <div class="col-lg-6 col-md-4 p-2 text-center">
                 <a class="text-dark navbar-name" href="#">
                     <span>{{ profile.name.first }}</span>
                     <span>{{ profile.name.last }}</span>
@@ -37,12 +37,12 @@
             </div>
             <!-- end full name -->
             <!-- start search/login -->
-            <div class="col-3 p-2 text-right">
+            <div class="col-lg-3 col-md-4 p-2 text-right">
                 <!-- start search -->
-                <div class="row">
-                    <div class="col-9 px-0 search-el">
-                        <form class="form-inline my-2 my-lg-0">
-                            <label class="item">
+                <div class="row mx-0">
+                    <div class="px-0 ml-auto search-el">
+                        <form class="form-inline my-0">
+                            <label class="item my-auto">
                                 <input type="text" placeholder="Search..." class="form-control">
                                 <span class="icon-magnifier"></span>
                             </label>
@@ -50,7 +50,7 @@
                         <!-- end search -->
                         <!-- start login -->
                     </div>
-                    <div class="col-3 dropdown">
+                    <div class="dropdown mx-2 my-auto align-middle">
                         <button 
                             class="btn btn-outline-secondary" 
                             type="button" 
@@ -163,6 +163,7 @@
         margin-left: auto;
     }
     .search-el input {
+        display: -webkit-inline-box;
         width: 40px;
         color: transparent;
         background-color: transparent;
@@ -176,7 +177,7 @@
         color: transparent;
     }
     .search-el input:focus {
-        width: 150px;
+        width: 7rem;
         color: #6c757d;
     }
     .search-el input:focus::-webkit-input-placeholder {
