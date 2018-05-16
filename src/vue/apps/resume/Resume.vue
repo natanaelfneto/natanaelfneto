@@ -1,26 +1,10 @@
 <template>
     <div id="app-resume">
-        <div class="container">
-
-            <Navbar
-                :profile="profile"
-                :langs="langs"
-                :links="links">
-            </Navbar>
-
-            <component :is="selectedMainComponent"></component>
-
-        </div>
     </div>
 </template>
 
 <script>
-    import Navbar from './components/Navbar.vue'
-
     export default {
-        components: {
-            Navbar,
-        },
         data: function() {
             return {
                 selectedMainComponent: 'Blank',
