@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.9 - 2018-05-20
+### Added
+- added flag icons to improved application language
+- refactored components to better apply bootstrap built in css
+
 ### 0.0.8 - 2018-05-13
 ### Added
 - added bootstrap 4 js as CDN (evaluating the jquery module first)
