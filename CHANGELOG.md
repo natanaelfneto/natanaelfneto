@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.10 - 2018-05-21
+### Added
+- replaced fontawesome version to 5
+- added sign in submenu for small and extra small devices display size
+
 ### 0.0.9 - 2018-05-20
 ### Added
 - added flag icons to improved application language
