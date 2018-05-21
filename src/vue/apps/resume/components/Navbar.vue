@@ -38,45 +38,85 @@
                         </span>
                     </li>
 
-                    <li class="nav-item d-inline-flex">
-                        <div class="nav-link item">
-                            <span aria-hidden="true" class="icon-eyeglasses"></span>
+                    <li class="row nav-item d-inline-flex">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fas fa-at fac-width fac-color-white"></i>
                         </div>
-                        <a class="nav-link text-muted" href="#">@natanaelfneto</a>
+                        <a class="py-2 text-muted" href="#">natanaelfneto</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">Resumé</a>
+                    <li class="row nav-item d-inline-flex">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fas fa-graduation-cap"></i>
+                        </div>
+                        <a class="py-2 text-muted" href="#">Resumé</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">Github</a>
+                    <li class="row nav-item d-inline-flex">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fab fa-github-alt"></i>
+                        </div>
+                        <a class="py-2 text-muted" href="#">Github</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">LinkedIn</a>
+                    <li class="row nav-item d-inline-flex">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fab fa-linkedin"></i>
+                        </div>
+                        <a class="py-2 text-muted" href="#">LinkedIn</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">NEED Tecnology</a>
+                    <li class="row nav-item d-inline-flex">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fas fa-code fac-width fac-color-white"></i>
+                        </div>
+                        <a class="py-2 text-muted" href="#">NEED Technology</a>
                     </li>
 
-                    <li class="nav-item dropdown d-md-none d-lg-none d-xl-none">
+                    <li class="row nav-item dropdown d-md-none d-lg-none d-xl-none">
+
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fas fa-user-astronaut"></i>
+                        </div>
 
                         <a 
-                            class="nav-link text-muted dropdown-toggle" 
-                            href="https://example.com" 
-                            id="dropdown10" 
+                            class="py-2 text-muted" 
+                            href="#" 
+                            id="dropdownSignInForm" 
                             data-toggle="dropdown" 
                             aria-haspopup="true" 
                             aria-expanded="false">
-                            Dropdown
+                            Sign in
                         </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdown10">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="col-xs-12 col-sm-12 dropdown-menu bg-light text-secondary" aria-labelledby="dropdownSignInForm">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <label for="dropdownFormEmail">Email address</label>
+                                    <input 
+                                        type="email" 
+                                        class="form-control" 
+                                        id="dropdownFormEmail"
+                                        autocomplete="current-user-email"
+                                        placeholder="email@example.com" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="dropdownFormPassword">Password</label>
+                                    <input 
+                                        type="password" 
+                                        class="form-control" 
+                                        id="dropdownFormPassword" 
+                                        autocomplete="current-password"
+                                        placeholder="Password" />
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                                </div>
+                                <button type="button" class="btn btn-block btn-light">Sign in</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-secondary" href="#">Forgot password?</a>
                         </div>
 
                     </li>
@@ -107,7 +147,15 @@
 <script>
 </script>
 
-<style>
+<style scoped>
+
+    .fac-width {
+        -webkit-text-stroke-width: 0.02rem;
+    }
+
+    .fac-color-white {
+        -webkit-text-stroke-color: white;
+    }
 
     @media (min-width: 768px) {
         .navbar-expand-md .navbar-collapse {
@@ -158,5 +206,8 @@
         outline: none;
     }
     
+    .nav-item>.item {
+        min-width: 2rem;
+    }
 
 </style>
