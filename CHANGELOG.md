@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.11 - 2018-05-21
+### Added
+- added bootstrap tooltips
+- made language selector a independent component as LanguageSelector
+- return LanguageSelector selected language props from main component data
+
 ### 0.0.10 - 2018-05-21
 ### Added
 - replaced fontawesome version to 5
