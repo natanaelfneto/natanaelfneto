@@ -5,6 +5,8 @@
 
             <Navbar :data="data"></Navbar>
 
+            <Jumbotron :data="data"></Jumbotron>
+
             <!-- <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
                 <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">Title of a longer featured post</h1>
@@ -51,10 +53,12 @@
 
 <script>
     import Navbar from './components/Navbar.vue'
+    import Jumbotron from './components/Jumbotron.vue'
 
     export default {
         components: {
-            Navbar
+            Navbar,
+            Jumbotron
         },
         data: function() {
             return {
@@ -257,15 +261,6 @@
     
     h1, h2, h3, h4, h5, h6 {
         font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    }
-
-    .display-4 {
-        font-size: 2.5rem;
-    }
-    @media (min-width: 768px) {
-        .display-4 {
-            font-size: 3rem;
-        }
     }
 
     .card-img-right {
