@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.12 - 2018-05-22
+### Added
+- added jumbotron within slider as a component
+
 ### 0.0.11 - 2018-05-22
 ### Added
 - added an animated sign in avatar to sign in menu

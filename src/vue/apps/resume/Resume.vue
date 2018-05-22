@@ -114,13 +114,13 @@
                         }
                     ],
                     resume: {
-                        'nada':'nada'
-                        //     profile: {
-                        //         title:'Sumary',
-                        //         position:'Biomedical, Electrical and Software Engineer',
-                        //         sumary:'Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it! Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it! Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it! Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it!',
-                        //         picture:''
-                        //     },
+                        profile: {
+                            position: {
+                                major:'Biomedical, Electrical and Software Engineer',
+                                minor:'UI/UX Enthusiast and a Cat Lover'
+                            },
+                            sumary:'Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it!',
+                        },
                         //     academics: {
                         //         title:'Academic Formation',
                         //         degrees: [
