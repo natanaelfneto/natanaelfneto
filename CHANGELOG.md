@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.0.11 - 2018-05-22
+### Added
+- added an animated sign in avatar to sign in menu
+- exported avatar as new component called PusheenAvatar
+
 ### 0.0.11 - 2018-05-21
 ### Added
 - added bootstrap tooltips

@@ -18,43 +18,16 @@
                             class="btn btn-sm btn-outline-secondary d-inline-flex py-2 border custom-border-color" 
                             href="#" 
                             id="dropdownSignInForm" 
-                            data-toggle="dropdown" 
+                            data-toggle="dropdown"
                             aria-haspopup="true" 
-                            aria-expanded="false">
+                            aria-expanded="false"
+                            @click="pusheenReset()">
                             <div class="item text-center mx-1">
                                 <i aria-hidden="true" class="fas fa-user-astronaut"></i>
                             </div>
                             <span class="mx-1">Sign in</span>
                         </a>
-                        <div class="col-xs-12 col-sm-12 dropdown-menu bg-light text-secondary" aria-labelledby="dropdownSignInForm">
-                            <form class="px-4 py-3">
-                                <div class="form-group">
-                                    <label for="dropdownFormEmail">Email address</label>
-                                    <input 
-                                        type="email" 
-                                        class="form-control" 
-                                        id="dropdownFormEmail-md-lg"
-                                        autocomplete="current-user-email"
-                                        placeholder="email@example.com" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="dropdownFormPassword">Password</label>
-                                    <input 
-                                        type="password" 
-                                        class="form-control" 
-                                        id="dropdownFormPassword-md-lg" 
-                                        autocomplete="current-password"
-                                        placeholder="Password" />
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input type="checkbox" class="form-check-input" id="dropdownCheck-md-lg">
-                                    <label class="form-check-label" for="dropdownCheck">Remember me</label>
-                                </div>
-                                <button type="button" class="btn btn-block btn-light">Sign in</button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-secondary" href="#">Forgot password?</a>
-                        </div>
+                        <SignInForm :data="data"></SignInForm>
                     </div>
 
                 </div>
@@ -131,38 +104,11 @@
                             id="dropdownSignInForm" 
                             data-toggle="dropdown" 
                             aria-haspopup="true" 
-                            aria-expanded="false">
+                            aria-expanded="false"
+                            @click="pusheenReset()">
                             Sign in
                         </a>
-                        <div class="col-xs-12 col-sm-12 dropdown-menu bg-light text-secondary" aria-labelledby="dropdownSignInForm">
-                            <form class="px-4 py-3">
-                                <div class="form-group">
-                                    <label for="dropdownFormEmail">Email address</label>
-                                    <input 
-                                        type="email" 
-                                        class="form-control" 
-                                        id="dropdownFormEmail"
-                                        autocomplete="current-user-email"
-                                        placeholder="email@example.com" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="dropdownFormPassword">Password</label>
-                                    <input 
-                                        type="password" 
-                                        class="form-control" 
-                                        id="dropdownFormPassword" 
-                                        autocomplete="current-password"
-                                        placeholder="Password" />
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                    <label class="form-check-label" for="dropdownCheck">Remember me</label>
-                                </div>
-                                <button type="button" class="btn btn-block btn-light">Sign in</button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-secondary" href="#">Forgot password?</a>
-                        </div>
+                        <SignInForm :data="data"></SignInForm>
                     </li>
                 </ul>
             </div>
@@ -189,15 +135,22 @@
 
 <script>
     import LanguageSelector from './Navbar/LanguageSelector.vue'
+    import SignInForm from './Navbar/SignInForm.vue'
 
     export default {
         components: {
-            LanguageSelector
+            LanguageSelector,
+            SignInForm
         },
         props: {
             data: {
                 type: Object,
                 required: true
+            }
+        },
+        methods: {
+            pusheenReset(){
+                this.data.pusheenStatus = 'dancing';
             }
         }
     }

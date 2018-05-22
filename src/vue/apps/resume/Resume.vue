@@ -244,8 +244,10 @@
                         //             }
                         //         ]
                         //     }
-                    }
-                }
+                    },
+                    pusheenStatus:'dancing',
+                    pusheenRememberMe: false,
+                },
             }
         }
     }
