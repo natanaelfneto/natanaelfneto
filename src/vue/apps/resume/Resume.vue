@@ -7,15 +7,7 @@
 
             <Jumbotron :data="data"></Jumbotron>
 
-            <!-- <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-                <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">Title of a longer featured post</h1>
-                <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-                <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-                </div>
-            </div> -->
-
-            <!-- <div class="row mb-2">
+            <div class="row mb-2">
                 <div class="col-md-6">
                 <div class="card flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
@@ -44,7 +36,7 @@
                     <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
                 </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
 
@@ -88,30 +80,65 @@
                     },
                     links: [
                         {
-                            'string':'@natanaelfneto',
-                            'destiny':'https://...',
-                            'icon':''
+                            string:'natanaelfneto',
+                            destiny:'http://natanaelfneto.com/',
+                            icon:{
+                                type:'fontawesome',
+                                class:{
+                                    base:'fas',
+                                    name:'fa-at',
+                                    custom:'fac-width fac-color-white',
+                                },
+                            },
                         },
                         {
-                            'string':'Resumé',
-                            'destiny':'https://...',
-                            'icon':''
+                            string:'Resumé',
+                            destiny:'#',
+                            icon:{
+                                type:'fontawesome',
+                                class:{
+                                    base:'fas',
+                                    name:'fa-graduation-cap',
+                                    custom:'',
+                                },
+                            },
                         },
                         {
-                            'string':'Github',
-                            'destiny':'https://github.com/natanaelfneto',
-                            'icon':''
+                            string:'Github',
+                            destiny:'#',
+                            icon:{
+                                type:'fontawesome',
+                                class:{
+                                    base:'fab',
+                                    name:'fa-github-alt',
+                                    custom:'',
+                                },
+                            },
                         },
                         {
-                            'string':'LinkedIn',
-                            'destiny':'https://...',
-                            'icon':''
+                            string:'LinkedIn',
+                            destiny:'#',
+                            icon:{
+                                type:'fontawesome',
+                                class:{
+                                    base:'fab',
+                                    name:'fa-linkedin',
+                                    custom:'',
+                                },
+                            },
                         },
                         {
-                            'string':'NEED Technology',
-                            'destiny':'https://...',
-                            'icon':''
-                        }
+                            string:'NEED Technology',
+                            destiny:'#',
+                            icon:{
+                                type:'fontawesome',
+                                class:{
+                                    base:'fas',
+                                    name:'fa-code',
+                                    custom:'fac-width fac-color-white',
+                                },
+                            },
+                        },
                     ],
                     resume: {
                         profile: {
@@ -249,6 +276,7 @@
                         //         ]
                         //     }
                     },
+                    activeTab:'natanaelfneto',
                     pusheenStatus:'dancing',
                     pusheenRememberMe: false,
                 },

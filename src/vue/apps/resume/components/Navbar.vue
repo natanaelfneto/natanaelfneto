@@ -1,6 +1,5 @@
 <template>
     <div id="component-navbar">
-
         <header class="blog-header py-1 py-sm-3">
             <div class="flex-nowrap justify-content-between align-items-center d-none d-md-block">
                 <div class="row">
@@ -12,7 +11,6 @@
                     <div class="col-md-4 col-sm-12 py-1 text-center">
                         <a class="blog-header-logo text-nowrap text-dark" href="#">{{ data.profile.name.display_name }}</a>
                     </div>
-
                     <div class="col-md-4 col-sm-12 d-flex justify-content-end align-items-center">
                         <a 
                             class="btn btn-sm btn-outline-secondary d-inline-flex py-2 border custom-border-color" 
@@ -29,15 +27,11 @@
                         </a>
                         <SignInForm :data="data"></SignInForm>
                     </div>
-
                 </div>
             </div>
         </header>
-
         <nav class="navbar navbar-expand-md navbar-light rounded">
-
             <span class="blog-header-logo text-dark d-md-none d-lg-none d-xl-none">{{ data.profile.name.display_name }}</span>
-
             <button 
                 id="menu-toggler-close"
                 class="navbar-toggler collapsed d-md-none d-lg-none d-xl-none" 
@@ -53,7 +47,6 @@
                     </span>
                 </span>
             </button>
-
             <div class="navbar-collapse d-md-block collapse" id="navbarsExample10">
                 <ul class="navbar-nav justify-content-md-between">
                     <!-- START: Language Selector -->
@@ -63,37 +56,24 @@
                         </div>
                         <LanguageSelector :data="data"></LanguageSelector>
                     </li>
-                    <!-- END: Language Selector-->
-                    <li class="row nav-item d-inline-flex">
+                    <!-- END: Language Selector -->
+                    <!-- START: Link Tabs -->
+                    <li :id="'navbar_link_'+link.string"
+                        class="row nav-item d-inline-flex"
+                        v-for="link in data.links"
+                        @click="setCurrentActiveTab($event)">
                         <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fas fa-at fac-width fac-color-white"></i>
+                            <i aria-hidden="true"
+                                :class="[
+                                    link.icon.class.base,
+                                    link.icon.class.name,
+                                    link.icon.class.custom
+                                    ]">
+                            </i>
                         </div>
-                        <a class="py-2 text-muted" href="#">natanaelfneto</a>
+                        <a class="py-2 text-muted" href="#">{{ link.string }}</a>
                     </li>
-                    <li class="row nav-item d-inline-flex">
-                        <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                        </div>
-                        <a class="py-2 text-muted" href="#">Resumé</a>
-                    </li>
-                    <li class="row nav-item d-inline-flex">
-                        <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fab fa-github-alt"></i>
-                        </div>
-                        <a class="py-2 text-muted" href="#">Github</a>
-                    </li>
-                    <li class="row nav-item d-inline-flex">
-                        <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fab fa-linkedin"></i>
-                        </div>
-                        <a class="py-2 text-muted" href="#">LinkedIn</a>
-                    </li>
-                    <li class="row nav-item d-inline-flex">
-                        <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fas fa-code fac-width fac-color-white"></i>
-                        </div>
-                        <a class="py-2 text-muted" href="#">NEED Technology</a>
-                    </li>
+                    <!-- END: Link Tabs -->
                     <li class="row nav-item dropdown d-md-none d-lg-none d-xl-none">
                         <div class="py-2 text-muted item text-center">
                             <i aria-hidden="true" class="fas fa-user-astronaut"></i>
@@ -112,7 +92,6 @@
                     </li>
                 </ul>
             </div>
-
             <button
                 id="menu-toggler-open"
                 class="navbar-toggler collapsed ml-auto" 
@@ -128,7 +107,6 @@
                     </span>
                 </span>
             </button>
-
         </nav>
     </div>
 </template>
@@ -151,6 +129,9 @@
         methods: {
             pusheenReset(){
                 this.data.pusheenStatus = 'dancing';
+            },
+            setCurrentActiveTab(e) {
+                this.data.activeTab = e.target.closest('li').id.replace('navbar_link_','');
             }
         }
     }

@@ -1,7 +1,7 @@
 <template>
     <div id="component-jumbotron">
 
-        <div class="text-white rounded bg-dark">
+        <div class="text-white rounded bg-dark" v-if="data.activeTab === 'natanaelfneto'">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -38,7 +38,7 @@
 
                     <div class="carousel-item">
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../assets/image/bg-gyn.png" style="" alt="Third slide">
+                            <img class="d-block custom-size" src="../assets/image/bg-gyn.png" alt="Third slide">
                             <div class="carousel-caption px-0">
                                 <h1 class="display-4 font-italic">Title of a longer featured post</h1>
                                 <p class="lead my-3 d-none d-md-block">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
@@ -60,6 +60,17 @@
                 </a>
             </div>
         </div>
+    
+        <div class="jumbotron row p-3 p-md-5 text-white rounded bg-img" v-if="data.activeTab === 'Resumé'">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">{{ data.resume.profile.position.major }}</h1>
+                <p class="lead mb-0"><a href="#" class="text-white">{{ data.resume.profile.position.minor }}</a></p>
+                <p class="lead my-3">{{ data.resume.profile.sumary }}</p>
+            </div>
+            <div class="col-md-6 mt-auto">
+                <div class="avatar avatar-size"></div>
+            </div>
+        </div>
 
     </div>
 </template>
@@ -76,6 +87,7 @@
 </script>
 
 <style scoped>
+    /* @natanaelfneto */
     .display-4 {
         font-size: 1.5rem;
     }
@@ -126,6 +138,31 @@
             width: 100%;
             position: relative;
             left: 0%;
+        }
+    }
+    /* Resumé */
+    .bg-img {
+        background-image: url('../assets/image/bg-gyn.png');
+    }
+    .avatar {
+        background-image: url('../assets/image/profile.png');
+        background-size: 100%;
+        background-position: center;
+        border: 1px solid #000;
+        border-radius: 10rem;
+        background-color: pink;
+        margin-left: auto;
+        margin-bottom: -8rem;
+        margin-right: auto;
+    }
+    .avatar-size {
+        width: 11rem;
+        height: 11rem;
+    }
+    @media (min-width: 1024px) {
+        .avatar-size {
+            width: 15rem;
+            height: 15rem;
         }
     }
 </style>
