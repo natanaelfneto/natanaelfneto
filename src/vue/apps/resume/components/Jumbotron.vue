@@ -69,16 +69,19 @@
             </div>
             <div class="col-md-6 mt-auto">
                 <div class="avatar avatar-size"></div>
-
-                <button class="btn"></button>
-                <span class="icon"></span>
-                <button class="close"></button>
-                
-
-                <div class="box">
-                    <i class="fab fa-codepen"></i>
+                <button class="menu-btn">
+                    <span class="item">
+					    <span class="icon-rocket"></span>
+				    </span>
+                </button>
+                <button class="menu-close">
+                    <span class="item">
+					    <span class="icon-size-actual"></span>
+				    </span>
+                </button>
+                <div class="menu-box">
+                    <i class="fab fa-github"></i>
                 </div>
-
             </div>
         </div>
 
@@ -97,26 +100,34 @@
 </script>
 
 <style scoped>
-
-    .btn, .close {
+    .menu-btn, .menu-close {
+        position: relative;
         width: 50px;
         height: 50px;
-        position: absolute;
-        right: 100px;
-        top: 25px;
         border-radius: 50%;
         cursor: pointer;
         transition-duration: 0.3s;
         animation: pop-btn 0.3s both ease-in-out 0.5s;
-        opacity: 0.8;
     }
-    .btn {
+    .menu-btn {
         background-color: #abc;
         z-index: 0;
+        left: 12rem;
     }
-    .close {
+    .menu-close {
         background-color: #cba;
         z-index: -1;
+        left: 8.6rem;
+    }
+    .menu-btn > span {
+        color: #222;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .menu-close > span {
+        color: crimson;
+        font-size: x-large;
+        font-weight: bold;
     }
     @keyframes pop-btn {
         0% {
@@ -129,157 +140,26 @@
             transform: scale(1);
         }
     }
-    .btn:hover, .close:hover {
+    .menu-btn:hover, .menu-close:hover {
         box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
     }
-
-    .icon {
-        width: 7%;
-        height: 2px;
-        position: absolute;
-        background-color: white;
-        top: 37%;
-        left: 68%;
-        transform: translateY(-50%);
-        animation: to-hamburger 0.3s forwards ease-in-out;
-        border: 0;
-        z-index: 1;
-    }
-
-    @media (min-width: 320px) {
-        .btn, .close {
-            top: 5%;
-            left: 62%;
-        }
-        .icon {
-            left: 65.5%;
-            top: 39%;
-            width: 10%;
-        }
-    }
-    @media (min-width: 375px) {
-        .icon {
-            width: 8%;
-        }
-    }
-    @media (min-width: 425px) {
-        .btn, .close {
-            left: 60%;
-        }
-        .icon {
-            left: 62.5%;
-        }
-    }
-    @media (min-width: 768px) {
-        .btn, .close {
-            left: 61%
-        }
-        .icon {
-            left: 65%;
-        }
-    }
-    @media (min-width: 1024px) {
-        .btn, .close {
-            left: 63%;
-            top: 10%;
-        }
-        .icon {
-            left: 65.2%;
-            top: 28%;
-            width: 7%;
-        }
-    }
-    @media (min-width: 1440px) {
-        .btn, .close {
-            top: 18%;
-        }
-        .icon {
-            left: 65%;
-            top: 35%;
-            width: 6%;
-        }
-    }
-
-    .icon::before, 
-    .icon::after {
-        top: -9px;
-        content: "";
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        background-color: white;
-        transition-duration: 0.3s;
-        transform: rotate(0deg);
-        right: 0;
-    }
-
-    .icon::after {
-        margin-top: 7px;
-        top: 3px;
-    }
-
-    .btn:focus,
-    .close:focus {
+    .menu-btn:focus,
+    .menu-close:focus {
         z-index: -1;
     }
-
-    .btn:focus ~ .close {
+    button:focus,
+    button:active,
+    button:focus-within,
+    button:hover,
+    button:visited {
+        outline: none;
+    }
+    .menu-btn:focus ~ .menu-close {
         z-index: 0;
     }
-
-    .close:focus ~ .btn {
+    .menu-close:focus ~ .menu-btn {
         z-index: 0;
     }
-
-    .btn:focus ~ .icon {
-        animation: to-arrow 0.3s forwards ease-in-out;
-    }
-
-    .close:focus ~ .icon {
-       animation: to-hamburger 0.3s forwards ease-in-out;
-    }
-
-    .btn:focus ~ .icon::before,
-    .btn:focus ~ .icon::after {
-        width: 80%;
-        right: -2px;
-    }
-
-    .close:focus ~ .icon::before,
-    .close:focus ~ .icon::after {
-        width: 100%;
-        right: 0;
-    }
-
-    .btn:focus ~ .icon::before {
-        transform: rotate(45deg);
-    }
-    .btn:focus ~ .icon::after {
-        transform: rotate(-45deg);
-    }
-
-    .close:focus ~ .icon::before {
-        transform: rotate(-45deg);
-    }
-    .close:focus ~ .icon::after {
-        transform: rotate(45deg);
-    }
-
-    @keyframes to-hamburger {
-        from {
-            transform: translateY(-50%) rotate(-180deg);
-        }
-    }
-    @keyframes to-arrow {
-        from {
-            transform: translateY(-50%) rotate(0deg);
-        }
-        to {
-            transform: translateY(-50%) rotate(180deg);
-        }
-    }
-
-
     /* @natanaelfneto */
     .display-4 {
         font-size: 1.5rem;
@@ -318,7 +198,6 @@
             left: -20%;
         }
     }
-
     @media (min-width: 1024px) {
         .display-4 {
             font-size: 3rem;
@@ -332,6 +211,47 @@
             position: relative;
             left: 0%;
         }
+    }
+    /* */
+    .menu-box {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+        border-radius: 50%;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        right: -40%;
+        transform: translate(-50%, -50%);
+        transition-duration: 0.3s;
+        z-index: -1;
+    }
+    .menu-box i {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ececec;
+        font-size: 26px;
+        color: black;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        left: 18px;
+        top: calc(75px - 50px/2);
+        box-shadow: 0 0 0.5rem #babbbc;
+        transition-duration: 0.3s;
+    }
+    .menu-btn:focus ~ .menu-box {
+        opacity: 1;
+        z-index: 1;
+    }
+    .menu-box i:hover {
+        transition-delay: initial !important;
+        box-shadow: 0 0 0 5px #babbbc;
+    }
+    .menu-btn:focus ~ .menu-box i:nth-of-type(1) {
+        transform: rotate(-90deg) translateX(85px) translateY(-50px) rotate(90deg);
+        transition-delay: 0s;
     }
     /* Resumé */
     .bg-img {
