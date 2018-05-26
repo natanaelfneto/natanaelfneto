@@ -4,40 +4,9 @@
         <div class="container">
 
             <Navbar :data="data"></Navbar>
-
             <Jumbotron :data="data"></Jumbotron>
-
-            <div class="row mb-2">
-                <div class="col-md-6">
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                    <div class="card-body d-flex flex-column align-items-start">
-                    <strong class="d-inline-block mb-2 text-primary">World</strong>
-                    <h3 class="mb-0">
-                        <a class="text-dark" href="#">Featured post</a>
-                    </h3>
-                    <div class="mb-1 text-muted">Nov 12</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#">Continue reading</a>
-                    </div>
-                    <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                    <div class="card-body d-flex flex-column align-items-start">
-                    <strong class="d-inline-block mb-2 text-success">Design</strong>
-                    <h3 class="mb-0">
-                        <a class="text-dark" href="#">Post title</a>
-                    </h3>
-                    <div class="mb-1 text-muted">Nov 11</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#">Continue reading</a>
-                    </div>
-                    <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-                </div>
-                </div>
-            </div>
-
+            <ResumeFieldset :data="data"></ResumeFieldset>
+            
         </div>
 
     </div>
@@ -46,11 +15,13 @@
 <script>
     import Navbar from './components/Navbar.vue'
     import Jumbotron from './components/Jumbotron.vue'
+    import ResumeFieldset from './components/ResumeFieldset.vue'
 
     export default {
         components: {
             Navbar,
-            Jumbotron
+            Jumbotron,
+            ResumeFieldset
         },
         data: function() {
             return {
@@ -141,48 +112,52 @@
                         },
                     ],
                     resume: {
-                        profile: {
+                        sumary: {
+                            isActive: true,
+                            title:'Sumary',
                             position: {
                                 major:'Biomedical, Electrical and Software Engineer',
                                 minor:'UI/UX Enthusiast and a Cat Lover'
                             },
-                            sumary:'Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it!',
+                            content:'Here I will dive into the task of writing a sumary for my professional profile. This will be hard. but i can do it!',
                         },
-                        //     academics: {
-                        //         title:'Academic Formation',
-                        //         degrees: [
-                        //             {
-                        //                 'year':'2018',
-                        //                 'level':'MSc',
-                        //                 'name':'Science, Technology and Innovation',
-                        //                 'department':'Science and Technology Department',
-                        //                 'school': {
-                        //                     'name':'Federal University of Rio Grande do Norte',
-                        //                     'acronym':'UFRN'
-                        //                 }
-                        //             },
-                        //             {
-                        //                 'year':'2016',
-                        //                 'level':'MBA',
-                        //                 'name':'Health Informatics',
-                        //                 'department':'Biomedical Engineering Department',
-                        //                 'school': {
-                        //                     'name':'Federal University of Rio Grande do Norte',
-                        //                     'acronym':'UFRN'
-                        //                 }
-                        //             },
-                        //             {
-                        //                 'year':'2015',
-                        //                 'level':'BEng',
-                        //                 'name':'Electrical Engineering',
-                        //                 'department':'Electric, Mecanic and Computer Engineering School',
-                        //                 'school': {
-                        //                     'name':'Federal University of Goiás',
-                        //                     'acronym':'UFG'
-                        //                 }
-                        //             }
-                        //         ],
-                        //     },
+                        academics: {
+                            isActive: true,
+                            title:'Academic Formation',
+                            degrees: [
+                                {
+                                    'year':'2018',
+                                    'level':'MSc',
+                                    'name':'Science, Technology and Innovation',
+                                    'department':'Science and Technology Department',
+                                    'school': {
+                                        'name':'Federal University of Rio Grande do Norte',
+                                        'acronym':'UFRN'
+                                    }
+                                },
+                                {
+                                    'year':'2016',
+                                    'level':'MBA',
+                                    'name':'Health Informatics',
+                                    'department':'Biomedical Engineering Department',
+                                    'school': {
+                                        'name':'Federal University of Rio Grande do Norte',
+                                        'acronym':'UFRN'
+                                    }
+                                },
+                                {
+                                    'year':'2015',
+                                    'level':'BEng',
+                                    'name':'Electrical Engineering',
+                                    'department':'Electric, Mecanic and Computer Engineering School',
+                                    'school': {
+                                        'name':'Federal University of Goiás',
+                                        'acronym':'UFG'
+                                    }
+                                }
+                            ]
+                        },
+
                         //     experiences: {
                         //         title:'Professional Experience',
                         //         experiences: [

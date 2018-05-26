@@ -14,10 +14,10 @@
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
                             <img class="d-block custom-size" src="../assets/image/bg-gyn.png" style="" alt="First slide">
                             <div class="carousel-caption px-0">
-                                <h1 class="display-4 font-italic">{{ data.resume.profile.position.major }}</h1>
-                                <p class="lead my-3 d-none d-md-block">{{ data.resume.profile.sumary }}</p>
+                                <h1 class="display-4 font-italic">{{ data.resume.sumary.position.major }}</h1>
+                                <p class="lead my-3 d-none d-md-block">{{ data.resume.sumary.content }}</p>
                                 <p class="lead mb-0">
-                                    <a href="#" class="text-white">{{ data.resume.profile.position.minor }}</a>
+                                    <a href="#" class="text-white">{{ data.resume.sumary.position.minor }}</a>
                                 </p>
                             </div>
                         </div>
@@ -63,9 +63,9 @@
     
         <div class="jumbotron row p-3 p-md-5 text-white rounded bg-img" v-if="data.activeTab === 'Resumé'">
             <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">{{ data.resume.profile.position.major }}</h1>
-                <p class="lead mb-0"><a href="#" class="text-white">{{ data.resume.profile.position.minor }}</a></p>
-                <p class="lead my-3">{{ data.resume.profile.sumary }}</p>
+                <h1 class="display-4 font-italic">{{ data.resume.sumary.position.major }}</h1>
+                <p class="lead mb-0"><a href="#" class="text-white">{{ data.resume.sumary.position.minor }}</a></p>
+                <p class="lead my-3">{{ data.resume.sumary.content }}</p>
             </div>
             <div class="col-md-6 mt-auto">
                 <div class="avatar avatar-size"></div>
