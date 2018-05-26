@@ -69,6 +69,16 @@
             </div>
             <div class="col-md-6 mt-auto">
                 <div class="avatar avatar-size"></div>
+
+                <button class="btn"></button>
+                <span class="icon"></span>
+                <button class="close"></button>
+                
+
+                <div class="box">
+                    <i class="fab fa-codepen"></i>
+                </div>
+
             </div>
         </div>
 
@@ -87,6 +97,189 @@
 </script>
 
 <style scoped>
+
+    .btn, .close {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 100px;
+        top: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        animation: pop-btn 0.3s both ease-in-out 0.5s;
+        opacity: 0.8;
+    }
+    .btn {
+        background-color: #abc;
+        z-index: 0;
+    }
+    .close {
+        background-color: #cba;
+        z-index: -1;
+    }
+    @keyframes pop-btn {
+        0% {
+            transform: scale(0);
+        }
+        80% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .btn:hover, .close:hover {
+        box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+    }
+
+    .icon {
+        width: 7%;
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        top: 37%;
+        left: 68%;
+        transform: translateY(-50%);
+        animation: to-hamburger 0.3s forwards ease-in-out;
+        border: 0;
+        z-index: 1;
+    }
+
+    @media (min-width: 320px) {
+        .btn, .close {
+            top: 5%;
+            left: 62%;
+        }
+        .icon {
+            left: 65.5%;
+            top: 39%;
+            width: 10%;
+        }
+    }
+    @media (min-width: 375px) {
+        .icon {
+            width: 8%;
+        }
+    }
+    @media (min-width: 425px) {
+        .btn, .close {
+            left: 60%;
+        }
+        .icon {
+            left: 62.5%;
+        }
+    }
+    @media (min-width: 768px) {
+        .btn, .close {
+            left: 61%
+        }
+        .icon {
+            left: 65%;
+        }
+    }
+    @media (min-width: 1024px) {
+        .btn, .close {
+            left: 63%;
+            top: 10%;
+        }
+        .icon {
+            left: 65.2%;
+            top: 28%;
+            width: 7%;
+        }
+    }
+    @media (min-width: 1440px) {
+        .btn, .close {
+            top: 18%;
+        }
+        .icon {
+            left: 65%;
+            top: 35%;
+            width: 6%;
+        }
+    }
+
+    .icon::before, 
+    .icon::after {
+        top: -9px;
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        transition-duration: 0.3s;
+        transform: rotate(0deg);
+        right: 0;
+    }
+
+    .icon::after {
+        margin-top: 7px;
+        top: 3px;
+    }
+
+    .btn:focus,
+    .close:focus {
+        z-index: -1;
+    }
+
+    .btn:focus ~ .close {
+        z-index: 0;
+    }
+
+    .close:focus ~ .btn {
+        z-index: 0;
+    }
+
+    .btn:focus ~ .icon {
+        animation: to-arrow 0.3s forwards ease-in-out;
+    }
+
+    .close:focus ~ .icon {
+       animation: to-hamburger 0.3s forwards ease-in-out;
+    }
+
+    .btn:focus ~ .icon::before,
+    .btn:focus ~ .icon::after {
+        width: 80%;
+        right: -2px;
+    }
+
+    .close:focus ~ .icon::before,
+    .close:focus ~ .icon::after {
+        width: 100%;
+        right: 0;
+    }
+
+    .btn:focus ~ .icon::before {
+        transform: rotate(45deg);
+    }
+    .btn:focus ~ .icon::after {
+        transform: rotate(-45deg);
+    }
+
+    .close:focus ~ .icon::before {
+        transform: rotate(-45deg);
+    }
+    .close:focus ~ .icon::after {
+        transform: rotate(45deg);
+    }
+
+    @keyframes to-hamburger {
+        from {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+    }
+    @keyframes to-arrow {
+        from {
+            transform: translateY(-50%) rotate(0deg);
+        }
+        to {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+
     /* @natanaelfneto */
     .display-4 {
         font-size: 1.5rem;
