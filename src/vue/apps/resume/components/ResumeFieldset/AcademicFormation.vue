@@ -18,8 +18,6 @@
                     <div class="content-row">{{ degree.department.name }}</div>
                     <div class="content-row">
                         <span>{{ degree.school.name }}</span>
-                        <span class="mx-1 d-none d-none d-lg-block">-</span>
-                        <span class="font-weight-500 d-none d-lg-block">{{ degree.school.acronym }}</span>
                     </div>
                 </div>
             </div>
