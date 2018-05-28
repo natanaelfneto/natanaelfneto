@@ -8,8 +8,8 @@
         :class="i == 0 ? 'pt-5' : 'pt-3'">
         <div class="row mt-4 mt-md-0">
             <div class="col-md-6 py-1 mr-auto">
-                <h3 class="mb-0">
-                    <a class="text-dark text-nowrap px-5" href="#">
+                <h3 class="mb-0 mx-5">
+                    <a class="text-dark text-sm-nowrap" href="#">
                         {{ fieldset.title }}
                     </a>
                 </h3>
@@ -42,3 +42,14 @@
         },
     }
 </script>
+
+<style scoped>
+    .text-sm-nowrap {
+        white-space: unset !important;
+    }
+    @media (min-width: 768px) {
+        .text-sm-nowrap {
+            white-space: nowrap !important;
+        }
+    }
+</style>

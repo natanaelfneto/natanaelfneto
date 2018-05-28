@@ -13,7 +13,7 @@
                 class="col-sm-12 col-md-9 detail-content">
                 <div class="row"><kbd class="font-weight-bold">{{ degree.level }}</kbd></div>
                 <div class="coll">
-                    <div class="ml-auto font-weight-bold text-muted content-year">{{ degree.year }}</div>
+                    <div class="ml-auto font-weight-bold text-muted content-year"><kbd>{{ degree.year }}</kbd></div>
                     <div class="font-weight-500 content-row">{{ degree.title.name }}</div>    
                     <div class="content-row">{{ degree.department.name }}</div>
                     <div class="content-row">
@@ -66,11 +66,16 @@
     }
     .academic-card > .detail-content > div > kbd {
         z-index: 1;
-        margin-left: auto;
         margin-right: auto;
-        top: -6rem;
+        top: -2rem;
         position: relative;
-        left: -2rem;
+        margin-left: 1rem;
+    }
+    .academic-card > .detail-content > .coll > .content-year > kbd {
+        top: -0.25rem;
+        position: relative;
+        padding-top: .35rem;
+        padding-bottom: .35rem;
     }
     .academic-card > .detail-content > .coll > .content-year {
         display: table; 
@@ -137,7 +142,7 @@
             margin-right: unset;
             top: 0.7rem;
             position: relative;
-            left: 1em;
+            left: -4em;
         }
         .academic-card > .detail-content > .coll > .content-year {
             top: -1rem;
