@@ -128,31 +128,52 @@
                                 {
                                     'year':'2018',
                                     'level':'MSc',
-                                    'name':'Science, Technology and Innovation',
-                                    'department':'Science and Technology Department',
+                                    'title':{
+                                        'name':'Science, Technology and Innovation',
+                                        'acronym':'STI',
+                                    },
+                                    'department':{
+                                        'name':'Science and Technology Department',
+                                        'short':'Science & Technology Dept.',
+                                        'acronym':'CTI',
+                                    },
                                     'school': {
                                         'name':'Federal University of Rio Grande do Norte',
-                                        'acronym':'UFRN'
+                                        'acronym':'UFRN',
                                     }
                                 },
                                 {
                                     'year':'2016',
                                     'level':'MBA',
-                                    'name':'Health Informatics',
-                                    'department':'Biomedical Engineering Department',
+                                    'title':{
+                                        'name':'Health Informatics',
+                                        'acronym':'HI',
+                                    },
+                                    'department':{
+                                        'name':'Biomedical Engineering Department',
+                                        'short':'Biomedical Eng. Dept.',
+                                        'acronym':'DEB',
+                                    },
                                     'school': {
                                         'name':'Federal University of Rio Grande do Norte',
-                                        'acronym':'UFRN'
+                                        'acronym':'UFRN',
                                     }
                                 },
                                 {
                                     'year':'2015',
                                     'level':'BEng',
-                                    'name':'Electrical Engineering',
-                                    'department':'Electric, Mecanic and Computer Engineering School',
+                                    'title':{
+                                        'name':'Electrical Engineering',
+                                        'acronym':'EE',
+                                    },
+                                    'department':{
+                                        'name':'Electric, Mecanic and Computer Engineering School',
+                                        'short':'Electric, Mecanic and Computer Eng. Dept.',
+                                        'acronym':'EMC',
+                                    },
                                     'school': {
                                         'name':'Federal University of Goiás',
-                                        'acronym':'UFG'
+                                        'acronym':'UFG',
                                     }
                                 }
                             ]

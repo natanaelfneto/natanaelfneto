@@ -61,7 +61,9 @@
             </div>
         </div>
     
-        <div class="jumbotron row p-3 p-md-5 text-white rounded bg-img" v-if="data.activeTab === 'Resumé'">
+        <div 
+            class="row p-3 p-md-5 text-white rounded bg-img mb-5 mb-md-3" 
+            v-if="data.activeTab === 'Resumé'">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">{{ data.resume.sumary.position.major }}</h1>
                 <p class="lead mb-0"><a href="#" class="text-white">{{ data.resume.sumary.position.minor }}</a></p>
@@ -69,18 +71,20 @@
             </div>
             <div class="col-md-6 mt-auto">
                 <div class="avatar avatar-size"></div>
-                <button class="menu-btn">
-                    <span class="item">
-					    <span class="icon-rocket"></span>
-				    </span>
-                </button>
-                <button class="menu-close">
-                    <span class="item">
-					    <span class="icon-size-actual"></span>
-				    </span>
-                </button>
-                <div class="menu-box">
-                    <i class="fab fa-github"></i>
+                <div class="d-none">
+                    <button class="menu-btn" style>
+                        <span class="item">
+                            <span class="icon-rocket"></span>
+                        </span>
+                    </button>
+                    <button class="menu-close">
+                        <span class="item">
+                            <span class="icon-size-actual"></span>
+                        </span>
+                    </button>
+                    <div class="menu-box">
+                        <i class="fab fa-github"></i>
+                    </div>
                 </div>
             </div>
         </div>

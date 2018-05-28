@@ -1,7 +1,8 @@
 <template>
     <div id="component-resume-fieldset" class="mx-lg-5 px-md-5">
     <div
-        class="bg-light pb-2 shadow mb-3"
+        class="pb-2 mb-3"
+        style="border-radius: 1px; background-color: #e9ecef4f; box-shadow: rgba(0, 0, 0, 0.35) 0.1rem 0.1rem .5em 0.1rem !important"
         v-for="(fieldset, index, i) in data.resume" 
         v-if="fieldset.isActive"
         :class="i == 0 ? 'pt-5' : 'pt-3'">
