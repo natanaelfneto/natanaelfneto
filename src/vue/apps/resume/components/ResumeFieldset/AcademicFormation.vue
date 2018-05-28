@@ -1,29 +1,29 @@
 <template>
     <div id="component-resume-fieldset-academic-formation">        
-            <div 
-                v-for="(degree, index, i) in data.resume.academics.degrees"
-                class="row py-2 mx-0 academic-card">
-                <div class="col-sm-12 col-md-3 image-content">
-                    <div class="d-flex">
-                        <img class="mx-auto" :src="require('../../assets/image/schools/'+degree.department.acronym+'.png')"/>
-                    </div>
+        <div 
+            v-for="(degree, index, i) in data.resume.academics.degrees"
+            class="row py-2 mx-0 academic-card">
+            <div class="col-sm-12 col-md-3 image-content">
+                <div class="d-flex">
+                    <img class="mx-auto" :src="require('../../assets/image/schools/'+degree.department.acronym+'.png')"/>
                 </div>
+            </div>
 
-                <div 
-                    class="col-sm-12 col-md-9 detail-content">
-                    <div class="row"><kbd class="font-weight-bold">{{ degree.level }}</kbd></div>
-                    <div class="col">
-                        <div class="ml-auto font-weight-bold text-muted content-year">{{ degree.year }}</div>
-                        <div class="row font-weight-500 content-title">{{ degree.title.name }}</div>    
-                        <div class="row content-school">{{ degree.department.name }}</div>
-                        <div class="row content-school">
-                            <span>{{ degree.school.name }}</span>
-                            <span class="mx-1 d-none d-md-block">-</span>
-                            <span class="font-weight-500 d-none d-md-block">{{ degree.school.acronym }}</span>
-                        </div>
+            <div 
+                class="col-sm-12 col-md-9 detail-content">
+                <div class="row"><kbd class="font-weight-bold">{{ degree.level }}</kbd></div>
+                <div class="coll">
+                    <div class="ml-auto font-weight-bold text-muted content-year">{{ degree.year }}</div>
+                    <div class="font-weight-500 content-row">{{ degree.title.name }}</div>    
+                    <div class="content-row">{{ degree.department.name }}</div>
+                    <div class="content-row">
+                        <span>{{ degree.school.name }}</span>
+                        <span class="mx-1 d-none d-none d-lg-block">-</span>
+                        <span class="font-weight-500 d-none d-lg-block">{{ degree.school.acronym }}</span>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </template>
 
@@ -74,37 +74,51 @@
         position: relative;
         left: -2rem;
     }
-    .academic-card > .detail-content > .col > .content-year {
+    .academic-card > .detail-content > .coll > .content-year {
         display: table; 
         position: relative;
-        top: -5rem;
-        left: 0.5rem;
+        top: -3.5rem;
     }
-    .academic-card > .detail-content > .col > div {
+    .academic-card > .detail-content > .coll > .content-row,
+    .academic-card > .detail-content > .coll > .content-row > span {
+        white-space: unset !important;
+    }
+    .academic-card > .detail-content > .coll > div {
         position: relative; 
         top: -1.5rem;
     }
     .font-weight-500 {
         font-weight: 500;
+    
+    }
+    @media (min-width: 375px) {
+        .academic-card > .detail-content > .coll > .content-year {
+            top: -3.5rem;
+            left: unset;
+        }
     }
     @media (min-width: 375px) {
         .academic-card > .detail-content {
             height: 155px;
         }
-        .academic-card > .detail-content > .col > .content-title {
-            top: -1rem;
-        }
-        .academic-card > .detail-content > .col > .content-year {
-            top: -5rem;
+        .academic-card > .detail-content > .coll > .content-year {
+            top: -3.5rem;
             left: unset;
         }
-        .academic-card > .detail-content > .col > .content-school {
+        .academic-card > .detail-content > .coll > .content-row {
             top: -2.5rem;
         }
     }
     @media (min-width:425px) {
         .academic-card > .detail-content {
-            height: 140px;
+            height: 100%;
+        }
+        .academic-card > .detail-content > .coll {
+            margin-bottom: -10%;
+        }
+        .academic-card > .detail-content > .coll > .content-year {
+            top: -3.5rem;
+            left: unset;
         }
     }
     @media (min-width: 768px) {
@@ -127,8 +141,13 @@
             position: relative;
             left: 1em;
         }
-        .academic-card > .detail-content > .col > .content-year {
-            top: -2.5rem;
+        .academic-card > .detail-content > .coll > .content-year {
+            top: -1rem;
+            left: unset;
+        }
+        .academic-card > .detail-content > .coll > .content-row,
+        .academic-card > .detail-content > .coll > .content-row > span {
+            white-space: nowrap !important;
         }
     }
     /*.profile {
