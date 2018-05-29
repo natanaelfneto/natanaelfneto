@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #4f6984;
+    --background-color: #e3dee578;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+}
