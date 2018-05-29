@@ -5,7 +5,7 @@
             class="row py-2 mx-0 academic-card">
             <div class="col-sm-12 col-md-3 image-content">
                 <div class="d-flex">
-                    <img class="mx-auto" :src="require('../../assets/image/schools/'+degree.department.acronym+'.png')"/>
+                    <img class="mx-auto" :src="require('../../../../assets/image/schools/'+degree.department.acronym+'.png')"/>
                 </div>
             </div>
 

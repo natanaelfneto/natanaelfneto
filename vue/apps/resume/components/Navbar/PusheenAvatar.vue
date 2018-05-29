@@ -72,7 +72,7 @@
         animation-timing-function: step-end;
     }
     .standing {
-        background-image: url('../../assets/image/pusheen/standing.png');
+        background-image: url('../../../../assets/image/pusheen/standing.png');
     }
     .dancing {
         animation-name: pusheen-dancing;
@@ -88,27 +88,27 @@
         animation-name: pusheen-remembering;
     }
     @keyframes pusheen-dancing {
-        0%  { background-image: url('../../assets/image/pusheen/dancing_step_1.png'); }
-        33%  { background-image: url('../../assets/image/pusheen/dancing_step_2.png'); }
-        66%  { background-image: url('../../assets/image/pusheen/dancing_step_3.png'); }
-        100% { background-image: url('../../assets/image/pusheen/dancing_step_4.png'); }
+        0%  { background-image: url('../../../../assets/image/pusheen/dancing_step_1.png'); }
+        33%  { background-image: url('../../../../assets/image/pusheen/dancing_step_2.png'); }
+        66%  { background-image: url('../../../../assets/image/pusheen/dancing_step_3.png'); }
+        100% { background-image: url('../../../../assets/image/pusheen/dancing_step_4.png'); }
     }
     @keyframes pusheen-typing {
-        0%  { background-image: url('../../assets/image/pusheen/typing_step_1.png'); }
-        33%  { background-image: url('../../assets/image/pusheen/typing_step_2.png'); }
-        66%  { background-image: url('../../assets/image/pusheen/typing_step_3.png'); }
-        100% { background-image: url('../../assets/image/pusheen/typing_step_4.png'); }
+        0%  { background-image: url('../../../../assets/image/pusheen/typing_step_1.png'); }
+        33%  { background-image: url('../../../../assets/image/pusheen/typing_step_2.png'); }
+        66%  { background-image: url('../../../../assets/image/pusheen/typing_step_3.png'); }
+        100% { background-image: url('../../../../assets/image/pusheen/typing_step_4.png'); }
     }
     @keyframes pusheen-spying {
-        0%  { background-image: url('../../assets/image/pusheen/spying_step_1.png'); }
-        33%  { background-image: url('../../assets/image/pusheen/spying_step_2.png'); }
-        66%  { background-image: url('../../assets/image/pusheen/spying_step_3.png'); }
-        100% { background-image: url('../../assets/image/pusheen/spying_step_4.png'); }
+        0%  { background-image: url('../../../../assets/image/pusheen/spying_step_1.png'); }
+        33%  { background-image: url('../../../../assets/image/pusheen/spying_step_2.png'); }
+        66%  { background-image: url('../../../../assets/image/pusheen/spying_step_3.png'); }
+        100% { background-image: url('../../../../assets/image/pusheen/spying_step_4.png'); }
     }
     @keyframes pusheen-remembering {
-        0%  { background-image: url('../../assets/image/pusheen/remembering_step_1.png'); }
-        33%  { background-image: url('../../assets/image/pusheen/remembering_step_2.png'); }
-        66%  { background-image: url('../../assets/image/pusheen/remembering_step_3.png'); }
-        100% { background-image: url('../../assets/image/pusheen/remembering_step_4.png'); }
+        0%  { background-image: url('../../../../assets/image/pusheen/remembering_step_1.png'); }
+        33%  { background-image: url('../../../../assets/image/pusheen/remembering_step_2.png'); }
+        66%  { background-image: url('../../../../assets/image/pusheen/remembering_step_3.png'); }
+        100% { background-image: url('../../../../assets/image/pusheen/remembering_step_4.png'); }
     }
 </style>

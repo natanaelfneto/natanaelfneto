@@ -12,7 +12,7 @@
 
                     <div class="carousel-item active">
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../assets/image/bg-gyn.png" style="" alt="First slide">
+                            <img class="d-block custom-size" src="../../../assets/image/bg-gyn.png" style="" alt="First slide">
                             <div class="carousel-caption px-0">
                                 <h1 class="display-4 font-italic">{{ data.resume.sumary.position.major }}</h1>
                                 <p class="lead my-3 d-none d-md-block">{{ data.resume.sumary.content }}</p>
@@ -25,7 +25,7 @@
 
                     <div class="carousel-item">
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../assets/image/bg-gyn.png" style="" alt="Second slide">
+                            <img class="d-block custom-size" src="../../../assets/image/bg-gyn.png" style="" alt="Second slide">
                             <div class="carousel-caption px-0">
                                 <h1 class="display-4 font-italic">Title of a longer featured post</h1>
                                 <p class="lead my-3 d-none d-md-block">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
@@ -38,7 +38,7 @@
 
                     <div class="carousel-item">
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../assets/image/bg-gyn.png" alt="Third slide">
+                            <img class="d-block custom-size" src="../../../assets/image/bg-gyn.png" alt="Third slide">
                             <div class="carousel-caption px-0">
                                 <h1 class="display-4 font-italic">Title of a longer featured post</h1>
                                 <p class="lead my-3 d-none d-md-block">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
@@ -259,10 +259,10 @@
     }
     /* Resumé */
     .bg-img {
-        background-image: url('../assets/image/bg-gyn.png');
+        background-image: url('../../../assets/image/bg-gyn.png');
     }
     .avatar {
-        background-image: url('../assets/image/profile.png');
+        background-image: url('../../../assets/image/profile.png');
         background-size: 100%;
         background-position: center;
         border: 1px solid #4f6984;
