@@ -142,7 +142,7 @@
             margin-right: unset;
             top: 0.7rem;
             position: relative;
-            left: -4em;
+            left: -3rem;
         }
         .academic-card > .detail-content > .coll > .content-year {
             top: -1rem;
@@ -151,6 +151,11 @@
         .academic-card > .detail-content > .coll > .content-row,
         .academic-card > .detail-content > .coll > .content-row > span {
             white-space: nowrap !important;
+        }
+    }
+    @media (min-width: 768px) {
+        .academic-card > .detail-content > div > kbd {
+            left: -5rem;
         }
     }
     /*.profile {

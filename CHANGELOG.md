@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.1.0 - 2018-05-22
+### Added
+- navbar tab fully functional
+- jumbotron for 'natanaelfneto' and 'Resumé' tabs working
+- avatar, login and basic fieldset fully responsive
+- all data come fron json data variable (still hardcoded)
+
 ### 0.0.12 - 2018-05-22
 ### Added
 - added jumbotron within slider as a component

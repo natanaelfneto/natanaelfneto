@@ -5,7 +5,7 @@
 
             <Navbar :data="data"></Navbar>
             <Jumbotron :data="data"></Jumbotron>
-            <ResumeFieldset :data="data"></ResumeFieldset>
+            <ResumeFieldset :data="data" v-if="data.activeTab == 'Resumé'"></ResumeFieldset>
             
         </div>
 

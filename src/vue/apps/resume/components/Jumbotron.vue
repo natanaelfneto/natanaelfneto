@@ -265,7 +265,7 @@
         background-image: url('../assets/image/profile.png');
         background-size: 100%;
         background-position: center;
-        border: 1px solid #000;
+        border: 1px solid #4f6984;
         border-radius: 10rem;
         background-color: pink;
         margin-left: auto;
