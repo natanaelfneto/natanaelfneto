@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
+### 0.1.2 - 2018-05-30
+### Added
+- fixed navbar dropdown selector click for mobile view
+- added functionality as dropdown selector for the SelectLanguage component
+
 ### 0.1.1 - 2018-05-29
 ### Added
 - added nodemon module
