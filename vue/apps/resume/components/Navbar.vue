@@ -132,7 +132,9 @@
             },
             setCurrentActiveTab(e) {
                 this.data.activeTab = e.target.closest('li').id.replace('navbar_link_','');
-                document.getElementById('menu-toggler-close').click();
+                if(document.getElementById('menu-toggler-close').offsetParent !== null) {
+                    document.getElementById('menu-toggler-close').click();
+                }
             }
         }
     }
