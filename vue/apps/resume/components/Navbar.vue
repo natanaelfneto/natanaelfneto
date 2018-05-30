@@ -132,6 +132,7 @@
             },
             setCurrentActiveTab(e) {
                 this.data.activeTab = e.target.closest('li').id.replace('navbar_link_','');
+                document.getElementById('menu-toggler-close').click();
             }
         }
     }
