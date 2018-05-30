@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Released]
 ## [Unreleased]
 
-### 0.1.0 - 2018-05-22
+### 0.1.1 - 2018-05-29
+### Added
+- added nodemon module
+- added script for development file watch
+
+### 0.1.0 - 2018-05-29
 ### Added
 - navbar tab fully functional
 - jumbotron for 'natanaelfneto' and 'Resumé' tabs working
