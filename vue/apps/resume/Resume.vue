@@ -45,7 +45,7 @@
                                 en_country:'Great Britain',
                                 own_description:'English',
                                 own_country:'Great Britain'
-                            }
+                            },
                         ],
                         setted: 'en-gb',
                     },
