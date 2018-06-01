@@ -3,51 +3,30 @@
         <div class="text-white rounded bg-dark">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li v-for="(post, index) in data.posts"
+                        data-target="#carouselExampleIndicators"
+                        :data-slide-to="index" 
+                        :class="index == 0 ? 'active' : ''">
+                    </li>
                 </ol>
                 <div class="carousel-inner">
-
-                    <div class="carousel-item active">
+                    <div v-for="(post, index) in data.posts"
+                        class="carousel-item"
+                        :class="index == 0 ? 'active' : ''">
                         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../../../../assets/image/bg-gyn.png" style="" alt="First slide">
+                            <img 
+                                class="d-block custom-size" 
+                                :src="require('../../../../assets/image/bg-gyn.png')" 
+                                :alt="'slide number '+index" />
                             <div class="carousel-caption px-0">
-                                <h1 class="display-4 font-italic">{{ data.resume.sumary.position.major }}</h1>
-                                <p class="lead my-3 d-none d-md-block">{{ data.resume.sumary.content }}</p>
+                                <h1 class="display-4 font-italic">{{ post.title }}</h1>
+                                <p class="lead my-3 d-none d-md-block">{{ post.content.short }}</p>
                                 <p class="lead mb-0">
-                                    <a href="#" class="text-white">{{ data.resume.sumary.position.minor }}</a>
+                                    <a href="#" class="text-white">Click here to see the full article</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="carousel-item">
-                        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../../../../assets/image/bg-gyn.png" style="" alt="Second slide">
-                            <div class="carousel-caption px-0">
-                                <h1 class="display-4 font-italic">Title of a longer featured post</h1>
-                                <p class="lead my-3 d-none d-md-block">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-                                <p class="lead mb-0">
-                                    <a href="#" class="text-white">Continue reading...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark align-middle d-table-row">
-                            <img class="d-block custom-size" src="../../../../assets/image/bg-gyn.png" alt="Third slide">
-                            <div class="carousel-caption px-0">
-                                <h1 class="display-4 font-italic">Title of a longer featured post</h1>
-                                <p class="lead my-3 d-none d-md-block">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-                                <p class="lead mb-0">
-                                    <a href="#" class="text-white">Continue reading...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

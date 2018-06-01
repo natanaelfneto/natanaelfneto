@@ -101,6 +101,29 @@
                             },
                         },
                     ],
+                    posts: [
+                        {
+                            title:'First post',
+                            content: {
+                                short:'this is a resume of the article content',
+                                full:'this is the full content of the article'
+                            }
+                        },
+                        {
+                            title:'Second post',
+                            content: {
+                                short:'this is a resume of the article content',
+                                full:'this is the full content of the article'
+                            }
+                        },
+                        {
+                            title:'Third post',
+                            content: {
+                                short:'this is a resume of the article content',
+                                full:'this is the full content of the article'
+                            }
+                        }
+                    ],
                     resume: {
                         sumary: {
                             isActive: true,
@@ -262,8 +285,8 @@
                         //         ]
                         //     }
                     },
-                    activeTab: 'natanaelfneto',
-                    pusheenStatus: 'dancing',
+                    activeTab:'natanaelfneto',
+                    pusheenStatus:'dancing',
                     pusheenRememberMe: false,
                 },
             }
