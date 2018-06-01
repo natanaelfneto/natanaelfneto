@@ -57,6 +57,22 @@
                         <LanguageSelector :data="data"></LanguageSelector>
                     </li>
                     <!-- END: Language Selector -->
+                    <li class="row nav-item dropdown d-md-none d-lg-none d-xl-none">
+                        <div class="py-2 text-muted item text-center">
+                            <i aria-hidden="true" class="fas fa-user-astronaut"></i>
+                        </div>
+                        <a 
+                            class="py-2 text-muted" 
+                            href="#" 
+                            id="dropdownSignInForm" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false"
+                            @click="pusheenReset()">
+                            Sign in
+                        </a>
+                        <SignInForm :data="data"></SignInForm>
+                    </li>
                     <!-- START: Link Tabs -->
                     <li :id="'navbar_link_'+link.string"
                         class="row nav-item d-inline-flex"
@@ -74,22 +90,6 @@
                         <a class="py-2 text-muted" href="#">{{ link.string }}</a>
                     </li>
                     <!-- END: Link Tabs -->
-                    <li class="row nav-item dropdown d-md-none d-lg-none d-xl-none">
-                        <div class="py-2 text-muted item text-center">
-                            <i aria-hidden="true" class="fas fa-user-astronaut"></i>
-                        </div>
-                        <a 
-                            class="py-2 text-muted" 
-                            href="#" 
-                            id="dropdownSignInForm" 
-                            data-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false"
-                            @click="pusheenReset()">
-                            Sign in
-                        </a>
-                        <SignInForm :data="data"></SignInForm>
-                    </li>
                 </ul>
             </div>
             <button

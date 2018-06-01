@@ -11,12 +11,15 @@
     import Navbar from './components/Navbar.vue'
     import natanaelfneto from './components/natanaelfneto.vue'
     import Resumé from './components/Resume.vue'
+    import Github from './components/Github.vue'
+    import axios from 'axios'
 
     export default {
         components: {
             Navbar,
             natanaelfneto,
             Resumé,
+            Github
         },
         data: function() {
             return {
@@ -285,11 +288,29 @@
                         //         ]
                         //     }
                     },
+                    github: {
+                        username:'natanaelfneto',
+                        user:{},
+                        orgs:{}
+                    },
                     activeTab:'natanaelfneto',
                     pusheenStatus:'dancing',
                     pusheenRememberMe: false,
+                    valor: []
                 },
             }
+        },
+        methods: {
+            getGithubUser(username) {
+                let url = 'https://api.github.com/users/'+username;
+                axios.get(url).then(res => { this.data.github.user = res.data });
+
+                let orgs_url = url+'/orgs'
+                axios.get(orgs_url).then(res => { this.data.github.orgs = res.data });
+            }
+        },
+        created: function() {
+            this.getGithubUser(this.data.github.username);
         }
     }
 </script>

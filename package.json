@@ -10,6 +10,7 @@
     "dev": "nodemon --ignore ./src/ --exec cross-env NODE_ENV=development webpack --progress --hide-modules"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.11"
   },
   "browserslist": [
