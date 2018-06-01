@@ -3,15 +3,15 @@
 </template>
 
 <script>
-    import Resume from './apps/resume/Resume.vue'
+    import PersonalPage from './apps/resume/PersonalPage.vue'
 
     export default {
         components: {
-            Resume
+            PersonalPage
         },
         data: function() {
             return {
-                selectedMainApp: 'Resume'
+                selectedMainApp: 'PersonalPage'
             }
         }
     }

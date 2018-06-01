@@ -1,5 +1,5 @@
 <template>
-    <div id="component-resume-fieldset-academic-formation">        
+    <div id="component-resume-academic-formation">        
         <div 
             v-for="(degree, index, i) in data.resume.academics.degrees"
             class="row py-2 mx-0 academic-card">

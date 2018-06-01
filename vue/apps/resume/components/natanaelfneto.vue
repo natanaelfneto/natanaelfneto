@@ -1,11 +1,16 @@
 <template>
-    <div id="component-resume-fieldset-sumary">
-        {{ data.resume.sumary.content }}
+    <div id="component-natanaelfneto">
+        <Jumbotron :data="data"></Jumbotron>
     </div>
 </template>
 
 <script>
+    import Jumbotron from './natanaelfneto/Jumbotron.vue'
+
     export default {
+        components: {
+            Jumbotron,
+        },
         props: {
             data: {
                 type: Object,

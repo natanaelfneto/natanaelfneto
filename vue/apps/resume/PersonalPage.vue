@@ -1,27 +1,22 @@
 <template>
-    <div id="app-resume">
-
+    <div id="app-personal-page">
         <div class="container">
-
             <Navbar :data="data"></Navbar>
-            <Jumbotron :data="data"></Jumbotron>
-            <ResumeFieldset :data="data" v-if="data.activeTab == 'Resumé'"></ResumeFieldset>
-            
+            <component :is="data.activeTab" :data="data"></component>
         </div>
-
     </div>
 </template>
 
 <script>
     import Navbar from './components/Navbar.vue'
-    import Jumbotron from './components/Jumbotron.vue'
-    import ResumeFieldset from './components/ResumeFieldset.vue'
+    import natanaelfneto from './components/natanaelfneto.vue'
+    import Resumé from './components/Resume.vue'
 
     export default {
         components: {
             Navbar,
-            Jumbotron,
-            ResumeFieldset
+            natanaelfneto,
+            Resumé,
         },
         data: function() {
             return {
@@ -52,7 +47,6 @@
                     links: [
                         {
                             string:'natanaelfneto',
-                            destiny:'http://natanaelfneto.com/',
                             icon:{
                                 type:'fontawesome',
                                 class:{
@@ -64,7 +58,6 @@
                         },
                         {
                             string:'Resumé',
-                            destiny:'#',
                             icon:{
                                 type:'fontawesome',
                                 class:{
@@ -76,7 +69,6 @@
                         },
                         {
                             string:'Github',
-                            destiny:'#',
                             icon:{
                                 type:'fontawesome',
                                 class:{
@@ -88,7 +80,6 @@
                         },
                         {
                             string:'LinkedIn',
-                            destiny:'#',
                             icon:{
                                 type:'fontawesome',
                                 class:{
@@ -100,7 +91,6 @@
                         },
                         {
                             string:'NEED Technology',
-                            destiny:'#',
                             icon:{
                                 type:'fontawesome',
                                 class:{
@@ -272,8 +262,8 @@
                         //         ]
                         //     }
                     },
-                    activeTab:'natanaelfneto',
-                    pusheenStatus:'dancing',
+                    activeTab: 'natanaelfneto',
+                    pusheenStatus: 'dancing',
                     pusheenRememberMe: false,
                 },
             }
