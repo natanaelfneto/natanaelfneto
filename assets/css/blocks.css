@@ -4138,13 +4138,9 @@
     height: 40px;
     padding: 13px;
     font-size: 16px;
-    background: #eee;
     text-align: center;
     display: inline-block;
-  }
-  
-  .news-v3 .post-shares li i:hover {
-    background: #ddd;
+    background-size: 100%;
   }
   
   .news-v3 .post-shares li span {

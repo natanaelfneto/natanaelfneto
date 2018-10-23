@@ -1,7 +1,7 @@
 <template>
     <div 
         id="cp-breadcrumbs" 
-        class="breadcrumbs-v1"
+        class="breadcrumbs-v1 mb-2"
         v-bind:style="{ 'background-image': 'url(' + data.background_image + ')' }">
         
         <div class="container">

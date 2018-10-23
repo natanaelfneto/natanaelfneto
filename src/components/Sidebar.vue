@@ -1,125 +1,73 @@
 <template>
     <div id="cp-sidebar-left">
-        <div class="headline-v2"><h2>Trending</h2></div>
-        <!-- Trending -->
+
+        <div class="headline-v2"><h2>Formação Acadêmica</h2></div>
         <ul class="list-unstyled blog-trending margin-bottom-50">
             <li>
-                <h3><a href="#">Praesent tincidunt ornare tortor</a></h3>
-                <small>23 Jan, 2015 / <a href="#">Art,</a> <a href="#">Lifestyles</a></small>
+                <h3>
+                    <span class="badge badge-secondary">MSc</span>
+                    <a href="#">Ciência, Tecnologia e Inovação</a></h3>
+                <small>Departamento de Ciência e Tecnologia</small>
+                <small><b>2018</b> - Universidade Federal do Rio Grande do Norte</small>
             </li>
             <li>
-                <h3><a href="#">Nunc leo leo, faucibus non gravida</a></h3>
-                <small>22 Jan, 2015 / <a href="#">Marketing</a></small>
+                <h3>
+                    <span class="badge badge-secondary">Esp</span>
+                    <a href="#">Informática em Saúde</a></h3>
+                <small>Departamento de Engenharia Biomédica</small>
+                <small><b>2017</b> - Universidade Federal do Rio Grande do Norte</small>
             </li>
             <li>
-                <h3><a href="#">Proin dapibus ornare magna.</a></h3>
-                <small>19 Jan, 2015 / <a href="#">Hi-Tech,</a> <a href="#">Technology</a></small>
-            </li>
-            <li>
-                <h3><a href="#">Fusce at diam ante.</a></h3>
-                <small>17 Jan, 2015 / <a href="#">Artificial Intelligence</a></small>
-            </li>
-            <li>
-                <h3><a href="#">Donec quis consequat magna...</a></h3>
-                <small>5 Jan, 2015 / <a href="#">Web,</a> <a href="#">Webdesign</a></small>
+                <h3>
+                    <span class="badge badge-secondary">BEng</span>
+                    <a href="#">Engenharia Elétrica</a></h3>
+                <small>Escola de Engenharia Elétrica, Mecânica e de Computação</small>
+                <small><b>2015</b> - Universidade Federal de Goiás</small>
             </li>
         </ul>
-        <!-- End Trending -->
 
-        <div class="headline-v2"><h2>Latest Posts</h2></div>
-        <!-- Latest Links -->
-        <ul class="list-unstyled blog-latest-posts margin-bottom-50">
-            <li>
-                <h3><a href="#">Wireframe for the news view...</a></h3>
-                <small>5 Jan, 2015 / <a href="#">Web,</a> <a href="#">Webdesign</a></small>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio leo.</p>
+        <div class="headline-v2"><h2>Github Profile</h2></div>
+        <ul class="list-unstyled">
+            <h3><small>Organizações</small></h3>
+            <li class="mb-4">
+                <div class="row mb-2" v-for="org in data.github.orgs">
+                    <a href="#" class="col-md-2 my-auto">
+                        <i 
+                            data-toggle="tooltip"
+                            data-placement="bottom" 
+                            v-bind:title="org.login"
+                            v-bind:style="{ 'background-image': 'url(' + org.avatar_url + ')' }"></i>
+                    </a>
+                    <a href="#" class="col">
+                        <span class="">{{ org.name }}</span>
+                    </a>
+                </div>
             </li>
-            <li>
-                <h3><a href="#">It is a long established fact that a reader</a></h3>
-                <small>17 Jan, 2015 / <a href="#">Artificial Intelligence</a></small>
-                <p>Pellentesque efficitur blandit dui, porta cursus velit imperdiet sit amet.</p>
-            </li>
-            <li>
-                <h3><a href="#">The point of using Lorem Ipsum</a></h3>
-                <small>19 Jan, 2015 / <a href="#">Hi-Tech,</a> <a href="#">Technology</a></small>
-                <p>Phasellus ullamcorper pellentesque ex. Cras venenatis elit orci, vitae dictum elit egestas a. Nunc nec auctor mauris, semper scelerisque nibh.</p>
-            </li>
-            <li>
-                <h3><a href="#">Many desktop publishing packages...</a></h3>
-                <small>23 Jan, 2015 / <a href="#">Art,</a> <a href="#">Lifestyles</a></small>
-                <p>Integer vehicula sed justo ac dapibus. In sodales nunc non varius accumsan.</p>
-            </li>
-        </ul>
-        <!-- End Latest Links -->
-
-        <div class="headline-v2"><h2>Tags</h2></div>
-        <!-- Tags v2 -->
-        <ul class="list-inline tags-v2 margin-bottom-50">
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Economy</a></li>
-            <li><a href="#">Sport</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Elections</a></li>
-            <li><a href="#">Flickr</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Web Hosting</a></li>
-            <li><a href="#">Wrapbootstrap</a></li>
-            <li><a href="#">Art</a></li>
-        </ul>
-        <!-- End Tags v2 -->
-
-        <div class="headline-v2"><h2>Photostream</h2></div>
-        <!-- Photostream -->
-        <ul class="list-inline blog-photostream margin-bottom-50">
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 1">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 2">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 3">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 4">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 5">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 6">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 7">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 8">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/img/image_01.jpg" rel="gallery" class="fancybox img-hover-v2" title="Image 9">
-                    <span><img class="img-responsive" src="assets/img/image_01.jpg" alt=""></span>
-                </a>
+            <h3><small>Repositórios Open Source</small></h3>
+            <li class="mb-4">
+                <div class="row mb-2" v-for="repo in data.github.repos">
+                    <span class="col-md-6 mt-auto">
+                        <a 
+                            class="d-block badge badge-secondary cp-font"
+                            v-bind:href="repo.clone_url"
+                            target="_blank">
+                            <span class="align-middle">{{ repo.name }}</span>
+                        </a>
+                    </span>
+                    <span class="col mx-auto">
+                        <button 
+                            class="btn btn-outline-info item w-100 py-0"
+                            @click.stop.prevent="clipboardCopy(repo.clone_url)">
+                            <span>
+                                <small class="d-inline">clone repo</small>
+                                <i aria-hidden="true" class="icon-cloud-download cp-font pl-2"></i>
+                            </span>
+                            
+                        </button>
+                    </span>
+                </div>
             </li>
         </ul>
-        <!-- End Photostream -->
 
         <div class="headline-v2"><h2>Newsletter</h2></div>
         <!-- Blog Newsletter -->
@@ -146,9 +94,39 @@
             }
         },
         methods: {
+            clipboardCopy: function(url) {
+                let CopiedObject = document.createElement("textarea");
+                try {
+                    CopiedObject.value = 'git clone '+url
+                    CopiedObject.setAttribute('readonly', '');
+                    document.body.appendChild(CopiedObject);
+                    CopiedObject.select()
+                    document.execCommand('copy');
+                    document.body.removeChild(CopiedObject);
+                } catch (err) {
+                    console.log("Element value could not be copied")
+                }
+            },
         }
     }
 </script>
 
-<style>
+<style scoped>
+    small {
+        display: block;
+    }
+    .cp-font {
+        font-size: 0.8rem;
+        height: 1.5rem;
+    }
+    ul > li > div > a > i {
+        color: #555;
+        width: 1rem;
+        height: 1rem;
+        padding: 13px;
+        display: inline-block;
+        background-size: 100%;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
 </style>

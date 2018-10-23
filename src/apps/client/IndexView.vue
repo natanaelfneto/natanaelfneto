@@ -16,7 +16,7 @@
 
                     <!-- Index Body Content -->
 					<div class="col-md-9">
-                        <Content :data="data"></Content>
+                        <Content :data="data" :experience="experience" v-for="experience in data.experiences"></Content>
 					</div>
 
 				</div>
