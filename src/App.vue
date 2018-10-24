@@ -10,6 +10,7 @@
         data: function() {
             return {
                 data: {
+                    activeTab: 'Resume',
                     github: {
                         username: 'natanaelfneto',
                         user: '',
@@ -32,6 +33,41 @@
                     background_image: 'assets/img/bg-gyn.png',
                     profile_image: 'assets/img/profile.png',
                     lais_image: 'assets/img/lais.png',
+                    academic: [
+                        {
+                            degree: 'Master',
+                            title: 'Ciência, Tecnologia e Inovação',
+                            acronym: 'MSc',
+                            year: {
+                                start: '',
+                                end: '2018',
+                            },
+                            department: 'Departamento de Ciência e Tecnologia',
+                            institution: 'Universidade Federal do Rio Grande do Norte',
+                        },
+                        {
+                            degree: 'Specialist',
+                            title: 'Informática em Saúde',
+                            acronym: 'Esp',
+                            year: {
+                                start: '',
+                                end: '2017',
+                            },
+                            department: 'Departamento de Engenharia Biomédica',
+                            institution: 'Universidade Federal do Rio Grande do Norte',
+                        },
+                        {
+                            degree: 'Bachelor',
+                            title: 'Engenharia Elétrica',
+                            acronym: 'BEng',
+                            year: {
+                                start: '',
+                                end: '2015',
+                            },
+                            department: 'Escola de Engenharia Elétrica, Mecânica e de Computação',
+                            institution: 'Universidade Federal de Goiás',
+                        },
+                    ],
                     experiences: [
                         {
                             description: 'Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e emissão de exames e laudos médicos remotos para o Ministério da Saúde (MS) do Brasil através do programa Telessaúde Brasil Redes',
@@ -177,7 +213,7 @@
                                 page_url: '',
                                 parents: [],
                             },
-                            position: 'Engenheiro Clínico e Eletrônico',
+                            position: 'Engenheiro Biomédico e Eletrônico',
                             location: 'Goiânia, GO',
                             year: {
                                 start: '2014',
@@ -313,6 +349,52 @@
     }
 </script>
 
+<style>
+    :root {
+        /* fade blue */
+        --first-color: #1795a1;
+
+        /* fade orange */
+        --second-color: #c99900;
+
+        /* fade dark gray */
+        --third-color: #272727;
+    }
+    /* 
+    .fade-blue {
+        color: var(--first-color) !important;
+    }
+    .fade-orange {
+        color: var(--second-color);
+    }
+    .fade-dark-gray {
+        color: var(--third-color);
+    }
+    .bg-fade-blue {
+        background-color: var(--first-color) !important;
+    }
+    .bg-fade-orange {
+        background-color: var(--second-color);
+    }
+    .bg-fade-dark-gray {
+        background-color: var(--third-color);
+    }
+    */
+    a {
+        color: var(--first-color);
+    }
+    a:hover {
+        color: var(--second-color);
+    }
+    .headline h2,
+    .headline h3,
+    .headline h4 {
+	    border-bottom: 2px solid var(--second-color);
+    }
+    .oldsh {
+        font-family: 'Old Style';
+    }
+</style>
 
 
 

@@ -16,7 +16,59 @@
 
                     <!-- Index Body Content -->
 					<div class="col-md-9">
-                        <Content :data="data" :experience="experience" v-for="experience in data.experiences"></Content>
+                        <ul class="nav nav-pills mb-3" id="ContentTab" role="tablist">
+                            <li class="nav-item">
+                                <a 
+                                    class="nav-link bg-fade-blue active" 
+                                    id="resume-tab" 
+                                    data-toggle="tab" 
+                                    href="#resume" 
+                                    role="tab" 
+                                    aria-controls="resume" 
+                                    aria-selected="true">
+                                    Resumé
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                    class="nav-link bg-fade-blue" 
+                                    id="published-tab" 
+                                    data-toggle="tab" 
+                                    href="#published" 
+                                    role="tab" 
+                                    aria-controls="published" 
+                                    aria-selected="false">
+                                    Publicações
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div 
+                                class="tab-pane fade show active" 
+                                id="resume" 
+                                role="tabpanel" 
+                                aria-labelledby="resume-tab">
+                                <component
+                                    :is="data.activeTab"
+                                    :data="data"
+                                    :item="item"
+                                    v-for="item in data.experiences">>
+                                </component>
+                            </div>
+                            <div 
+                                class="tab-pane fade" 
+                                id="published" 
+                                role="tabpanel" 
+                                aria-labelledby="published-tab">
+                                <component
+                                    :is="data.activeTab"
+                                    :data="data"
+                                    :item="item"
+                                    v-for="item in data.published">>
+                                </component>
+                            </div>
+                        </div>
+                        
 					</div>
 
 				</div>
@@ -31,16 +83,18 @@
 
 <script>
     import Breadcrumbs from '../../components/Breadcrumbs.vue'
-    import Content from '../../components/Content.vue'
     import Footer from '../../components/Footer.vue'
+    import Published from '../../components/Published.vue'
+    import Resume from '../../components/Resume.vue'
     import Sidebar from '../../components/Sidebar.vue'
 
     export default {
         name: "Index",
         components: {
             Breadcrumbs,
-            Content,
             Footer,
+            Published,
+            Resume,
             Sidebar
         },
         props: {
@@ -54,5 +108,11 @@
     }
 </script>
 
-<style>
+<style scoped>
+    .bg-fade-blue.active {
+        background-color: var(--first-color) !important;
+    }
+    .nav-tabs .nav-link {
+        border-bottom-color: #dee2e6;
+    }
 </style>

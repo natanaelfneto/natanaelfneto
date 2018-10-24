@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Old Style";
+    src: url("assets/plugins/oldstyle/fonts/oldsh__.eot");
+    src: 
+        url('./fonts/oldsh___.eot?#iefix') format('embedded-opentype'),
+        /* url("./fonts/oldsh__.woff2") format("woff2"), */
+        /* url("./fonts/oldsh__.woff") format("woff"), */
+        url('./fonts/oldsh___.ttf') format('truetype'),
+        url("./fonts/oldsh__.otf") format("opentype"),
+        url("./fonts/oldsh__.svg#oldstyle") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

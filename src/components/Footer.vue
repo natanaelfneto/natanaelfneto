@@ -5,56 +5,97 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
-                    </div><!--/col-md-3-->
+                        <a href="index.html">
+                            <img 
+                                id="logo-footer" 
+                                class="footer-logo w-50 mb-0 mx-2" 
+                                src="assets/img/natanaelfneto.png" 
+                                alt="">
+                            <p class="oldsh">natanaelfneto</p>
+                        </a>
+                    </div>
                     <!-- End About -->
-
-                    <!-- Latest -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="posts">
-                            <div class="headline"><h2>Latest Posts</h2></div>
-                            <ul class="list-unstyled latest-list">
-                                <li>
-                                    <a href="#">Incredible content</a>
-                                    <small>May 8, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">Best shoots</a>
-                                    <small>June 23, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">New Terms and Conditions</a>
-                                    <small>September 15, 2014</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/col-md-3-->
-                    <!-- End Latest -->
 
                     <!-- Link List -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>Useful Links</h2></div>
-                        <ul class="list-unstyled link-list">
-                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                        </ul>
-                    </div><!--/col-md-3-->
-                    <!-- End Link List -->
+                        <div class="headline"><h2>Contato</h2></div>
+                        <address class="md-margin-bottom-40">
+                            <div>
+                                <span aria-hidden="true" class="icon-pointer"></span>
+                                <span>Natal, RN</span>
+                            </div>
+                            <div>
+                                <span aria-hidden="true" class="icon-call-out"></span>
+                                <span>+55 (62) 982-176-644</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-whatsapp"></i>
+                                <span>+55 (62) 982-176-644</span>
+                            </div>
+                            <div>
+                                <span aria-hidden="true" class="icon-link"></span>
+                                <a href="https://natanaelfneto.com" class="">natanaelfneto.com</a>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-md-3 md-margin-bottom-40 mt-4">
+                        <div class="headline mt-4"></div>
+                        <address class="md-margin-bottom-40">
+                            <div>
+                                <span aria-hidden="true" class="icon-paper-plane ml-auto"></span>
+                                <a href="https://t.me/natanaelfneto" target="_blank">
+                                    @natanaelfneto
+                                </a>
+                            </div>
+                            <div>
+                                <i class="fa fa-twitter"></i>
+                                <a href="https://twitter.com/natanaelfneto" target="_blank">
+                                    @natanaelfneto
+                                </a>
+                            </div>
+                            <div>
+                                <i class="fa fa-instagram"></i>
+                                <a href="https://www.instagram.com/natanaelfneto/" target="_blank">
+                                    @natanaelfneto
+                                </a>
+                            </div>
+                            <div>
+                                <i class="fa fa-skype"></i>
+                                <a href="#/" class="">
+                                    natanaelfneto@outlook.com
+                                </a>
+                            </div>
+                        </address>
+                    </div>
 
                     <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>
-                        <address class="md-margin-bottom-40">
-                            25, Lorem Lis Street, Orange <br />
-                            California, US <br />
-                            Phone: 800 123 3456 <br />
-                            Fax: 800 123 3456 <br />
-                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                    <div class="col-md-3 map-img md-margin-bottom-40 mt-4">
+                        <div class="headline mt-4"></div>
+                        <address class="md-margin-bottom-40 mt-4">
+                            <div>
+                                <i class="fa fa-github"></i>
+                                <a href="https://github.com/natanaelfneto" target="_blank">
+                                    github.com/natanaelfneto
+                                </a>
+                            </div>
+                            <div>
+                                <i class="fa fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/natanaelfneto/" target="_blank">
+                                    linkedin.com/in/natanaelfneto
+                                </a>
+                            </div>
+                            <div>
+                                <span aria-hidden="true" class="icon-envelope"></span>
+                                <a href="mailto:natanaelfneto@outlook.com" class="">
+                                    natanaelfneto@outlook.com
+                                </a>
+                            </div>
+                            <div>
+                                <span aria-hidden="true" class="icon-envelope"></span>
+                                <a href="mailto:natanaelfreitasneto@gmail.com" class="">
+                                    natanaelfreitasneto@gmail.com
+                                </a>
+                            </div>
                         </address>
                     </div><!--/col-md-3-->
                     <!-- End Address -->
@@ -65,54 +106,11 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            2015 &copy; All Rights Reserved.
-                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                    <div class="col-md-6 ml-auto">
+                        <p class="text-right">
+                            2018 &copy; All Rights Reserved.
                         </p>
                     </div>
-
-                    <!-- Social Links -->
-                    <div class="col-md-6">
-                        <ul class="footer-socials list-inline">
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-                                    <i class="fa fa-skype"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-                                    <i class="fa fa-dribbble"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
                 </div>
             </div>
         </div><!--/copyright-->
@@ -134,5 +132,8 @@
     }
 </script>
 
-<style>
+<style scoped>
+    .oldsh {
+        font-size: 1.5rem;
+    }
 </style>

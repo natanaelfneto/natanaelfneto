@@ -46,6 +46,7 @@
         border: 1px solid;
         border-radius: 10rem;
         margin-right: auto;
+        margin-left: 1.5rem;
         margin-bottom: -15rem;
     }
 </style>
