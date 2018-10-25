@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/osx,node,macos,linux,windows,webstorm,database,sublimetext,webstorm+all,visualstudio,visualstudiocode,openframeworks+visualstudio
 
 ### Database ###
@@ -131,9 +130,6 @@ typings/
 ### OpenFrameworks+VisualStudio ###
 # ignore generated binaries
 # but not the data folder
-
-/bin/*
-!/bin/data/
 
 # general
 
