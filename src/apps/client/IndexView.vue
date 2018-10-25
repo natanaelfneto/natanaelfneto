@@ -17,7 +17,7 @@
                     <!-- Index Body Content -->
 					<div class="col-md-9">
                         <ul class="nav nav-pills mb-3" id="ContentTab" role="tablist">
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue active" 
                                     id="resume-tab" 
@@ -25,11 +25,11 @@
                                     href="#resume" 
                                     role="tab" 
                                     aria-controls="resume" 
-                                    aria-selected="true">
+                                    aria-selected="false">
                                     Resumé
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue" 
                                     id="published-tab" 
@@ -37,7 +37,7 @@
                                     href="#published" 
                                     role="tab" 
                                     aria-controls="published" 
-                                    aria-selected="false">
+                                    aria-selected="true">
                                     Publicações
                                 </a>
                             </li>
@@ -48,24 +48,28 @@
                                 id="resume" 
                                 role="tabpanel" 
                                 aria-labelledby="resume-tab">
-                                <component
+                                <Resume
+                                    :data="data"
+                                    :item="item"
+                                    v-for="item in data.experiences">>
+                                </Resume>
+                                <!-- <component
                                     :is="data.activeTab"
                                     :data="data"
                                     :item="item"
                                     v-for="item in data.experiences">>
-                                </component>
+                                </component> -->
                             </div>
                             <div 
                                 class="tab-pane fade" 
                                 id="published" 
                                 role="tabpanel" 
                                 aria-labelledby="published-tab">
-                                <component
-                                    :is="data.activeTab"
+                                <Published
                                     :data="data"
                                     :item="item"
                                     v-for="item in data.published">>
-                                </component>
+                                </Published>
                             </div>
                         </div>
                         
@@ -109,9 +113,17 @@
 </script>
 
 <style scoped>
+    .bg-fade-blue {
+        color: #17a2b8;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid;
+        border-color: var(--first-color) !important;
+    }
     .bg-fade-blue.active {
         background-color: var(--first-color) !important;
     }
+
     .nav-tabs .nav-link {
         border-bottom-color: #dee2e6;
     }

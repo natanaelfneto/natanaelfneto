@@ -5,8 +5,8 @@
 
         <Github :data="data"></Github>
 
+        <!-- Blog Newsletter 
         <div class="headline-v2"><h2>Newsletter</h2></div>
-        <!-- Blog Newsletter -->
         <div class="blog-newsletter">
             <p>Subscribe to our newsletter for good news, sent out every month.</p>
             <div class="input-group">
@@ -15,7 +15,7 @@
                     <button class="btn-u" type="button">Subscribe</button>
                 </span>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

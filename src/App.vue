@@ -10,7 +10,7 @@
         data: function() {
             return {
                 data: {
-                    activeTab: 'Resume',
+                    activeTab: 'Published',
                     github: {
                         username: 'natanaelfneto',
                         user: '',
@@ -33,6 +33,134 @@
                     background_image: 'assets/img/bg-gyn.png',
                     profile_image: 'assets/img/profile.png',
                     lais_image: 'assets/img/lais.png',
+                    published: [
+                        {
+                            description: 'Paper documents are being replace in different areas every day and, for any activity that requires authenticity, these new digital forms need to assure the same guaranties as the physical document does, i.e., authorship, authenticity, chronological evidence and integrity. In this article we shall analyze a viable use of available technologies to solve this evidenced issue. In medical reports for image exams, the use of a Picture Archive Communications System (PACS) allow the medical reports to be emitted remotely but it alone does not guarantee any of the security measurements for non-repudiation. The results presented in this article were obtained from an Integrative Literature Review and make evidence that the digital signatures model, based on asymmetric cryptography, could help solve this issue if a solution implementation does not change the installed DICOM/PACS environment and if it makes possible for an easy emitter check without the possibility of repudiation, within the local legislation',
+                            preview: '',
+                            sources: [
+                                {
+                                    type: 'link',
+                                    icon: 'fa_ fa-link',
+                                    link: 'https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901',
+                                },
+                                {
+                                    type: 'pdf',
+                                    icon: 'far fa-file-pdf',
+                                    link: 'https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901/6958',
+                                },
+                            ],
+                            work: 'Digital Signatures Schemes: An Integrative Literature Review of Asymmetric Cryptography Usage as a Technical Method for Authenticity and Nonrepudiation on Remote Medical Reports for PACS',
+                            appends: '',
+                            type: 'Article',
+                            authors: [
+                                {
+                                    name: 'Freitas Neto, N.',
+                                },
+                                {
+                                    name: 'Freitas, M. A. N.',
+                                },
+                                {
+                                    name: 'Dantas, M. C. R.',
+                                },
+                                {
+                                    name: 'Valentim, R. A. M.',
+                                }
+                            ],
+                            location: {
+                                name: 'ECOP/UFERSA',
+                                is: {
+                                    sn: '2526-7574',
+                                    bn: '',
+                                },
+                                link: 'https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901',
+                            },
+                            year: '2018',
+                        },
+                        {
+                            description: 'O Sistema Único de Saúde (SUS) representa uma das principais conquistas da sociedade brasileira e tem sido referenciado como sendo um dos maiores sistemas de saúde pública do mundo. Afinal, ele é responsável por ações que vão desde a promoção da saúde à atenção a doenças que exigem um alto nível de complexidade tecnológica, realizando atendimento de caráter universal. Considerando a importância da existência de um sistema de saúde com essas dimensões, vê-se necessário ressaltar o desafio de serem desenvolvidas ações educativas no âmbito do SUS tendo em vista seu fortalecimento e o aperfeiçoamento constante da sua força de trabalho. Nessa perspectiva, reconhece-se a área de Gestão do Trabalho e da Educação na Saúde como estratégica para a gestão do SUS, considerando que a coordenação da Política de Educação Permanente do trabalhador deve ser de sua responsabilidade. Por conseguinte, defende-se que ao utilizar a educação como ferramenta estratégica para a gestão, esta seja compreendida como mediadora no processo em que se relacionam o trabalho concreto e as aprendizagens subjetivas e sociais (RAMOS, 2011). É fato que a execução da Política de Educação Permanente tem se concretizado por meio de várias iniciativas, entre elas, a Educação a Distância. Que, para Belloni (2012), surge como caminho incontornável, como uma nova solução de melhoria da qualidade do ensino no sentido de adequá-lo ao século XXI',
+                            preview: '',
+                            sources: [
+                                {
+                                    type: 'link',
+                                    icon: 'fa_ fa-link',
+                                    link: 'http://www.observatoriorh.ufrn.br/biblioteca/categoria/11',
+                                },
+                                {
+                                    type: 'pdf',
+                                    icon: 'far fa-file-pdf',
+                                    link: 'http://www.observatoriorh.ufrn.br/uploads/989ca41953558a5e3657c76432bbef71.pdf',
+                                },
+                            ],
+                            work: 'Um olhar sobre a evasão na Educação a Distância: Para além dos números [A integração entre o ensino e o serviço de saúde: relato de atores, olhar de investigadores]',
+                            appends: '1ed.Natal: Una, 2017, v. 1, p. 119-132.',
+                            type: 'Book Chapter',
+                            authors: [
+                                {
+                                    name: 'Costa, T. P. T.',
+                                },
+                                {
+                                    name: 'Freitas Neto, N.',
+                                },
+                                {
+                                    name: 'Castro, J. L.',
+                                },
+                            ],
+                            location: {
+                                name: 'NESC/UFRN',
+                                is: {
+                                    sn: '',
+                                    bn: '978-85-60036-35-6',
+                                },
+                                link: 'http://www.observatoriorh.ufrn.br/biblioteca/categoria/11',
+                            },
+                            year: '2018',
+                        },
+                        {
+                            description: 'O trabalho  descreve uma  ferramenta  Web  que permitirá  aos profissionais  da  saúde  gerenciar  formulários  de  triagem médica  com  segurança  e  dinamismo  que  não  se  consegue atualmente com  a utilização formulários em papel. A  prática  de  triagem  surgiu  das  exigências  da  guerra,  e  se mantêm intimamente associado à medicina militar. Os sistemas mais  antigos,  projetados  para  distribuir  cuidados  de  saúde sistematicamente  entre  os  soldados  feridos  e  doentes, remontam  apenas  ao  século  18  (Iserson  KV,  Moskop  JC, 2007).  No  século  21,  a  utilização  da  informática  cresce constantemente  em  diversas  áreas  do  conhecimento,  mesmo quando  elas  não  percebem,  asseverando  assim  a  natureza multidisciplinar e estratégica dessa área. O uso da informática se  torna  relevante  por  lidar  com  recursos,  dispositivos  e métodos  para  otimizar o  gerenciamento  das  informações em saúde (SBIS, 2013). O sistema desenvolvido tem por finalidade incorporar aos procesos de triagens médicas para os diferentes profissionais  envolvidos,  digitalmente,  a  criação,  atualização através  de  versionamento,  correlação  lógicas  dos  itens questionados e segurança dos dados.',
+                            preview: '',
+                            sources: [
+                                {
+                                    type: 'link',
+                                    icon: 'fa_ fa-link',
+                                    link: 'https://www.researchgate.net/application.ClientValidation.html?origPath=/profile/Marcel_Dantas/publication/314229421_Ferramenta_Web_para_gerar_e_gerenciar_formularios_de_triagem_medica_para_o_Hospital_Universitario_Onofre_Lopes_HUOLUFRN/links/58eabec10f7e9b978f840bf4/Ferramenta-Web-para-gerar-e-gerenciar-formularios-de-triagem-medica-para-o-Hospital-Universitario-Onofre-Lopes-HUOL-UFRN.pdf',
+                                },
+                                {
+                                    type: 'pdf',
+                                    icon: 'far fa-file-pdf',
+                                    link: 'http://www.sbis.org.br/biblioteca_virtual/cbis/Anais_CBIS_2016_Diversos.pdf',
+                                },
+                            ],
+                            work: 'Ferramenta Web para gerar e gerenciar formulários de triagem médica para o Hospital Universitário Onofre Lopes HUOL/UFRN',
+                            appends: 'Goiânia. acervo da Sociedade Brasileira de Informática em Saúde, 2016.',
+                            type: 'Essay',
+                            authors: [
+                                {
+                                    name: 'Freitas Neto, N.',
+                                },
+                                {
+                                    name: 'Freitas, I. M. A.',
+                                },
+                                {
+                                    name: 'Guerra, P. V.',
+                                },
+                                {
+                                    name: 'Dantas, M. C. R.',
+                                },
+                                {
+                                    name: 'Valentim, R. A. M.',
+                                }
+                            ],
+                            location: {
+                                name: 'XV Congresso Brasileiro de Informática em Saúde',
+                                is: {
+                                    sn: '2178-2857',
+                                    bn: '',
+                                },
+                                link: 'http://www.sbis.org.br/cbis2016',
+                            },
+                            year: '2016',
+                        },
+                    ],
                     academic: [
                         {
                             degree: 'Master',

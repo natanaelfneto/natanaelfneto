@@ -29,7 +29,7 @@
                                 <span>+55 (62) 982-176-644</span>
                             </div>
                             <div>
-                                <i class="fa fa-whatsapp"></i>
+                                <i class="fa_ fa-whatsapp"></i>
                                 <span>+55 (62) 982-176-644</span>
                             </div>
                             <div>
@@ -48,19 +48,19 @@
                                 </a>
                             </div>
                             <div>
-                                <i class="fa fa-twitter"></i>
+                                <i class="fa_ fa-twitter"></i>
                                 <a href="https://twitter.com/natanaelfneto" target="_blank">
                                     @natanaelfneto
                                 </a>
                             </div>
                             <div>
-                                <i class="fa fa-instagram"></i>
+                                <i class="fa_ fa-instagram"></i>
                                 <a href="https://www.instagram.com/natanaelfneto/" target="_blank">
                                     @natanaelfneto
                                 </a>
                             </div>
                             <div>
-                                <i class="fa fa-skype"></i>
+                                <i class="fa_ fa-skype"></i>
                                 <a href="#/" class="">
                                     natanaelfneto@outlook.com
                                 </a>
@@ -73,13 +73,13 @@
                         <div class="headline mt-4"></div>
                         <address class="md-margin-bottom-40 mt-4">
                             <div>
-                                <i class="fa fa-github"></i>
+                                <i class="fa_ fa-github"></i>
                                 <a href="https://github.com/natanaelfneto" target="_blank">
                                     github.com/natanaelfneto
                                 </a>
                             </div>
                             <div>
-                                <i class="fa fa-linkedin"></i>
+                                <i class="fa_ fa-linkedin"></i>
                                 <a href="https://www.linkedin.com/in/natanaelfneto/" target="_blank">
                                     linkedin.com/in/natanaelfneto
                                 </a>
