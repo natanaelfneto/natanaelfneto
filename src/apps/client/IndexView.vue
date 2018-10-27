@@ -10,12 +10,12 @@
 				<div class="row">
 
                     <!-- Index Body Sidebar -->
-					<div class="col-md-3">
+					<div class="col-lg-3 col-md-12">
                         <Sidebar :data="data"></Sidebar>
 					</div>
 
                     <!-- Index Body Content -->
-					<div class="col-md-9">
+					<div class="col-lg-9 col-md-12">
                         <ul class="nav nav-pills mb-3" id="ContentTab" role="tablist">
                             <li class="nav-item px-2">
                                 <a 
@@ -106,7 +106,7 @@
     }
 </script>
 
-<style scoped>
+<style>
     .bg-fade-blue {
         color: #17a2b8;
         background-color: transparent;
@@ -120,5 +120,15 @@
 
     .nav-tabs .nav-link {
         border-bottom-color: #dee2e6;
+    }
+    @media (min-width: 980px) {
+        .container {
+            max-width: 1024px !important;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px !important;
+        }
     }
 </style>

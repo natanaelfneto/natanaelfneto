@@ -20,7 +20,7 @@
             <h3><small>Repositórios Abertos</small></h3>
             <li class="mb-4">
                 <div class="row mb-2" v-for="repo in data.sidebar.github.object.featured_repos">
-                    <span class="col-md-6 mt-auto">
+                    <span class="col mt-auto">
                         <a 
                             class="d-block badge badge-secondary cp-font"
                             v-bind:href="repo.clone_url"

@@ -1,9 +1,59 @@
 {
-    "data": {
-        "settings": {
+    "data":
+    {
+        "settings":
+        {
+            "name": "NATANAEL F. NETO",
+            "title": "Electrical and Software Engineer",
             "logos": "assets/img/logos/",
             "background_image": "assets/img/bg-gyn.png",
-            "profile_image": "assets/img/profile.png"
+            "profile_image": "assets/img/profile.png",
+            "peronal_logo": "assets/img/natanaelfneto.png",
+            "contact":{
+                "0": [
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-pointer"
+                        },
+                        "info": "Natal, RN",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-call-out"
+                        },
+                        "info": "+55 (62) 982-176-644",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "fontawesome",
+                            "meta": "fa_ fa-whatsapp"
+                        },
+                        "info": "+55 (62) 982-176-644",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-link"
+                        },
+                        "info": "natanaelfneto.com",
+                        "meta": {
+                            "type": "link",
+                            "value": "https://natanaelfneto.com"
+                        }
+                    }
+                ],
+                "1": [{},{},{},{}],
+                "2": [{},{},{},{}]
+            }
         },
         "sidebar": {
             "academic": {
@@ -313,12 +363,10 @@
                         ],
                         "periodic": {
                             "name": "ECOP/UFERSA",
-                            "register": [
-                                {
-                                    "type": "issn",
-                                    "value": "2526-7574"
-                                }
-                            ],
+                            "register": {
+                                "type": "issn",
+                                "value": "2526-7574"
+                            },
                             "link": "https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901"
                         },
                         "year": "2018"
@@ -350,12 +398,10 @@
                         ],
                         "periodic": {
                             "name": "NESC/UFRN",
-                            "register": [
-                                {
-                                    "type": "isbn",
-                                    "value": "978-85-60036-35-6"
-                                }
-                            ],
+                            "register": {
+                                "type": "isbn",
+                                "value": "978-85-60036-35-6"
+                            },
                             "link": "http://www.observatoriorh.ufrn.br/biblioteca/categoria/11"
                         },
                         "year": "2018"
@@ -366,7 +412,8 @@
                                 "type": "link",
                                 "icon": "fa_ fa-link",
                                 "link": "https://www.researchgate.net/application.ClientValidation.html?origPath=/profile/Marcel_Dantas/publication/314229421_Ferramenta_Web_para_gerar_e_gerenciar_formularios_de_triagem_medica_para_o_Hospital_Universitario_Onofre_Lopes_HUOLUFRN/links/58eabec10f7e9b978f840bf4/Ferramenta-Web-para-gerar-e-gerenciar-formularios-de-triagem-medica-para-o-Hospital-Universitario-Onofre-Lopes-HUOL-UFRN.pdf"
-                            }, {
+                            },
+                            {
                                 "type": "pdf",
                                 "icon": "far fa-file-pdf",
                                 "link": "http://www.sbis.org.br/biblioteca_virtual/cbis/Anais_CBIS_2016_Diversos.pdf"

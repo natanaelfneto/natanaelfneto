@@ -10,8 +10,8 @@
                 v-bind:style="{ 'background-image': 'url(' +  data.settings.profile_image + ')' }">
             </div>
             <div class="cp-text">
-                <h1><small>Natanael F. Neto</small></h1>
-                <span>Electrical and Software Engineer</span>
+                <h1><small>{{ data.settings.name }}</small></h1>
+                <span>{{ data.settings.title }}</span>
             </div>
         </div>
 

@@ -4,12 +4,12 @@
             <div class="container">
                 <div class="row">
                     <!-- About -->
-                    <div class="col-md-3 md-margin-bottom-40">
+                    <div class="col-lg-3 col-md-3">
                         <a href="index.html">
                             <img 
                                 id="logo-footer" 
-                                class="footer-logo w-50 mb-0 mx-2" 
-                                src="assets/img/natanaelfneto.png" 
+                                class="footer-logo w-50 mb-0 mx-2 mx-md-4" 
+                                v-bind:src="data.settings.peronal_logo" 
                                 alt="">
                             <p class="oldsh">natanaelfneto</p>
                         </a>
@@ -17,9 +17,11 @@
                     <!-- End About -->
 
                     <!-- Link List -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>Contato</h2></div>
-                        <address class="md-margin-bottom-40">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="headline">
+                            <h2>Contato</h2>
+                        </div>
+                        <address class="my-md-0">
                             <div>
                                 <span aria-hidden="true" class="icon-pointer"></span>
                                 <span>Natal, RN</span>
@@ -38,9 +40,9 @@
                             </div>
                         </address>
                     </div>
-                    <div class="col-md-3 md-margin-bottom-40 mt-4">
-                        <div class="headline mt-4"></div>
-                        <address class="md-margin-bottom-40">
+                    <div class="col-lg-3 col-md-12 mt-lg-4 mt-md-0">
+                        <div class="headline mt-4 d-none d-lg-block"></div>
+                        <address class="my-md-0">
                             <div>
                                 <span aria-hidden="true" class="icon-paper-plane ml-auto"></span>
                                 <a href="https://t.me/natanaelfneto" target="_blank">
@@ -69,9 +71,9 @@
                     </div>
 
                     <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40 mt-4">
-                        <div class="headline mt-4"></div>
-                        <address class="md-margin-bottom-40 mt-4">
+                    <div class="col-lg-3 col-md-12 mt-lg-4 mt-md-0">
+                        <div class="headline mt-4 d-none d-lg-block"></div>
+                        <address class="mt-4 my-md-0">
                             <div>
                                 <i class="fa_ fa-github"></i>
                                 <a href="https://github.com/natanaelfneto" target="_blank">

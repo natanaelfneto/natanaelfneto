@@ -16,7 +16,7 @@
                         <span v-if="item.periodic.register.type == 'isbn'">ISBN: {{ item.periodic.register.value }}</span>
                     </a>
                 </li>
-            </ul>
+            </ul> 
             <h3>{{ item.title }}</h3>
             <span class="pr-2" v-for="author in item.authors">{{ author.name }};</span>
             <p class="mb-0 mt-3">{{ item.description }}</p>
