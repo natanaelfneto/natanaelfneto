@@ -8,6 +8,8 @@
                 <li class="mr-auto">
                     <div>
                         <span>{{ item.year }}</span>
+                        <span class="mx-2">-</span>
+                        <span>{{ item.type }}</span>
                     </div>
                 </li>
                 <li class="ml-auto">

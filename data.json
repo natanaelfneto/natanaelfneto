@@ -332,6 +332,46 @@
                 "is_enabled": true,
                 "object": [
                     {
+                        "description": "A automação hospitalar é uma área multidisciplinar que envolve linguagens de programação (software), plataformas eletrônicas (hardware), atuação (mecânica), e fluidos fármacos. [...] A Esclerose Lateral Amiotrófica (ELA) é uma doença neurodegenerativa, caracterizada por uma progressiva e fatal perda de neurônios motores do cortéx cerebral, tronco encefálico e medula espinhal, não afetando, no entanto, a atividade cognitiva do paciente. [...] A Esclerose Lateral Amiotrófica é a forma mais comum de doença progressiva do neurônio motor e um grande exemplo de doença neurodegenerativa, considerada por alguns autores como a mais devastadora das doenças neurodegenerativas. [...] O objetivo desse trabalho é a implementação de um sistema dotado de recursos para o gerenciamento de informações de pacientes e profissionais de saúde, capaz de receber sinais vitais do paciente, tanto do ambiente hospitalar, quanto domiciliar [...] com foco na melhoria da qualidade de vida do paciente e evolução do tratamento.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": ""
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": ""
+                            }
+                        ],
+                        "title": "Sistema de Telemonitoramento para Pacientes com Esclerose Lateral Amiotrófica [O RN à Luz da Inovação para o Mundo]",
+                        "type": "Capítulo de Livro",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, I. M. A."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "SEDIS/UFRN",
+                            "register": {
+                                "type": "isbn",
+                                "value": "978-85-7064-042-0"
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    }, 
+                    {
                         "description": "Paper documents are being replace in different areas every day and, for any activity that requires authenticity, these new digital forms need to assure the same guaranties as the physical document does, i.e., authorship, authenticity, chronological evidence and integrity. In this article we shall analyze a viable use of available technologies to solve this evidenced issue. In medical reports for image exams, the use of a Picture Archive Communications System (PACS) allow the medical reports to be emitted remotely but it alone does not guarantee any of the security measurements for non-repudiation. The results presented in this article were obtained from an Integrative Literature Review and make evidence that the digital signatures model, based on asymmetric cryptography, could help solve this issue if a solution implementation does not change the installed DICOM/PACS environment and if it makes possible for an easy emitter check without the possibility of repudiation, within the local legislation",
                         "sources": [
                             {
@@ -346,7 +386,7 @@
                             }
                         ],
                         "title": "Digital Signatures Schemes: An Integrative Literature Review of Asymmetric Cryptography Usage as a Technical Method for Authenticity and Nonrepudiation on Remote Medical Reports for PACS",
-                        "type": "Article",
+                        "type": "Artigo",
                         "authors": [
                             {
                                 "name": "Freitas Neto, N."
@@ -384,7 +424,7 @@
                             }
                         ],
                         "title": "Um olhar sobre a evasão na Educação a Distância: Para além dos números [A integração entre o ensino e o serviço de saúde: relato de atores, olhar de investigadores]",
-                        "type": "Book Chapter",
+                        "type": "Capítulo de Livro",
                         "authors": [
                             {
                                 "name": "Costa, T. P. T."
@@ -405,6 +445,98 @@
                             "link": "http://www.observatoriorh.ufrn.br/biblioteca/categoria/11"
                         },
                         "year": "2018"
+                    }, 
+                    {
+                        "description": "This article purpose is to analyze the insertion of the population aging theme in the training of professionals working in the Family Health Strategy and in the Family Health Support Center. This is a study with a qualitative approach and documentary type, carried out in the state of Rio Grande do Norte, located in the Northeastern region of Brazil. To reach the objective, the pedagogical projects of the courses for the professions that work in the Family Health Strategy and in the Family Health Support Unit were searched. The documents analysis was based on the content analysis method, using the thematic analysis technique in three pre-established registration units: (i) skills and abilities; (ii) professional profile; and (iii) curricular structure. From the analysis of the pedagogical projects, two analytical categories emerged: discussion about aging and training for health care of the elderly. The research result was that the discussion about the thematic of the aging in the process of formation of human resources in health is still insipient. There is a clear necessity to prepare people to provide adequate attention to the elderly population, as well as to formulate and manage public policies for the mentioned population that benefits from Health Unic System (SUS).",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://doi.org/10.3823/2509"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://imedicalsociety.org/ojs/index.php/iam/article/view/2716/2259"
+                            }
+                        ],
+                        "title": "A Look at Professional Education in Health with Emphasis on Aging",
+                        "type": "Artigo",
+                        "authors": [
+                            {
+                                "name": "Lima, R. R. T."
+                            }, 
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Costa, T. P. T."
+                            }, 
+                            {
+                                "name": "Vilar, R. L. A."
+                            }, 
+                            {
+                                "name": "Castro, J. L."
+                            },
+                            {
+                                "name": "Lima, K. C."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "International Archives of Medicine",
+                            "register": {
+                                "type": "issn",
+                                "value": "1755-7682"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "Atualmente   a   educação   à   distância   tor-nou-se  uma  ferramenta  fundamental  para  quebrar   as   barreiras   da   necessidade   da   presença física, inspirado nos benefícios do EaD  foi  implementado  o  projeto  AVASUS,  este  projeto  consistem  em  uma  plataforma  com cursos EaD onde o objetivo principal é UMA METODOLOGIA PARA OTIMIZAR O SISTEMA DE MELHORIA CONTINUADA DO AVASUS COM FOCO NAS EXPERIÊNCIAS DO USUÁRIO A METHODOLOGY TO OPTIMIZE THE AVASUS CONTINUOUS IMPROVIMENT SYSTEM WITH A FOCUS ON USER EXPIRENCESqualificar profissionais e estudantes da área da saúde, o pós-atendimento é uma pratica importante  para  obter  um  feedback  dos  usuários sobre problemas apresentados na plataforma,  problemas  com  cursos,  suges-tões  e  críticas.  Através  desse  feedback  a  equipe busca atender aos pedidos dos usu-ários. O presente trabalho de conclusão de curso propõe uma otimização do atual pro-cesso  do  sistema  de  pós-atendimento  do  AVASUS,  na  arquitetura  apresentada  pode-remos  verificar  um  sistema  mais  dinâmico e objetivo ao receber os problemas que os usuários venham a apresentar durante a rea-lização do curso, além de automatizar parte do processo atual, o proposto trabalho irá manter parte do processo de forma huma-nizada,  visto  que  uma  certa  quantidade  de  avaliações são subjetivas e precisam de uma analise mais criteriosa. Poderemos verificar ao fim do trabalho que a arquitetura pro-posta  é  implementável,  além  de  atender de forma eficiente as necessidades do pro-cesso de pós-atendimento.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://periodicos.ufrn.br/reb/issue/view/610"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "https://periodicos.ufrn.br/reb/article/view/11129/7950"
+                            }
+                        ],
+                        "title": "Uma metodologia para otimizar o Sistema de Melhoria Continuada do AVASUS com foco nas experiências do usuário",
+                        "type": "Artigo",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Vieira, G. V."
+                            }, 
+                            {
+                                "name": "Coutinho, k. M. D."
+                            }, 
+                            {
+                                "name": "Laranjeiras, L. A. C."
+                            }, 
+                            {
+                                "name": "Valentim, R. A. M."
+                            },
+                            {
+                                "name": "Coutinho, K. D."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "Revista Brasileira de Inovação Tecnológica em Saúde",
+                            "register": {
+                                "type": "issn",
+                                "value": "2236-1103"
+                            },
+                            "link": "https://periodicos.ufrn.br/reb/index"
+                        },
+                        "year": "2016"
                     }, {
                         "description": "O trabalho  descreve uma  ferramenta  Web  que permitirá  aos profissionais  da  saúde  gerenciar  formulários  de  triagem médica  com  segurança  e  dinamismo  que  não  se  consegue atualmente com  a utilização formulários em papel. A  prática  de  triagem  surgiu  das  exigências  da  guerra,  e  se mantêm intimamente associado à medicina militar. Os sistemas mais  antigos,  projetados  para  distribuir  cuidados  de  saúde sistematicamente  entre  os  soldados  feridos  e  doentes, remontam  apenas  ao  século  18  (Iserson  KV,  Moskop  JC, 2007).  No  século  21,  a  utilização  da  informática  cresce constantemente  em  diversas  áreas  do  conhecimento,  mesmo quando  elas  não  percebem,  asseverando  assim  a  natureza multidisciplinar e estratégica dessa área. O uso da informática se  torna  relevante  por  lidar  com  recursos,  dispositivos  e métodos  para  otimizar o  gerenciamento  das  informações em saúde (SBIS, 2013). O sistema desenvolvido tem por finalidade incorporar aos procesos de triagens médicas para os diferentes profissionais  envolvidos,  digitalmente,  a  criação,  atualização através  de  versionamento,  correlação  lógicas  dos  itens questionados e segurança dos dados.",
                         "sources": [
@@ -420,7 +552,7 @@
                             }
                         ],
                         "title": "Ferramenta Web para gerar e gerenciar formulários de triagem médica para o Hospital Universitário Onofre Lopes HUOL/UFRN",
-                        "type": "Essay",
+                        "type": "Resumo",
                         "authors": [
                             {
                                 "name": "Freitas Neto, N."
