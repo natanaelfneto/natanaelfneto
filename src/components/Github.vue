@@ -1,6 +1,6 @@
 <template>
     <div id="cp-github">
-        <div class="headline-v2"><h2>Github Profile</h2></div>
+        <div class="headline-v2"><h2>Github</h2></div>
         <ul class="list-unstyled">
             <h3><small>Organizações</small></h3>
             <li class="mb-4">

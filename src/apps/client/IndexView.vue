@@ -26,7 +26,7 @@
                                     role="tab" 
                                     aria-controls="resume" 
                                     aria-selected="false">
-                                    Resumé
+                                    Experiências
                                 </a>
                             </li>
                             <li class="nav-item px-2">

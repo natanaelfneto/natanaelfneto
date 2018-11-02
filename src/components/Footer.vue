@@ -8,7 +8,7 @@
                         <a href="index.html">
                             <img 
                                 id="logo-footer" 
-                                class="footer-logo w-50 mb-0 mx-2 mx-md-4" 
+                                class="footer-logo w-50 mb-0 mx-2" 
                                 v-bind:src="data.settings.peronal_logo" 
                                 alt="">
                             <p class="oldsh">natanaelfneto</p>
