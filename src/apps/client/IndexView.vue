@@ -16,7 +16,7 @@
 
                     <!-- Index Body Content -->
 					<div class="col-lg-9 col-md-12">
-                        <ul class="nav nav-pills mb-3" id="ContentTab" role="tablist">
+                        <ul class="nav nav-pills mb-3 mt-4 print-my-0" id="ContentTab" role="tablist">
                             <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue active" 
@@ -25,7 +25,7 @@
                                     href="#resume" 
                                     role="tab" 
                                     aria-controls="resume" 
-                                    aria-selected="false">
+                                    aria-selected="true">
                                     Experiências
                                 </a>
                             </li>
@@ -37,7 +37,7 @@
                                     href="#published" 
                                     role="tab" 
                                     aria-controls="published" 
-                                    aria-selected="true">
+                                    aria-selected="false">
                                     Publicações
                                 </a>
                             </li>
@@ -49,8 +49,19 @@
                                     href="#patent" 
                                     role="tab" 
                                     aria-controls="patent" 
-                                    aria-selected="true">
+                                    aria-selected="false">
                                     Patentes
+                                </a>
+                            </li>
+                            <li
+                                class="nav-item px-2 ml-auto">
+                                <a
+                                    href="javascript:;"
+                                    onclick="window.print()"
+                                    class="btn btn-secondary"
+                                    role="button" aria-disabled="true">
+                                    PDF
+                                    <span aria-hidden="true" class="ml-2 icon-printer"></span>
                                 </a>
                             </li>
                         </ul>
@@ -60,6 +71,9 @@
                                 id="resume" 
                                 role="tabpanel" 
                                 aria-labelledby="resume-tab">
+                                <div class="d-lg-none headline-v2 mb-4 mt-4 print-my-0">
+                                    <h2>Experiências Profissionais</h2>
+                                </div>
                                 <Resume
                                     :data="data"
                                     :item="item"
@@ -72,6 +86,9 @@
                                 id="published" 
                                 role="tabpanel" 
                                 aria-labelledby="published-tab">
+                                <div class="d-lg-none headline-v2 mb-4 mt-4 print-my-0">
+                                    <h2>Publicações</h2>
+                                </div>
                                 <Published
                                     :data="data"
                                     :item="item"
@@ -80,10 +97,13 @@
                                 </Published>
                             </div>
                             <div 
-                                class="row d-flex tab-pane fade" 
+                                class="row px-2 tab-pane fade" 
                                 id="patent" 
                                 role="tabpanel" 
                                 aria-labelledby="patent-tab">
+                                <div class="mx-2 col-12 d-lg-none headline-v2 mb-4 mt-2 print-my-0">
+                                    <h2>Patentes</h2>
+                                </div>
                                 <Patent
                                     :data="data"
                                     :item="item"
@@ -143,7 +163,9 @@
     .bg-fade-blue.active {
         background-color: var(--first-color) !important;
     }
-
+    .tab-content>.row.active {
+        display: flex !important;
+    }
     .nav-tabs .nav-link {
         border-bottom-color: #dee2e6;
     }

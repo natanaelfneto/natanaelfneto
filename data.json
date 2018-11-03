@@ -447,36 +447,6 @@
                         "year": "2018"
                     },
                     {
-                        "description": "incompleto",
-                        "sources": [
-                        ],
-                        "title": "Explorador de arquivos DICOM local e remoto",
-                        "type": "Oral",
-                        "authors": [
-                            {
-                                "name": "Freitas Neto, N."
-                            },
-                            {
-                                "name": "Guerra, P. V."
-                            }, 
-                            {
-                                "name": "Dantas, M. C. R."
-                            },
-                            {
-                                "name": "Valentim, R. A. M."
-                            }
-                        ],
-                        "periodic": {
-                            "name": "1ª Conferência Internacional de Inovação em Saúde",
-                            "register": {
-                                "type": "",
-                                "value": ""
-                            },
-                            "link": ""
-                        },
-                        "year": "2017"
-                    },
-                    {
                         "description": "This article purpose is to analyze the insertion of the population aging theme in the training of professionals working in the Family Health Strategy and in the Family Health Support Center. This is a study with a qualitative approach and documentary type, carried out in the state of Rio Grande do Norte, located in the Northeastern region of Brazil. To reach the objective, the pedagogical projects of the courses for the professions that work in the Family Health Strategy and in the Family Health Support Unit were searched. The documents analysis was based on the content analysis method, using the thematic analysis technique in three pre-established registration units: (i) skills and abilities; (ii) professional profile; and (iii) curricular structure. From the analysis of the pedagogical projects, two analytical categories emerged: discussion about aging and training for health care of the elderly. The research result was that the discussion about the thematic of the aging in the process of formation of human resources in health is still insipient. There is a clear necessity to prepare people to provide adequate attention to the elderly population, as well as to formulate and manage public policies for the mentioned population that benefits from Health Unic System (SUS).",
                         "sources": [
                             {
@@ -659,6 +629,96 @@
             "patent": {
                 "is_enabled": true,
                 "object": [
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth iOS",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Rocha Junior, M."
+                            },
+                            {
+                                "name": "Queiroz, R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            },
+                            {
+                                "name": "Freire, C. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth Android",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freire, C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth Web",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            },
+                            {
+                                "name": "Freire, C. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
                     {
                         "description": "",
                         "sources": [

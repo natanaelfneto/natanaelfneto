@@ -3,7 +3,6 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <!-- About -->
                     <div class="col-lg-3 col-md-3">
                         <a href="index.html">
                             <img 
@@ -14,10 +13,7 @@
                             <p class="oldsh">natanaelfneto</p>
                         </a>
                     </div>
-                    <!-- End About -->
-
-                    <!-- Link List -->
-                    <div class="col-lg-3 col-md-12">
+                    <div class="col-lg-3 col-md-12 print-col-lg-3">
                         <div class="headline">
                             <h2>Contato</h2>
                         </div>
@@ -40,8 +36,8 @@
                             </div>
                         </address>
                     </div>
-                    <div class="col-lg-3 col-md-12 mt-lg-4 mt-md-0">
-                        <div class="headline mt-4 d-none d-lg-block"></div>
+                    <div class="col-lg-3 col-md-12 print-col-lg-3 mt-lg-4 print-mt-lg-4 mt-md-0">
+                        <div class="headline mt-4 d-none d-lg-block print-d-lg-block"></div>
                         <address class="my-md-0">
                             <div>
                                 <span aria-hidden="true" class="icon-paper-plane ml-auto"></span>
@@ -69,10 +65,8 @@
                             </div>
                         </address>
                     </div>
-
-                    <!-- Address -->
-                    <div class="col-lg-3 col-md-12 mt-lg-4 mt-md-0">
-                        <div class="headline mt-4 d-none d-lg-block"></div>
+                    <div class="col-lg-3 col-md-12 print-col-lg-3 mt-lg-4 print-mt-lg-4 mt-md-0">
+                        <div class="headline mt-4 d-none d-lg-block print-d-lg-block"></div>
                         <address class="mt-4 my-md-0">
                             <div>
                                 <i class="fa_ fa-github"></i>
@@ -99,8 +93,7 @@
                                 </a>
                             </div>
                         </address>
-                    </div><!--/col-md-3-->
-                    <!-- End Address -->
+                    </div>
                 </div>
             </div>
         </div><!--/footer-->
@@ -109,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 ml-auto">
-                        <p class="text-right">
+                        <p class="text-right print-d-none">
                             2018 &copy; All Rights Reserved.
                         </p>
                     </div>

@@ -1,32 +1,30 @@
 <template>
     <div
         id="cp-resume"
-        class="news-v3 bg-color-white mb-4">
-        
-        <!-- <img class="img-responsive full-width" src="assets/img/image_01.jpg" alt=""> -->
+        class="news-v3 bg-color-white mb-4 print-mb-md-0">
         <div class="news-v3-in">
             <ul class="list-inline d-flex">
-                <li class="mr-auto">
+                <li class="print mr-auto">
                     <div v-if="item.year.start != item.year.end">
-                        <span>{{ item.year.start }}</span>
-                        <span class="px-2">-</span>
                         <span>{{ item.year.end }}</span>
+                        <span class="px-1">-</span>
+                        <span>{{ item.year.start }}</span>
                     </div>
                     <div v-if="item.year.start == item.year.end">
                         <span>{{ item.year.start }}</span>
                     </div>
                 </li>
-                <li class="ml-auto">
-                    <a href="#" class="item">{{ item.location }}
-                        <i aria-hidden="true" class="logo-pointer"></i>
-                    </a>
+                <li class="print ml-auto">
+                    <a href="#">{{ item.location }}
+                        <span aria-hidden="true" class="icon-pointer"></span>
+                    </a> 
                 </li>
             </ul>
             <h3>{{ item.position }}</h3>
             <p>{{ item.description }}</p>
-            <div class="row px-0 mx-0">
-                <ul class="post-shares col-md-4 my-0">
-                    <li class="mr-auto">
+            <div class="row px-0 mx-0 print-place">
+                <ul class="print-d-none post-shares col-md-4 my-0">
+                    <li class="print m r-auto">
                         <a href="#">
                             <i 
                                 data-toggle="tooltip"
@@ -36,7 +34,7 @@
                             </i>
                         </a>
                     </li>
-                    <li class="mr-auto" v-for="parent in item.place.parents">
+                    <li class="print mr-auto" v-for="parent in item.place.parents">
                         <a href="#">
                             <i
                                 data-toggle="tooltip"
@@ -47,14 +45,14 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="list-inline d-flex col-md-8 my-auto">
-                    <li class="ml-auto">
+                <ul class="print-col-12 list-inline d-flex col-md-8 my-auto">
+                    <li class="print ml-auto print-place">
                         <div v-if="item.place.acronym != ''">
                             <span>
-                                <a v-bind:href="item.place.page_url" target="_blank">{{ item.place.name }}</a>
+                                <a v-bind:href="item.place.page_url" target="_blank">
+                                    {{ item.place.name }} - {{ item.place.acronym }}
+                                </a>
                             </span>
-                            <span class="px-2">-</span>
-                            <span>{{ item.place.acronym }}</span>
                         </div>
                         <div v-if="item.place.acronym == ''">
                             <span>
@@ -65,6 +63,7 @@
                 </ul>
             </div>
         </div>
+        <hr class="hr d-none mx-4">
     </div>
 </template>
 
@@ -90,5 +89,8 @@
 <style>
     .test {
         background-size: 100%;
+    }
+    .news-v3-in:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 </style>

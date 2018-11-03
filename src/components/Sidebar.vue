@@ -24,19 +24,6 @@
             }
         },
         methods: {
-            clipboardCopy: function(url) {
-                let CopiedObject = document.createElement("textarea");
-                try {
-                    CopiedObject.value = 'git clone '+url
-                    CopiedObject.setAttribute('readonly', '');
-                    document.body.appendChild(CopiedObject);
-                    CopiedObject.select()
-                    document.execCommand('copy');
-                    document.body.removeChild(CopiedObject);
-                } catch (err) {
-                    console.log("Element value could not be copied")
-                }
-            },
         }
     }
 </script>

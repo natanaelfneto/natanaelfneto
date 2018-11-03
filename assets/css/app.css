@@ -569,7 +569,7 @@ h3.heading-xs {
 ------------------------------------*/
 .btn {
 	box-shadow: none;
-	border-radius: 0;
+	/* border-radius: 0; */
 }
 .btn-u {
 	border: 0;

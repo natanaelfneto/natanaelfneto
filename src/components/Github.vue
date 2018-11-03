@@ -56,6 +56,22 @@
             }
         },
         methods: {
+            clipboardCopy: function(url) {
+                let CopiedObject = document.createElement("textarea");
+                var output = "";
+                try {
+                    CopiedObject.value = 'git clone '+url
+                    CopiedObject.setAttribute('readonly', '');
+                    document.body.appendChild(CopiedObject);
+                    CopiedObject.select()
+                    document.execCommand('copy');
+                    document.body.removeChild(CopiedObject);
+                    output = "O comando: <git clone "+url+"> foi copiado com sucesso!";
+                } catch (err) {
+                    output = "Element value could not be copied"
+                }
+                alert(output);
+            },
         }
     }
 </script>

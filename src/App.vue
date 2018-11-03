@@ -94,6 +94,95 @@
     .oldsh {
         font-family: 'Old Style';
     }
+    @media print {
+        .breadcrumbs-v1, .badge {
+            -webkit-print-color-adjust: exact;
+        }
+        #cp-resume {
+            transform: scale(1.05);
+        }
+        [class*="col-md"], [class*="col-sm"], [class*="col-xs"] {
+            float: none;
+        }
+        img {
+            display: block;
+        }
+        #cp-github, .btn, .nav-item {
+            display: none;
+        }
+        .print-col-lg-3 {
+            flex: 0 0 25% !important;
+            max-width: 25% !important;
+        }
+        .print-mt-lg-4 {
+            margin-top: 1.5rem !important;
+        }
+        .print-d-lg-block {
+            display: block !important;
+        }
+        address {
+            margin-top: 1.5rem !important;
+        }
+        a {
+            text-decoration: none !important;
+        }
+        div, p, a {
+            color: black;
+        }
+        li.ml-auto.print {
+            margin-left: 1rem !important;
+        }
+        li.mr-auto.print {
+            margin-right: 1rem !important;
+        }
+        .print-d-none {
+            display: none;
+        }
+        .print-col-12 {
+            width: 100% !important;
+        }
+        #ContentTab {
+            display: none;
+        }
+        .news-v3 .news-v3-in {
+            padding-bottom: 1rem !important;
+            padding-top: 1rem !important;
+        }
+        .news-v3-in>p {
+            margin-bottom: 0 !important;
+        }
+        .print-place {
+            position: relative !important;
+            left: -1rem !important;
+            margin-top: 5px !important;
+        }
+        .print-place>div>span {
+            font-weight: bold !important;
+            color: gray !important;
+        }
+        .print-mb-md-0 {
+            margin-bottom: 0 !important;
+        }
+        .print-my-0 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .hr {
+            margin-top: 0rem !important;
+            display: block !important;
+        }
+        .news-v3-in>ul {
+            margin-bottom: 0 !important;
+        }
+        .headline>h2 {
+            font-weight: bold !important;
+            color: black !important;
+        }
+        .footer {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
 </style>
 
 
