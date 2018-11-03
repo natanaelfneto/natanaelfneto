@@ -41,6 +41,18 @@
                                     Publicações
                                 </a>
                             </li>
+                            <li class="nav-item px-2">
+                                <a 
+                                    class="nav-link bg-fade-blue" 
+                                    id="patent-tab" 
+                                    data-toggle="tab" 
+                                    href="#patent" 
+                                    role="tab" 
+                                    aria-controls="patent" 
+                                    aria-selected="true">
+                                    Patentes
+                                </a>
+                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div 
@@ -67,6 +79,18 @@
                                     v-for="item in data.content.published.object">>
                                 </Published>
                             </div>
+                            <div 
+                                class="row d-flex tab-pane fade" 
+                                id="patent" 
+                                role="tabpanel" 
+                                aria-labelledby="patent-tab">
+                                <Patent
+                                    :data="data"
+                                    :item="item"
+                                    v-if="data.content.patent.is_enabled"
+                                    v-for="item in data.content.patent.object">>
+                                </Patent>
+                            </div>
                         </div>
 					</div>
 				</div>
@@ -82,6 +106,7 @@
 <script>
     import Breadcrumbs from '../../components/Breadcrumbs.vue'
     import Footer from '../../components/Footer.vue'
+    import Patent from '../../components/Patent.vue'
     import Published from '../../components/Published.vue'
     import Resume from '../../components/Resume.vue'
     import Sidebar from '../../components/Sidebar.vue'
@@ -91,6 +116,7 @@
         components: {
             Breadcrumbs,
             Footer,
+            Patent,
             Published,
             Resume,
             Sidebar

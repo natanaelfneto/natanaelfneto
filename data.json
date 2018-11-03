@@ -445,7 +445,37 @@
                             "link": "http://www.observatoriorh.ufrn.br/biblioteca/categoria/11"
                         },
                         "year": "2018"
-                    }, 
+                    },
+                    {
+                        "description": "incompleto",
+                        "sources": [
+                        ],
+                        "title": "Explorador de arquivos DICOM local e remoto",
+                        "type": "Oral",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Guerra, P. V."
+                            }, 
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Valentim, R. A. M."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "1ª Conferência Internacional de Inovação em Saúde",
+                            "register": {
+                                "type": "",
+                                "value": ""
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
                     {
                         "description": "This article purpose is to analyze the insertion of the population aging theme in the training of professionals working in the Family Health Strategy and in the Family Health Support Center. This is a study with a qualitative approach and documentary type, carried out in the state of Rio Grande do Norte, located in the Northeastern region of Brazil. To reach the objective, the pedagogical projects of the courses for the professions that work in the Family Health Strategy and in the Family Health Support Unit were searched. The documents analysis was based on the content analysis method, using the thematic analysis technique in three pre-established registration units: (i) skills and abilities; (ii) professional profile; and (iii) curricular structure. From the analysis of the pedagogical projects, two analytical categories emerged: discussion about aging and training for health care of the elderly. The research result was that the discussion about the thematic of the aging in the process of formation of human resources in health is still insipient. There is a clear necessity to prepare people to provide adequate attention to the elderly population, as well as to formulate and manage public policies for the mentioned population that benefits from Health Unic System (SUS).",
                         "sources": [
@@ -537,7 +567,51 @@
                             "link": "https://periodicos.ufrn.br/reb/index"
                         },
                         "year": "2016"
-                    }, {
+                    },
+                    {
+                        "description": "O presente relato tem como objetivo explicitar a experiência positiva de pesquisadores, no período de 12 meses, com a implantação de uma equipe de apoio técnico para o sistema OpenPACS, que gerencia e armazena imagens médicas que demandava dos profissionais de saúde um maior conhecimento técnico afim de lograr a ferramenta. Considera-se uma experiência de caráter inovador por ser o primeiro hospital universitário do país a ter um laboratório cuja missão é promover a inovação tecnológica em saúde, de maneira estratégica, pois é de entendimento comum que várias demandas da área da saúde estão presente no ambiente hospitalar.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "http://www.sbis.org.br/cbis2016"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://www.sbis.org.br/biblioteca_virtual/cbis/Anais_CBIS_2016_Diversos.pdf"
+                            }
+                        ],
+                        "title": "A experiência de uma equipe de apoio permanente ao sistema PACS do Hospital Universitário Onofre Lopes - HUOL/UFRN",
+                        "type": "Relato",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, I. M. A."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Hekis, H. R."
+                            }, 
+                            {
+                                "name": "Valentim, R. A. M."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "XV Congresso Brasileiro de Informática em Saúde",
+                            "register": {
+                                "type": "issn",
+                                "value": "2178-2857"
+                            },
+                            "link": "http://www.sbis.org.br/cbis2016"
+                        },
+                        "year": "2016"
+                    },
+                    {
                         "description": "O trabalho  descreve uma  ferramenta  Web  que permitirá  aos profissionais  da  saúde  gerenciar  formulários  de  triagem médica  com  segurança  e  dinamismo  que  não  se  consegue atualmente com  a utilização formulários em papel. A  prática  de  triagem  surgiu  das  exigências  da  guerra,  e  se mantêm intimamente associado à medicina militar. Os sistemas mais  antigos,  projetados  para  distribuir  cuidados  de  saúde sistematicamente  entre  os  soldados  feridos  e  doentes, remontam  apenas  ao  século  18  (Iserson  KV,  Moskop  JC, 2007).  No  século  21,  a  utilização  da  informática  cresce constantemente  em  diversas  áreas  do  conhecimento,  mesmo quando  elas  não  percebem,  asseverando  assim  a  natureza multidisciplinar e estratégica dessa área. O uso da informática se  torna  relevante  por  lidar  com  recursos,  dispositivos  e métodos  para  otimizar o  gerenciamento  das  informações em saúde (SBIS, 2013). O sistema desenvolvido tem por finalidade incorporar aos procesos de triagens médicas para os diferentes profissionais  envolvidos,  digitalmente,  a  criação,  atualização através  de  versionamento,  correlação  lógicas  dos  itens questionados e segurança dos dados.",
                         "sources": [
                             {
@@ -577,6 +651,148 @@
                                 "value": "2178-2857"
                             },
                             "link": "http://www.sbis.org.br/cbis2016"
+                        },
+                        "year": "2016"
+                    }
+                ]
+            },
+            "patent": {
+                "is_enabled": true,
+                "object": [
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenForms",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openforms.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000323-8"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenMedVideo",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Castro, T. B."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openmedvideo.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000324-6"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenBiMed",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Lima, D. F."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openbimed.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000322-0"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "NSUChat2",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "HoodID",
+                            "register": {
+                                "type": "software",
+                                "value": "20180822"
+                            },
+                            "link": ""
+                        },
+                        "year": "2016"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "MeisterCharts",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "HoodID",
+                            "register": {
+                                "type": "software",
+                                "value": "28180722"
+                            },
+                            "link": ""
                         },
                         "year": "2016"
                     }
