@@ -138,7 +138,7 @@
             "experiences": {
                 "is_enabled": true,
                 "object": [{
-                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e emissão de exames e laudos médicos remotos para o Ministério da Saúde (MS) do Brasil através do programa Telessaúde Brasil Redes",
+                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e emissão de exames e laudos médicos remotos para o Ministério da Saúde (MS) do Brasil através do programa Telessaúde Brasil Redes. Plataforma capaz de receber exames de imagens médicas no formato DICOM e inserir 'tags' privadas contendo o laudo médico do exame, a assinatura digital e verificador de autenticidade por meio de chaves assimétricas.",
                     "place": {
                         "name": "Laboratório de Inovação Tecnológica em Saúde",
                         "acronym": "LAIS",
@@ -176,7 +176,7 @@
                         "end": "2018"
                     }
                 }, {
-                    "description": "Responsável por coordenar a equipe de desenvolvimento das aplicações mobile Android e iOS junto com os sistemas Web/API de controle de acessos às torres (sites) da operadora Vivo S/A por empresas prestadoras de serviços. O sistema viabilizava acesso às torres (sites) por meio de cadeados Bluetooth BLE com o acompanhamento dos gestores das equipes das empresas prestadoras de serviços via aparelhos smartphone com conexão, ou não, à internet",
+                    "description": "Responsável por coordenar a equipe de desenvolvimento das aplicações mobile Android e iOS junto com os sistemas Web/API de controle de acessos às torres (sites) da operadora Vivo S/A por empresas prestadoras de serviços. O sistema viabilizava acesso às torres (sites) por meio de cadeados Bluetooth BLE com o acompanhamento dos gestores das equipes das empresas prestadoras de serviços via aparelhos smartphone com conexão, ou não, à internet.",
                     "place": {
                         "name": "Need Tecnlogogia e Serviços",
                         "acronym": "NEED®",
@@ -207,7 +207,7 @@
                         "end": "2017"
                     }
                 }, {
-                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e acesso remoto de exames de imagens médicas de acordo com os padrões HL7 e DICOM para o Hospital Universitário Onofre Lopes, vinculado à rede da Empresa Brasileira de Serviços Hospitalares (EBSERH).",
+                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e acesso remoto de exames de imagens médicas de acordo com os padrões HL7 e DICOM para o Hospital Universitário Onofre Lopes, vinculado à rede da Empresa Brasileira de Serviços Hospitalares (EBSERH). Plataforma que vincula a imagem do exame médico aos dados do passiente através do formato DICOM e permite a acesso aos exames para computadores pessoais e terminais de emissão de laudo via protocolo DICOM assim como via API por protocolo HTTP.",
                     "place": {
                         "name": "Laboratório de Inovação Tecnológica em Saúde",
                         "acronym": "LAIS",
@@ -245,7 +245,7 @@
                         "end": "2017"
                     }
                 }, {
-                    "description": "Responsável pela coordenação do desenvolvimento e manutenção de hardware e software de aparelhos de imagens médicas e dos sistemas administrativos internos da empresa",
+                    "description": "Responsável pela coordenação do desenvolvimento e manutenção de hardware e software de aparelhos de imagens médicas e dos sistemas administrativos internos da empresa. Equipamentos de CT (Tomografia Computadorizada), DX (Raio-X Digital) e (MRI) Ressonância Magnética. Hardwares capazes de fazer a aquisição de dados entre equipamentos para arquivamento e diagnóstico.",
                     "place": {
                         "name": "CTX Assistência e Revenda de Equipamentos de Imagens Médica Ltda",
                         "acronym": "CTX®",
@@ -262,7 +262,7 @@
                         "end": "2016"
                     }
                 }, {
-                    "description": "Projetos elétricos de baixa e alta tensão (13,8 a 230 kV), diagramas unifilares, projetos de montagem eletromecânica, projetos funcionais de painéis, diagramas de interligação, lista de materiais, memoriais de cálculo, memoriais descritivos, quadros de carga, laudos de aterramento, entre outros documentos relacionados a subestações de energia",
+                    "description": "Projetos elétricos de baixa e alta tensão (13,8 a 230 kV), diagramas unifilares, projetos de montagem eletromecânica, projetos funcionais de painéis, diagramas de interligação, lista de materiais, memoriais de cálculo, memoriais descritivos, quadros de carga, laudos de aterramento, entre outros documentos relacionados a subestações de energia. Também responsável pelos desenhos técnicos na plataforma AutoCAD. Versões 2008/2010/2012.",
                     "place": {
                         "name": "Engeserve Engenharia e Serviços Ltda",
                         "acronym": "",

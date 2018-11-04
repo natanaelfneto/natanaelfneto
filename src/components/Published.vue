@@ -1,10 +1,10 @@
 <template>
     <div
         id="cp-published"
-        class="news-v3 bg-color-white mb-4">
+        class="news-v3 bg-color-white mb-4 print-mt">
         
         <div class="news-v3-in">
-            <ul class="list-inline d-flex">
+            <ul class="list-inline d-flex print-mb">
                 <li class="mr-auto">
                     <div>
                         <span>{{ item.year }}</span>
@@ -19,11 +19,13 @@
                     </a>
                 </li>
             </ul> 
-            <h3>{{ item.title }}</h3>
-            <span class="pr-2" v-for="author in item.authors">{{ author.name }};</span>
-            <p class="mb-0 mt-3">{{ item.description }}</p>
+            <h3 class="print-my-0">{{ item.title }}</h3>
+            <div class="print-py">
+                <span class="pr-2" v-for="author in item.authors">{{ author.name }};</span>
+            </div>
+            <p class="mb-0 mt-3 print-my-0">{{ item.description }}</p>
             <div class="row px-0 mx-0">
-                <ul class="post-shares ml-auto my-0">
+                <ul class="post-shares ml-auto my-0 print-d-none">
                     <li v-for="source in item.sources">
                         <a v-bind:href="source.link">
                             <i v-bind:class="source.icon" class="cp-font"></i>
@@ -32,6 +34,7 @@
                 </ul>
             </div>
         </div>
+        <hr class="hr d-none mx-4 mt-0 mb-4">
     </div>
 </template>
 

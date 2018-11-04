@@ -13,14 +13,14 @@
 					<div class="col-lg-3 col-md-12">
                         <Sidebar :data="data"></Sidebar>
 					</div>
-
                     <!-- Index Body Content -->
 					<div class="col-lg-9 col-md-12">
                         <ul class="nav nav-pills mb-3 mt-4 print-my-0" id="ContentTab" role="tablist">
                             <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue active" 
-                                    id="resume-tab" 
+                                    id="resume_tab" 
+                                    ref="resume_tab" 
                                     data-toggle="tab" 
                                     href="#resume" 
                                     role="tab" 
@@ -32,7 +32,8 @@
                             <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue" 
-                                    id="published-tab" 
+                                    id="published_tab" 
+                                    ref="published_tab" 
                                     data-toggle="tab" 
                                     href="#published" 
                                     role="tab" 
@@ -44,7 +45,8 @@
                             <li class="nav-item px-2">
                                 <a 
                                     class="nav-link bg-fade-blue" 
-                                    id="patent-tab" 
+                                    id="patent_tab" 
+                                    ref="patent_tab" 
                                     data-toggle="tab" 
                                     href="#patent" 
                                     role="tab" 
@@ -56,9 +58,8 @@
                             <li
                                 class="nav-item px-2 ml-auto">
                                 <a
-                                    href="javascript:;"
-                                    onclick="window.print()"
-                                    class="btn btn-secondary"
+                                    @click.stop.prevent="printPage()"
+                                    class="btn btn-secondary text-light"
                                     role="button" aria-disabled="true">
                                     PDF
                                     <span aria-hidden="true" class="ml-2 icon-printer"></span>
@@ -69,8 +70,9 @@
                             <div 
                                 class="tab-pane fade show active" 
                                 id="resume" 
+                                ref="resume" 
                                 role="tabpanel" 
-                                aria-labelledby="resume-tab">
+                                aria-labelledby="resume_tab">
                                 <div class="d-lg-none headline-v2 mb-4 mt-4 print-my-0">
                                     <h2>Experiências Profissionais</h2>
                                 </div>
@@ -81,12 +83,13 @@
                                     v-for="item in data.content.experiences.object">
                                 </Resume>
                             </div>
-                            <div 
+                            <div
                                 class="tab-pane fade" 
                                 id="published" 
+                                ref="published" 
                                 role="tabpanel" 
-                                aria-labelledby="published-tab">
-                                <div class="d-lg-none headline-v2 mb-4 mt-4 print-my-0">
+                                aria-labelledby="published_tab">
+                                <div class="d-lg-none headline-v2 mb-4 mt-5">
                                     <h2>Publicações</h2>
                                 </div>
                                 <Published
@@ -99,8 +102,9 @@
                             <div 
                                 class="row px-2 tab-pane fade" 
                                 id="patent" 
+                                ref="patent" 
                                 role="tabpanel" 
-                                aria-labelledby="patent-tab">
+                                aria-labelledby="patent_tab">
                                 <div class="mx-2 col-12 d-lg-none headline-v2 mb-4 mt-2 print-my-0">
                                     <h2>Patentes</h2>
                                 </div>
@@ -148,6 +152,17 @@
             }
         },
         methods: {
+            printPage: function() {
+                this.$refs.resume.setAttribute('class', 'tab-pane fade show active')
+                this.$refs.published.setAttribute('class', 'tab-pane fade show active')
+                this.$refs.patent.setAttribute('class', 'tab-pane fade show active')
+                window.print();
+                this.$refs.published.setAttribute('class', 'tab-pane fade')
+                this.$refs.patent.setAttribute('class', 'tab-pane fade')
+                this.$refs.resume_tab.setAttribute('class', 'nav-link bg-fade-blue active')
+                this.$refs.published_tab.setAttribute('class', 'nav-link bg-fade-blue')
+                this.$refs.patent_tab.setAttribute('class', 'nav-link bg-fade-blue')
+            }
         },
     }
 </script>

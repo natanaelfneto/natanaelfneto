@@ -1,9 +1,9 @@
 <template>
     <div
-        id="cp-published"
-        class="col-4 news-v3 mb-4 px-2">
+        id="cp-patent"
+        class="col-4 news-v3 mb-4 px-2 print-page-break">
         
-        <div class="news-v3-in bg-color-white">
+        <div class="news-v3-in bg-color-white print-page-break">
             <ul class="row list-inline">
                 <li class="col-12">
                     <div>

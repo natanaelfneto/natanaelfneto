@@ -63,7 +63,7 @@
                 </ul>
             </div>
         </div>
-        <hr class="hr d-none mx-4">
+        <hr class="hr d-none mx-4 mb-2">
     </div>
 </template>
 
