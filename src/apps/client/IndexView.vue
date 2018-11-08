@@ -155,10 +155,10 @@
             printPage: function() {
                 this.$refs.resume.setAttribute('class', 'tab-pane fade show active')
                 this.$refs.published.setAttribute('class', 'tab-pane fade show active')
-                this.$refs.patent.setAttribute('class', 'tab-pane fade show active')
+                this.$refs.patent.setAttribute('class', 'row px-2 tab-pane fade show active')
                 window.print();
                 this.$refs.published.setAttribute('class', 'tab-pane fade')
-                this.$refs.patent.setAttribute('class', 'tab-pane fade')
+                this.$refs.patent.setAttribute('class', 'row px-2 tab-pane fade')
                 this.$refs.resume_tab.setAttribute('class', 'nav-link bg-fade-blue active')
                 this.$refs.published_tab.setAttribute('class', 'nav-link bg-fade-blue')
                 this.$refs.patent_tab.setAttribute('class', 'nav-link bg-fade-blue')

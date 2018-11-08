@@ -74,7 +74,16 @@
     .oldsh {
         font-family: 'Old Style';
     }
+    @page {
+        margin: default;
+    }
     @media print {
+        .news-v3-in.print {
+            height: 12rem !important;
+        }
+        .print-font-small {
+            font-size: x-small !important;
+        }
         #cp-resume {
             margin-top: 0rem !important;
         } 
@@ -137,7 +146,7 @@
             font-weight: bold !important;
             color: gray !important;
         }
-        .print-mb-md-0, .news-v3-in>ul, .news-v3-in>p {
+        .print-mb-0 .print-mb-md-0, .news-v3-in>ul, .news-v3-in>p {
             margin-bottom: 0 !important;
         }
         .print-my-0 {
@@ -159,7 +168,7 @@
             font-weight: bold !important;
             color: black !important;
         }
-        .footer, p {
+        .footer, p, .print-py-0 {
             padding-top: 0 !important;
             padding-bottom: 0 !important;
         }
