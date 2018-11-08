@@ -1,9 +1,9 @@
 <template>
     <div
         id="cp-patent"
-        class="col-4 news-v3 mb-4 px-2 print-page-break">
+        class="col-4 news-v3 mb-4 px-2 print-my-0 print-mb-0 print-py-0">
         
-        <div class="news-v3-in bg-color-white print-page-break">
+        <div class="news-v3-in bg-color-white print print-mb-0 print-py-0">
             <ul class="row list-inline">
                 <li class="col-12">
                     <div>
@@ -23,18 +23,14 @@
                     </a>
                 </li>
             </ul> 
-            <h3>{{ item.title }}</h3>
+            <h3 class="print-mb-0">{{ item.title }}</h3>
             <div class="h-25">
                 <span class="pr-2" v-for="author in item.authors">{{ author.name }};</span>
             </div>
-            <div class="row px-0 mx-0">
+            <div class="row px-0 mx-0 print-mb-0">
                 <ul class="mr-auto post-shares mb-0 mt-auto">
                     <li>
-                        
-                            <i 
-                                v-bind:style="{ 'background-image': 'url(' + data.settings.logos + item.icon + ')' }">
-                            </i>
-                        
+                        <i v-bind:style="{ 'background-image': 'url(' + data.settings.logos + item.icon + ')' }"></i>
                     </li>
                 </ul>
                 <ul class="ml-auto post-shares mb-0 mt-auto">
@@ -72,8 +68,10 @@
     .cp-font {
         font-size: 2rem !important;
     }
-    .news-v3-in {
-        height: 16rem;
+    @media all {
+        .news-v3-in {
+            height: 16rem;
+        }
     }
     .news-v3-in:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
