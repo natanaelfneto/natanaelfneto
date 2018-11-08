@@ -1,0 +1,863 @@
+{
+    "data":
+    {
+        "settings":
+        {
+            "name": "NATANAEL F. NETO",
+            "title": "Engenheiro Eletricista e de Software",
+            "logos": "assets/img/logos/",
+            "background_image": "assets/img/bg-gyn.png",
+            "profile_image": "assets/img/profile.png",
+            "peronal_logo": "assets/img/natanaelfneto.png",
+            "contact":{
+                "0": [
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-pointer"
+                        },
+                        "info": "Natal, RN",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-call-out"
+                        },
+                        "info": "+55 (62) 982-176-644",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "fontawesome",
+                            "meta": "fa_ fa-whatsapp"
+                        },
+                        "info": "+55 (62) 982-176-644",
+                        "meta": {}
+                    },
+                    {
+                        "icon":
+                        {
+                            "type": "lineicons",
+                            "value": "icon-link"
+                        },
+                        "info": "natanaelfneto.com",
+                        "meta": {
+                            "type": "link",
+                            "value": "https://natanaelfneto.com"
+                        }
+                    }
+                ],
+                "1": [{},{},{},{}],
+                "2": [{},{},{},{}]
+            }
+        },
+        "sidebar": {
+            "academic": {
+                "is_enabled": true,
+                "object": [
+                    {
+                        "degree": "Master",
+                        "title": "Ciência, Tecnologia e Inovação",
+                        "acronym": "MSc",
+                        "year": {
+                            "start": "",
+                            "end": "2018"
+                        },
+                        "department": {
+                            "name": "Departamento de Ciência e Tecnologia"
+                        },
+                        "institution": {
+                            "name": "Universidade Federal do Rio Grande do Norte"
+                        }
+                    },
+                    {
+                        "degree": "Specialist",
+                        "title": "Informática em Saúde",
+                        "acronym": "Esp",
+                        "year": {
+                            "start": "",
+                            "end": "2017"
+                        },
+                        "department": {
+                            "name": "Departamento de Engenharia Biomédica"
+                        },
+                        "institution": {
+                            "name": "Universidade Federal do Rio Grande do Norte"
+                        }
+                    },
+                    {
+                        "degree": "Bachelor",
+                        "title": "Engenharia Elétrica",
+                        "acronym": "BEng",
+                        "year": {
+                            "start": "",
+                            "end": "2015"
+                        },
+                        "department": {
+                            "name": "Escola de Engenharia Elétrica, Mecânica e de Computação"
+                        },
+                        "institution": {
+                            "name": "Universidade Federal de Goiás"
+                        }
+                    }
+                ]
+            },
+            "github": {
+                "is_enabled": true,
+                "object": {
+                    "user": {
+                        "login": "natanaelfneto"
+                    },
+                    "orgs": {},
+                    "featured_repos": [
+                        {
+                            "name": "pythontail",
+                            "data": {}
+                        },
+                        {
+                            "name": "dicompopulate",
+                            "data": {}
+                        },
+                        {
+                            "name": "codedir2pdf",
+                            "data": {}
+                        }
+                    ]
+                }
+            },
+            "likedin" : {
+                "is_enabled": false,
+                "object": {}
+            }
+        },
+        "content": {
+            "experiences": {
+                "is_enabled": true,
+                "object": [{
+                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e emissão de exames e laudos médicos remotos para o Ministério da Saúde (MS) do Brasil através do programa Telessaúde Brasil Redes. Plataforma capaz de receber exames de imagens médicas no formato DICOM e inserir 'tags' privadas contendo o laudo médico do exame, a assinatura digital e verificador de autenticidade por meio de chaves assimétricas.",
+                    "place": {
+                        "name": "Laboratório de Inovação Tecnológica em Saúde",
+                        "acronym": "LAIS",
+                        "image": {
+                            "logo": "lais.png"
+                        },
+                        "page_url": "http://lais.huol.ufrn.br/",
+                        "parents": [{
+                            "name": "Programa Nacional Telessaúde Brasil Redes",
+                            "acronym": "TELESSAÚDE",
+                            "image": {
+                                "logo": "telessaude.png"
+                            },
+                            "page_url": "http://dab.saude.gov.br/portaldab/ape_telessaude.php"
+                        }, {
+                            "name": "Universidade Federal do Rio Grande do Norte",
+                            "acronym": "UFRN",
+                            "image": {
+                                "logo": "ufrn.png"
+                            },
+                            "page_url": "https://www.ufrn.br/"
+                        }, {
+                            "name": "Ministério da Saúde do Brasil",
+                            "acronym": "MS-BR",
+                            "image": {
+                                "logo": "msbr.png"
+                            },
+                            "page_url": "http://portalms.saude.gov.br/"
+                        }]
+                    },
+                    "position": "Engenheiro Pesquisador Sênior",
+                    "location": "Natal, RN",
+                    "year": {
+                        "start": "2017",
+                        "end": "2018"
+                    }
+                }, {
+                    "description": "Responsável por coordenar a equipe de desenvolvimento das aplicações mobile Android e iOS junto com os sistemas Web/API de controle de acessos às torres (sites) da operadora Vivo S/A por empresas prestadoras de serviços. O sistema viabilizava acesso às torres (sites) por meio de cadeados Bluetooth BLE com o acompanhamento dos gestores das equipes das empresas prestadoras de serviços via aparelhos smartphone com conexão, ou não, à internet.",
+                    "place": {
+                        "name": "Need Tecnlogogia e Serviços",
+                        "acronym": "NEED®",
+                        "image": {
+                            "logo": "need.png"
+                        },
+                        "page_url": "",
+                        "parents": [{
+                            "name": "Grupo Oltec Ltda",
+                            "acronym": "OLTEC",
+                            "image": {
+                                "logo": "oltec.png"
+                            },
+                            "page_url": "http://www.oltec.com.br/en/"
+                        }, {
+                            "name": "Telxius Telecom S/A",
+                            "acronym": "TELXIUS",
+                            "image": {
+                                "logo": "telxius.png"
+                            },
+                            "page_url": "https://telxius.com/en/"
+                        }]
+                    },
+                    "position": "Coordenador da Equipe de Tecnologia da Informação",
+                    "location": "Rio de Janeiro, RJ",
+                    "year": {
+                        "start": "2017",
+                        "end": "2017"
+                    }
+                }, {
+                    "description": "Responsável por desenvolver aplicações e sistemas para aquisição, arquivamento e acesso remoto de exames de imagens médicas de acordo com os padrões HL7 e DICOM para o Hospital Universitário Onofre Lopes, vinculado à rede da Empresa Brasileira de Serviços Hospitalares (EBSERH). Plataforma que vincula a imagem do exame médico aos dados do passiente através do formato DICOM e permite a acesso aos exames para computadores pessoais e terminais de emissão de laudo via protocolo DICOM assim como via API por protocolo HTTP.",
+                    "place": {
+                        "name": "Laboratório de Inovação Tecnológica em Saúde",
+                        "acronym": "LAIS",
+                        "image": {
+                            "logo": "lais.png"
+                        },
+                        "page_url": "http://lais.huol.ufrn.br/",
+                        "parents": [{
+                            "name": "Hospital Universitário Onofre Lopes",
+                            "acronym": "HUOL",
+                            "image": {
+                                "logo": "huol.png"
+                            },
+                            "page_url": "http://www.ebserh.gov.br/web/huol-ufrn"
+                        }, {
+                            "name": "Empresa Brasileira de Serviços Hospitalares",
+                            "acronym": "EBSERH",
+                            "image": {
+                                "logo": "ebserh.png"
+                            },
+                            "page_url": "http://www.ebserh.gov.br/"
+                        }, {
+                            "name": "Universidade Federal do Rio Grande do Norte",
+                            "acronym": "UFRN",
+                            "image": {
+                                "logo": "ufrn.png"
+                            },
+                            "page_url": "https://www.ufrn.br/"
+                        }]
+                    },
+                    "position": "Engenheiro Pesquisador",
+                    "location": "Natal, RN",
+                    "year": {
+                        "start": "2016",
+                        "end": "2017"
+                    }
+                }, {
+                    "description": "Responsável pela coordenação do desenvolvimento e manutenção de hardware e software de aparelhos de imagens médicas e dos sistemas administrativos internos da empresa. Equipamentos de CT (Tomografia Computadorizada), DX (Raio-X Digital) e (MRI) Ressonância Magnética. Hardwares capazes de fazer a aquisição de dados entre equipamentos para arquivamento e diagnóstico.",
+                    "place": {
+                        "name": "CTX Assistência e Revenda de Equipamentos de Imagens Médica Ltda",
+                        "acronym": "CTX®",
+                        "image": {
+                            "logo": "ctx.png"
+                        },
+                        "page_url": "",
+                        "parents": []
+                    },
+                    "position": "Engenheiro Biomédico e Eletrônico",
+                    "location": "Goiânia, GO",
+                    "year": {
+                        "start": "2014",
+                        "end": "2016"
+                    }
+                }, {
+                    "description": "Projetos elétricos de baixa e alta tensão (13,8 a 230 kV), diagramas unifilares, projetos de montagem eletromecânica, projetos funcionais de painéis, diagramas de interligação, lista de materiais, memoriais de cálculo, memoriais descritivos, quadros de carga, laudos de aterramento, entre outros documentos relacionados a subestações de energia. Também responsável pelos desenhos técnicos na plataforma AutoCAD. Versões 2008/2010/2012.",
+                    "place": {
+                        "name": "Engeserve Engenharia e Serviços Ltda",
+                        "acronym": "",
+                        "image": {
+                            "logo": "engeserve.png"
+                        },
+                        "page_url": "http://www.engeserve.com.br/",
+                        "parents": []
+                    },
+                    "position": "Estágio em Engenheiro Elétrica",
+                    "location": "Goiânia, GO",
+                    "year": {
+                        "start": "2011",
+                        "end": "2013"
+                    }
+                }, {
+                    "description": "Experiência como funcionário de uma franquia internacional com o objetivo de desenvolver o idioma inglês, obrigatório na época para todos os funcionários de contato direto com clientes, além de auxiliar com os custos existentes durante o período de graduação",
+                    "place": {
+                        "name": "Outback Steak House Goiânia",
+                        "acronym": "",
+                        "image": {
+                            "logo": "outback.png"
+                        },
+                        "page_url": "https://www.outback.com.br/",
+                        "parents": [{
+                            "name": "Flamboyant Shopping",
+                            "acronym": "",
+                            "image": {
+                                "logo": "flamboyant.png"
+                            },
+                            "page_url": "http://www.flamboyant.com.br/"
+                        }]
+                    },
+                    "position": "Waiter (Atendente)",
+                    "location": "Goiânia, GO",
+                    "year": {
+                        "start": "2009",
+                        "end": "2010"
+                    }
+                }, {
+                    "description": "Trabalho exercido como membro da equipe responsável por auxiliar clientes com a instalação e configuração, de maneira remota, de modens CDMA e GSM (GPRS/HSPDA) e configuração de informações de ISP da operadora nos computadores Windows, MacOS/OSX e Linux durante a fase de implantação da tecnologia 3G da Vivo S/A. no Brasil",
+                    "place": {
+                        "name": "Atento Brasil Ltda",
+                        "acronym": "",
+                        "image": {
+                            "logo": "atento.png"
+                        },
+                        "page_url": "http://atento.com/locations/brazil/",
+                        "parents": [{
+                            "name": "Vivo Brasil S/A",
+                            "acronym": "https://www.vivoempresas.com.br/‎",
+                            "image": {
+                                "logo": "vivo.png"
+                            },
+                            "page_url": ""
+                        }]
+                    },
+                    "position": "Atendente direto para consumidores Pessoa Jurídica",
+                    "location": "Goiânia, GO",
+                    "year": {
+                        "start": "2008",
+                        "end": "2009"
+                    }
+                }]
+            },
+            "published": {
+                "is_enabled": true,
+                "object": [
+                    {
+                        "description": "A automação hospitalar é uma área multidisciplinar que envolve linguagens de programação (software), plataformas eletrônicas (hardware), atuação (mecânica), e fluidos fármacos. [...] A Esclerose Lateral Amiotrófica (ELA) é uma doença neurodegenerativa, caracterizada por uma progressiva e fatal perda de neurônios motores do cortéx cerebral, tronco encefálico e medula espinhal, não afetando, no entanto, a atividade cognitiva do paciente. [...] A Esclerose Lateral Amiotrófica é a forma mais comum de doença progressiva do neurônio motor e um grande exemplo de doença neurodegenerativa, considerada por alguns autores como a mais devastadora das doenças neurodegenerativas. [...] O objetivo desse trabalho é a implementação de um sistema dotado de recursos para o gerenciamento de informações de pacientes e profissionais de saúde, capaz de receber sinais vitais do paciente, tanto do ambiente hospitalar, quanto domiciliar [...] com foco na melhoria da qualidade de vida do paciente e evolução do tratamento.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": ""
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": ""
+                            }
+                        ],
+                        "title": "Sistema de Telemonitoramento para Pacientes com Esclerose Lateral Amiotrófica [O RN à Luz da Inovação para o Mundo]",
+                        "type": "Capítulo de Livro",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, I. M. A."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "SEDIS/UFRN",
+                            "register": {
+                                "type": "isbn",
+                                "value": "978-85-7064-042-0"
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    }, 
+                    {
+                        "description": "Paper documents are being replace in different areas every day and, for any activity that requires authenticity, these new digital forms need to assure the same guaranties as the physical document does, i.e., authorship, authenticity, chronological evidence and integrity. In this article we shall analyze a viable use of available technologies to solve this evidenced issue. In medical reports for image exams, the use of a Picture Archive Communications System (PACS) allow the medical reports to be emitted remotely but it alone does not guarantee any of the security measurements for non-repudiation. The results presented in this article were obtained from an Integrative Literature Review and make evidence that the digital signatures model, based on asymmetric cryptography, could help solve this issue if a solution implementation does not change the installed DICOM/PACS environment and if it makes possible for an easy emitter check without the possibility of repudiation, within the local legislation",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901/6958"
+                            }
+                        ],
+                        "title": "Digital Signatures Schemes: An Integrative Literature Review of Asymmetric Cryptography Usage as a Technical Method for Authenticity and Nonrepudiation on Remote Medical Reports for PACS",
+                        "type": "Artigo",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, M. A. N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Valentim, R. A. M."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "ECOP/UFERSA",
+                            "register": {
+                                "type": "issn",
+                                "value": "2526-7574"
+                            },
+                            "link": "https://periodicos.ufersa.edu.br/index.php/ecop/article/view/7901"
+                        },
+                        "year": "2018"
+                    }, {
+                        "description": "O Sistema Único de Saúde (SUS) representa uma das principais conquistas da sociedade brasileira e tem sido referenciado como sendo um dos maiores sistemas de saúde pública do mundo. Afinal, ele é responsável por ações que vão desde a promoção da saúde à atenção a doenças que exigem um alto nível de complexidade tecnológica, realizando atendimento de caráter universal. Considerando a importância da existência de um sistema de saúde com essas dimensões, vê-se necessário ressaltar o desafio de serem desenvolvidas ações educativas no âmbito do SUS tendo em vista seu fortalecimento e o aperfeiçoamento constante da sua força de trabalho. Nessa perspectiva, reconhece-se a área de Gestão do Trabalho e da Educação na Saúde como estratégica para a gestão do SUS, considerando que a coordenação da Política de Educação Permanente do trabalhador deve ser de sua responsabilidade. Por conseguinte, defende-se que ao utilizar a educação como ferramenta estratégica para a gestão, esta seja compreendida como mediadora no processo em que se relacionam o trabalho concreto e as aprendizagens subjetivas e sociais (RAMOS, 2011). É fato que a execução da Política de Educação Permanente tem se concretizado por meio de várias iniciativas, entre elas, a Educação a Distância. Que, para Belloni (2012), surge como caminho incontornável, como uma nova solução de melhoria da qualidade do ensino no sentido de adequá-lo ao século XXI",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "http://www.observatoriorh.ufrn.br/biblioteca/categoria/11"
+                            }, {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://www.observatoriorh.ufrn.br/uploads/989ca41953558a5e3657c76432bbef71.pdf"
+                            }
+                        ],
+                        "title": "Um olhar sobre a evasão na Educação a Distância: Para além dos números [A integração entre o ensino e o serviço de saúde: relato de atores, olhar de investigadores]",
+                        "type": "Capítulo de Livro",
+                        "authors": [
+                            {
+                                "name": "Costa, T. P. T."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            }, 
+                            {
+                                "name": "Castro, J. L."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "NESC/UFRN",
+                            "register": {
+                                "type": "isbn",
+                                "value": "978-85-60036-35-6"
+                            },
+                            "link": "http://www.observatoriorh.ufrn.br/biblioteca/categoria/11"
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "This article purpose is to analyze the insertion of the population aging theme in the training of professionals working in the Family Health Strategy and in the Family Health Support Center. This is a study with a qualitative approach and documentary type, carried out in the state of Rio Grande do Norte, located in the Northeastern region of Brazil. To reach the objective, the pedagogical projects of the courses for the professions that work in the Family Health Strategy and in the Family Health Support Unit were searched. The documents analysis was based on the content analysis method, using the thematic analysis technique in three pre-established registration units: (i) skills and abilities; (ii) professional profile; and (iii) curricular structure. From the analysis of the pedagogical projects, two analytical categories emerged: discussion about aging and training for health care of the elderly. The research result was that the discussion about the thematic of the aging in the process of formation of human resources in health is still insipient. There is a clear necessity to prepare people to provide adequate attention to the elderly population, as well as to formulate and manage public policies for the mentioned population that benefits from Health Unic System (SUS).",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://doi.org/10.3823/2509"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://imedicalsociety.org/ojs/index.php/iam/article/view/2716/2259"
+                            }
+                        ],
+                        "title": "A Look at Professional Education in Health with Emphasis on Aging",
+                        "type": "Artigo",
+                        "authors": [
+                            {
+                                "name": "Lima, R. R. T."
+                            }, 
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Costa, T. P. T."
+                            }, 
+                            {
+                                "name": "Vilar, R. L. A."
+                            }, 
+                            {
+                                "name": "Castro, J. L."
+                            },
+                            {
+                                "name": "Lima, K. C."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "International Archives of Medicine",
+                            "register": {
+                                "type": "issn",
+                                "value": "1755-7682"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "Atualmente   a   educação   à   distância   tor-nou-se  uma  ferramenta  fundamental  para  quebrar   as   barreiras   da   necessidade   da   presença física, inspirado nos benefícios do EaD  foi  implementado  o  projeto  AVASUS,  este  projeto  consistem  em  uma  plataforma  com cursos EaD onde o objetivo principal é UMA METODOLOGIA PARA OTIMIZAR O SISTEMA DE MELHORIA CONTINUADA DO AVASUS COM FOCO NAS EXPERIÊNCIAS DO USUÁRIO A METHODOLOGY TO OPTIMIZE THE AVASUS CONTINUOUS IMPROVIMENT SYSTEM WITH A FOCUS ON USER EXPIRENCESqualificar profissionais e estudantes da área da saúde, o pós-atendimento é uma pratica importante  para  obter  um  feedback  dos  usuários sobre problemas apresentados na plataforma,  problemas  com  cursos,  suges-tões  e  críticas.  Através  desse  feedback  a  equipe busca atender aos pedidos dos usu-ários. O presente trabalho de conclusão de curso propõe uma otimização do atual pro-cesso  do  sistema  de  pós-atendimento  do  AVASUS,  na  arquitetura  apresentada  pode-remos  verificar  um  sistema  mais  dinâmico e objetivo ao receber os problemas que os usuários venham a apresentar durante a rea-lização do curso, além de automatizar parte do processo atual, o proposto trabalho irá manter parte do processo de forma huma-nizada,  visto  que  uma  certa  quantidade  de  avaliações são subjetivas e precisam de uma analise mais criteriosa. Poderemos verificar ao fim do trabalho que a arquitetura pro-posta  é  implementável,  além  de  atender de forma eficiente as necessidades do pro-cesso de pós-atendimento.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://periodicos.ufrn.br/reb/issue/view/610"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "https://periodicos.ufrn.br/reb/article/view/11129/7950"
+                            }
+                        ],
+                        "title": "Uma metodologia para otimizar o Sistema de Melhoria Continuada do AVASUS com foco nas experiências do usuário",
+                        "type": "Artigo",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Vieira, G. V."
+                            }, 
+                            {
+                                "name": "Coutinho, k. M. D."
+                            }, 
+                            {
+                                "name": "Laranjeiras, L. A. C."
+                            }, 
+                            {
+                                "name": "Valentim, R. A. M."
+                            },
+                            {
+                                "name": "Coutinho, K. D."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "Revista Brasileira de Inovação Tecnológica em Saúde",
+                            "register": {
+                                "type": "issn",
+                                "value": "2236-1103"
+                            },
+                            "link": "https://periodicos.ufrn.br/reb/index"
+                        },
+                        "year": "2016"
+                    },
+                    {
+                        "description": "O presente relato tem como objetivo explicitar a experiência positiva de pesquisadores, no período de 12 meses, com a implantação de uma equipe de apoio técnico para o sistema OpenPACS, que gerencia e armazena imagens médicas que demandava dos profissionais de saúde um maior conhecimento técnico afim de lograr a ferramenta. Considera-se uma experiência de caráter inovador por ser o primeiro hospital universitário do país a ter um laboratório cuja missão é promover a inovação tecnológica em saúde, de maneira estratégica, pois é de entendimento comum que várias demandas da área da saúde estão presente no ambiente hospitalar.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "http://www.sbis.org.br/cbis2016"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://www.sbis.org.br/biblioteca_virtual/cbis/Anais_CBIS_2016_Diversos.pdf"
+                            }
+                        ],
+                        "title": "A experiência de uma equipe de apoio permanente ao sistema PACS do Hospital Universitário Onofre Lopes - HUOL/UFRN",
+                        "type": "Relato",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, I. M. A."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Hekis, H. R."
+                            }, 
+                            {
+                                "name": "Valentim, R. A. M."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "XV Congresso Brasileiro de Informática em Saúde",
+                            "register": {
+                                "type": "issn",
+                                "value": "2178-2857"
+                            },
+                            "link": "http://www.sbis.org.br/cbis2016"
+                        },
+                        "year": "2016"
+                    },
+                    {
+                        "description": "O trabalho  descreve uma  ferramenta  Web  que permitirá  aos profissionais  da  saúde  gerenciar  formulários  de  triagem médica  com  segurança  e  dinamismo  que  não  se  consegue atualmente com  a utilização formulários em papel. A  prática  de  triagem  surgiu  das  exigências  da  guerra,  e  se mantêm intimamente associado à medicina militar. Os sistemas mais  antigos,  projetados  para  distribuir  cuidados  de  saúde sistematicamente  entre  os  soldados  feridos  e  doentes, remontam  apenas  ao  século  18  (Iserson  KV,  Moskop  JC, 2007).  No  século  21,  a  utilização  da  informática  cresce constantemente  em  diversas  áreas  do  conhecimento,  mesmo quando  elas  não  percebem,  asseverando  assim  a  natureza multidisciplinar e estratégica dessa área. O uso da informática se  torna  relevante  por  lidar  com  recursos,  dispositivos  e métodos  para  otimizar o  gerenciamento  das  informações em saúde (SBIS, 2013). O sistema desenvolvido tem por finalidade incorporar aos procesos de triagens médicas para os diferentes profissionais  envolvidos,  digitalmente,  a  criação,  atualização através  de  versionamento,  correlação  lógicas  dos  itens questionados e segurança dos dados.",
+                        "sources": [
+                            {
+                                "type": "link",
+                                "icon": "fa_ fa-link",
+                                "link": "https://www.researchgate.net/application.ClientValidation.html?origPath=/profile/Marcel_Dantas/publication/314229421_Ferramenta_Web_para_gerar_e_gerenciar_formularios_de_triagem_medica_para_o_Hospital_Universitario_Onofre_Lopes_HUOLUFRN/links/58eabec10f7e9b978f840bf4/Ferramenta-Web-para-gerar-e-gerenciar-formularios-de-triagem-medica-para-o-Hospital-Universitario-Onofre-Lopes-HUOL-UFRN.pdf"
+                            },
+                            {
+                                "type": "pdf",
+                                "icon": "far fa-file-pdf",
+                                "link": "http://www.sbis.org.br/biblioteca_virtual/cbis/Anais_CBIS_2016_Diversos.pdf"
+                            }
+                        ],
+                        "title": "Ferramenta Web para gerar e gerenciar formulários de triagem médica para o Hospital Universitário Onofre Lopes HUOL/UFRN",
+                        "type": "Resumo",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Freitas, I. M. A."
+                            }, 
+                            {
+                                "name": "Guerra, P. V."
+                            }, 
+                            {
+                                "name": "Dantas, M. C. R."
+                            }, 
+                            {
+                                "name": "Valentim, R. A. M."
+                            }
+                        ],
+                        "periodic": {
+                            "name": "XV Congresso Brasileiro de Informática em Saúde",
+                            "register": {
+                                "type": "issn",
+                                "value": "2178-2857"
+                            },
+                            "link": "http://www.sbis.org.br/cbis2016"
+                        },
+                        "year": "2016"
+                    }
+                ]
+            },
+            "patent": {
+                "is_enabled": true,
+                "object": [
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth iOS",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Rocha Junior, M."
+                            },
+                            {
+                                "name": "Queiroz, R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            },
+                            {
+                                "name": "Freire, C. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth Android",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freire, C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "Padlock Auth Web",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Fontes, H. G. S."
+                            },
+                            {
+                                "name": "Freire, C. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "aguradando..."
+                            },
+                            "link": ""
+                        },
+                        "year": "2018"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenForms",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openforms.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000323-8"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenMedVideo",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Castro, T. B."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openmedvideo.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000324-6"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "OpenBiMed",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Lima, D. F."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Dantas, M. C. R."
+                            }
+                        ],
+                        "icon":"openbimed.png",
+                        "ownership": {
+                            "name": "NIT/UFRN",
+                            "register": {
+                                "type": "software",
+                                "value": "BR512017000322-0"
+                            },
+                            "link": ""
+                        },
+                        "year": "2017"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "NSUChat2",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "HoodID",
+                            "register": {
+                                "type": "software",
+                                "value": "20180822"
+                            },
+                            "link": ""
+                        },
+                        "year": "2016"
+                    },
+                    {
+                        "description": "",
+                        "sources": [
+                        ],
+                        "title": "MeisterCharts",
+                        "type": "Registro de Software",
+                        "authors": [
+                            {
+                                "name": "Dantas, M. C. R."
+                            },
+                            {
+                                "name": "Freitas Neto, N."
+                            },
+                            {
+                                "name": "Veras, N. V. R."
+                            }
+                        ],
+                        "icon":"",
+                        "ownership": {
+                            "name": "HoodID",
+                            "register": {
+                                "type": "software",
+                                "value": "28180722"
+                            },
+                            "link": ""
+                        },
+                        "year": "2016"
+                    }
+                ]
+            }
+        }
+    }
+}
